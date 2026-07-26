@@ -57,3 +57,18 @@ collections:
       - { label: "Descrizione", name: "descrizione", widget: "text", required: false }
       - { label: "Link Sito Web", name: "sito", widget: "string", required: false }
       - { label: "Logo", name: "logo", widget: "image", required: false }
+
+  # -------------------------------------------------------------
+  # 3. ROSE
+  # -------------------------------------------------------------
+  - name: "rose"
+    label: "Rose Squadre"
+    folder: "content/rose"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Categoria", name: "categoria", widget: "select", options: ["Prima Squadra", "Juniores U19", "Allievi U17", "Giovanissimi U15", "Esordienti U13", "Pulcini U11"] }
+      - { label: "Ruolo", name: "ruolo", widget: "select", options: ["Portiere", "Difensore", "Centracampista", "Attaccante", "Allenatore", "Vice Allenatore", "Dirigente"] }
+      - { label: "Nome", name: "nome", widget: "text", required: true }
+      - { label: "Numero maglio", name: "numero", widget: "string", required: false }
+      - { label: "Foto", name: "foto", widget: "image", required: false }
