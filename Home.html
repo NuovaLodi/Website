@@ -1517,7 +1517,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       // 1. Recupera l'elenco dei file pubblicati da Netlify / GitHub
-      const response = await fetch('https://api.github.com/repos/TUO_ACCOUNT/nuova-lodi-website/contents/content/news');
+      const response = await fetch('https://api.github.com/repos/NuovaLodi/Website/contents/content/news');
       
       if (!response.ok) {
         throw new Error('Impossibile recuperare le news');
