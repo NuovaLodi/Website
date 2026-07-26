@@ -1513,11 +1513,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <script>
 async function loadDynamicNews() {
+    alert("Lo script è stato avviato!"); // <-- INSERISCI L'ALERT QUI
+    
   console.log("1. Inizio esecuzione loadDynamicNews");
   const container = document.getElementById('news-container');
 
   try {
-    const url = 'https://api.github.com/repos/NOME_UTENTE/NOME_REPO/contents/content/news';
+    const url = 'https://api.github.com/repos/NuovaLodi/Website/contents/content/news';
     console.log("2. Chiamata API a:", url);
 
     const response = await fetch(url);
