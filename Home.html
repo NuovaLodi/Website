@@ -85,10 +85,10 @@
             <a href="#" onclick="showPage('home'); toggleMenu();" class="block hover:text-brandYellow">HOME</a>
             <a href="#" onclick="showPage('societa'); toggleMenu();" class="block hover:text-brandYellow">SOCIETÀ</a>
             <a href="#" onclick="showPage('squadre'); toggleMenu();" class="block hover:text-brandYellow">SQUADRE</a>
-            <a href="#" class="block hover:text-brandYellow">ISCRIZIONI</a>
-            <a href="#news-section" onclick="showPage('home'); toggleMenu();" class="block hover:text-brandYellow">NEWS & EVENTI</a>
-            <a href="#sponsor-section" onclick="showPage('home'); toggleMenu();" class="block hover:text-brandYellow">SPONSOR</a>
-            <a href="#" class="block hover:text-brandYellow">CONTATTI</a>
+            <a href="#" onclick="showPage('iscrizioni'); toggleMenu();" class="hover:text-brandYellow transition pb-1">SEGRETERIA</a>
+            <a href="#" onclick="showPage('news'); toggleMenu();" class="hover:text-brandYellow transition pb-1">NEWS & EVENTI</a>
+            <a href="#" onclick="showPage('sponsor'); toggleMenu();" class="hover:text-brandYellow transition pb-1">SPONSOR</a>
+            <a href="#" onclick="showPage('contatti'); toggleMenu();" class="hover:text-brandYellow transition pb-1">CONTATTI</a>
         </div>
     </header>
 
@@ -1510,29 +1510,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <script>
 async function loadDynamicNews() {
-    
   console.log("1. Inizio esecuzione loadDynamicNews");
   const container = document.getElementById('news-container');
 
   try {
     const url = 'https://api.github.com/repos/NuovaLodi/Website/contents/content/news';
-    console.log("2. Chiamata API a:", url);
-
     const response = await fetch(url);
-    console.log("3. Stato risposta HTTP:", response.status, response.statusText);
     
     if (!response.ok) {
       throw new Error(`Errore HTTP: ${response.status}`);
     }
 
     const files = await response.json();
-    console.log("4. Elenco file trovati nella cartella GitHub:", files);
-
     const newsFiles = files.filter(f => f.name.endsWith('.md') || f.name.endsWith('.json'));
-    console.log("5. File filtrati (.md o .json):", newsFiles);
 
     if (newsFiles.length === 0) {
-      console.log("Nessun file .md o .json trovato.");
       container.innerHTML = '<p class="col-span-full text-center text-gray-500">Nessuna notizia presente al momento.</p>';
       return;
     }
@@ -1540,11 +1532,8 @@ async function loadDynamicNews() {
     container.innerHTML = '';
 
     for (const file of newsFiles) {
-      console.log("6. Scarico contenuto del file:", file.name);
       const res = await fetch(file.download_url);
       const text = await res.text();
-      console.log("7. Contenuto grezzo del file:\n", text);
-
       let news = {};
 
       if (file.name.endsWith('.json')) {
@@ -1575,8 +1564,6 @@ async function loadDynamicNews() {
         }
       }
 
-      console.log("8. Dati notizia estratti:", news);
-
       const title = news.title || news.titolo || news.heading || 'Senza Titolo';
       const summary = news.summary || news.description || news.sommario || news.body || '';
       const image = news.image || news.immagine || news.thumbnail || news.cover || '';
@@ -1590,7 +1577,7 @@ async function loadDynamicNews() {
       }) : '';
 
       const cardHTML = `
-        <article class="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-red-600 flex flex-col hover:shadow-lg transition-shadow">
+        <article class="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-brandRed flex flex-col hover:shadow-lg transition-shadow">
           ${image ? `<img src="${image}" alt="${title}" class="w-full h-48 object-cover">` : ''}
           <div class="p-5 flex-1 flex flex-col justify-between">
             <div>
@@ -1599,7 +1586,7 @@ async function loadDynamicNews() {
               <p class="text-gray-600 text-sm mb-4">${summary}</p>
             </div>
             <div class="pt-3 border-t border-gray-100 flex justify-between items-center">
-              <span class="text-red-600 font-bold text-sm hover:underline cursor-pointer">
+              <span class="text-brandRed font-bold text-sm hover:underline cursor-pointer">
                 Leggi di più &rarr;
               </span>
             </div>
@@ -1616,13 +1603,11 @@ async function loadDynamicNews() {
   }
 }
 
-// Questo avvia la funzione quando la pagina è pronta
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', loadDynamicNews);
-    } else {
-      loadDynamicNews(); // Esegue subito se il DOM è già pronto
-    }
-    
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadDynamicNews);
+} else {
+  loadDynamicNews();
+}
 </script>
     
 </body>
