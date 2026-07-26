@@ -1524,7 +1524,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const files = await response.json();
-      const jsonFiles = files.filter(f => f.name.endsWith('.json'));
+      const jsonFiles = files.filter(f => f.name.endsWith('.md'));
 
       if (jsonFiles.length === 0) {
         container.innerHTML = '<p class="col-span-full text-center text-gray-500">Nessuna notizia presente al momento.</p>';
