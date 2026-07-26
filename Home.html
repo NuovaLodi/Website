@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.S.D. Nuova Lodi 1952 - Sito Ufficiale</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#D32F2F',
+                        brandYellow: '#FFD54F',
+                        brandDark: '#1E293B',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <!-- 1. TOP BAR INFO -->
+    <div class="bg-brandDark text-gray-300 text-xs py-2 px-4 border-b border-gray-700">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-location-dot text-brandYellow mr-1"></i> Oratorio Cabrini / C.S. Selvagreca - Lodi</span>
+                <span><i class="fa-solid fa-envelope text-brandYellow mr-1"></i> info@nuovalodi.it</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="#" class="hover:text-brandYellow transition"><i class="fa-solid fa-shield-halved text-brandYellow mr-1"></i> Safeguarding & Tutela Minori</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="hover:text-brandYellow"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-brandYellow"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. HEADER & NAVIGATION -->
+    <header class="bg-brandRed text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo & Nome -->
+            <a href="#" onclick="showPage('home')" class="flex items-center space-x-3">
+                <div class="w-14 h-14 bg-white rounded-full p-1 shadow flex items-center justify-center">
+                    <img src="NLcircolare-PNG.png" alt="A.S.D. Nuova Lodi Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <span class="block font-extrabold text-lg tracking-wider leading-none">NUOVA LODI</span>
+                    <span class="text-xs text-brandYellow font-semibold tracking-widest">DAL 1952</span>
+                </div>
+            </a>
+
+            <!-- Menu Desktop -->
+            <nav class="hidden md:flex space-x-6 font-semibold text-sm">
+                <a href="#" id="nav-home" onclick="showPage('home')" class="hover:text-brandYellow transition pb-1">HOME</a>
+                <a href="#" id="nav-societa" onclick="showPage('societa')" class="hover:text-brandYellow transition pb-1">SOCIETÀ</a>
+                <a href="#" id="nav-squadre" onclick="showPage('squadre')" class="hover:text-brandYellow transition pb-1">SQUADRE</a>
+                <a href="#" id="nav-iscrizioni" onclick="showPage('iscrizioni')" class="hover:text-brandYellow transition pb-1">SEGRETERIA</a>
+                <a href="#" id="nav-news" onclick="showPage('news')" class="hover:text-brandYellow transition pb-1">NEWS & EVENTI</a>
+                <a href="#" id="nav-sponsor" onclick="showPage('sponsor')" class="hover:text-brandYellow transition pb-1">SPONSOR</a>
+                <a href="#" id="nav-contatti" onclick="showPage('contatti')" class="hover:text-brandYellow transition pb-1">CONTATTI</a>
+            </nav>
+
+            <!-- Tasto Menu Mobile -->
+            <button class="md:hidden text-white text-2xl focus:outline-none" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brandDark text-white px-4 py-3 space-y-2 border-t border-gray-700 font-semibold text-sm">
+            <a href="#" onclick="showPage('home'); toggleMenu();" class="block hover:text-brandYellow">HOME</a>
+            <a href="#" onclick="showPage('societa'); toggleMenu();" class="block hover:text-brandYellow">SOCIETÀ</a>
+            <a href="#" onclick="showPage('squadre'); toggleMenu();" class="block hover:text-brandYellow">SQUADRE</a>
+            <a href="#" class="block hover:text-brandYellow">ISCRIZIONI</a>
+            <a href="#news-section" onclick="showPage('home'); toggleMenu();" class="block hover:text-brandYellow">NEWS & EVENTI</a>
+            <a href="#sponsor-section" onclick="showPage('home'); toggleMenu();" class="block hover:text-brandYellow">SPONSOR</a>
+            <a href="#" class="block hover:text-brandYellow">CONTATTI</a>
+        </div>
+    </header>
+
+
+    <!-- ================================================================= -->
+    <!-- PAGINA 1: HOME PAGE                                               -->
+    <!-- ================================================================= -->
+    <main id="page-home">
+        <!-- HERO BANNER -->
+        <section class="relative bg-cover bg-center text-white py-24 md:py-32 px-4" style="background-image: url('hero-bg.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-brandRed/40"></div>
+            <div class="relative max-w-5xl mx-auto text-center space-y-6">
+                <span class="bg-brandYellow text-brandDark font-bold text-xs uppercase px-4 py-1.5 rounded-full tracking-wider shadow">
+                    Stagione Sportiva 2026/2027
+                </span>
+                <h1 class="text-3xl md:text-6xl font-extrabold uppercase tracking-tight leading-tight text-white drop-shadow-md">
+                    Passione, Crescita e Valori<br class="hidden sm:inline"> nel Calcio Lodigiano
+                </h1>
+                <p class="text-gray-200 text-sm md:text-xl max-w-2xl mx-auto font-medium drop-shadow">
+                    Dalla Scuola Calcio alla Prima Squadra. Entra a far parte della grande famiglia dell'A.S.D. Nuova Lodi.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                    <a href="#" class="bg-brandYellow text-brandDark font-extrabold px-8 py-3.5 rounded-md shadow-xl hover:bg-yellow-400 transition transform hover:-translate-y-0.5 uppercase text-sm">
+                        <i class="fa-solid fa-pen-to-square mr-2"></i>Iscrizioni Online
+                    </a>
+                    <a href="#" class="bg-black/40 backdrop-blur-md border-2 border-white text-white font-bold px-8 py-3.5 rounded-md hover:bg-white hover:text-brandRed transition uppercase text-sm">
+                        <i class="fa-solid fa-calendar-days mr-2"></i>Programma Gare
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MATCH CENTER -->
+        <section class="max-w-7xl mx-auto px-4 -mt-10 relative z-10 mb-12">
+            <div class="bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200">
+                <div class="p-6 bg-white">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold uppercase text-gray-400"><i class="fa-solid fa-trophy text-brandYellow mr-1"></i> Prima Squadra - Ultimo Turno</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Domenica 18 Ottobre</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2">
+                        <div class="flex items-center space-x-3 w-2/5">
+                            <span class="font-bold text-gray-800 text-right w-full">Nuova Lodi</span>
+                        </div>
+                        <div class="bg-brandRed text-white font-extrabold px-4 py-1 rounded text-lg tracking-widest shadow-inner">
+                            2 - 1
+                        </div>
+                        <div class="flex items-center space-x-3 w-2/5">
+                            <span class="font-semibold text-gray-600">Avversario FC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 bg-gray-50">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-bold uppercase text-brandRed"><i class="fa-solid fa-clock mr-1"></i> Prossimo Match</span>
+                        <span class="text-xs bg-brandYellow/30 text-brandDark font-semibold px-2 py-0.5 rounded">Ore 15:30</span>
+                    </div>
+                    <div class="flex justify-between items-center py-2">
+                        <div class="flex items-center space-x-3 w-2/5">
+                            <span class="font-semibold text-gray-600 text-right w-full">Squadra Ospite</span>
+                        </div>
+                        <div class="text-center font-bold text-gray-400 text-xs px-2">VS</div>
+                        <div class="flex items-center space-x-3 w-2/5">
+                            <span class="font-bold text-gray-800">Nuova Lodi</span>
+                        </div>
+                    </div>
+                    <div class="text-center text-xs text-gray-500 mt-2">
+                        <i class="fa-solid fa-location-arrow text-brandRed mr-1"></i> Centro Sportivo Selvagreca, Lodi
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- SEZIONE ULTIME NOTIZIE / EVENTI (HOME PAGE) -->
+<section id="news-section" class="max-w-7xl mx-auto px-4 py-10">
+    <div class="flex justify-between items-end border-b-2 border-brandRed pb-3 mb-8">
+        <div>
+            <span class="text-xs font-bold text-brandRed uppercase tracking-widest">Informativa & Media</span>
+            <h2 class="text-2xl md:text-3xl font-extrabold uppercase text-brandDark">Ultime Notizie</h2>
+        </div>
+        <a href="#" onclick="showPage('news')" class="text-xs font-bold text-brandRed hover:underline uppercase flex items-center gap-1">
+            Tutte le news <i class="fa-solid fa-chevron-right text-[10px]"></i>
+        </a>
+    </div>
+
+    <!-- Verranno caricate automaticamente solo le 3 news più recenti -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="home-news-container">
+        <!-- Popolato dinamicamente da JavaScript -->
+    </div>
+</section>
+
+        <!-- SEZIONE UTILITÀ & LINK RAPIDI -->
+        <section class="bg-gray-100 py-12 border-y border-gray-200 my-8">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-8">
+                    <span class="text-xs font-bold text-brandRed uppercase tracking-widest">Servizi e Informazioni</span>
+                    <h2 class="text-2xl md:text-3xl font-extrabold uppercase text-brandDark">Area Utilità</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <a href="#" class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex items-center gap-4 hover:border-brandRed transition group">
+                        <div class="w-12 h-12 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-xl group-hover:bg-brandRed group-hover:text-white transition">
+                            <i class="fa-solid fa-file-pdf"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-brandDark">Modulistica</h4>
+                            <p class="text-xs text-gray-500">Scarica i moduli iscrizione</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex items-center gap-4 hover:border-brandRed transition group">
+                        <div class="w-12 h-12 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-xl group-hover:bg-brandRed group-hover:text-white transition">
+                            <i class="fa-solid fa-shield-cat"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-brandDark">Safeguarding</h4>
+                            <p class="text-xs text-gray-500">Codice etico e tutela minori</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex items-center gap-4 hover:border-brandRed transition group">
+                        <div class="w-12 h-12 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-xl group-hover:bg-brandRed group-hover:text-white transition">
+                            <i class="fa-solid fa-map-pin"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-brandDark">Dove Siamo</h4>
+                            <p class="text-xs text-gray-500">Indicazioni per gli impianti</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex items-center gap-4 hover:border-brandRed transition group">
+                        <div class="w-12 h-12 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-xl group-hover:bg-brandRed group-hover:text-white transition">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm text-brandDark">Contatti Segreteria</h4>
+                            <p class="text-xs text-gray-500">Orari e numeri utili</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEZIONE MAIN SPONSOR (HOME PAGE) -->
+<section class="bg-gray-50 py-12 border-t border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 space-y-8">
+        <div class="flex justify-between items-end border-b-2 border-brandRed pb-3">
+            <div>
+                <span class="text-xs font-bold text-brandRed uppercase tracking-widest">Insieme Cresciamo</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold uppercase text-brandDark">Main Sponsor</h2>
+            </div>
+            <a href="#" onclick="showPage('sponsor')" class="text-xs font-bold text-brandRed hover:underline uppercase flex items-center gap-1">
+                Tutti i partner <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </a>
+        </div>
+
+        <!-- Contenitore per i Main Sponsor in Home -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="home-sponsors-container">
+            <!-- Popolato da JavaScript -->
+        </div>
+    </div>
+</section>
+
+    </main>
+
+
+    <!-- ================================================================= -->
+    <!-- PAGINA 2: SOCIETÀ (CHI SIAMO, STORIA, NONNO, IMPIANTI, ORGANIGR.) -->
+    <!-- ================================================================= -->
+    <main id="page-societa" class="hidden">
+        <!-- Banner Introduttivo -->
+        <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+            <div class="max-w-7xl mx-auto text-center space-y-2">
+                <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">A.S.D. Nuova Lodi 1952</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Chi Siamo</h1>
+                <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">Oltre 70 anni di calcio, educazione e passione nel cuore della comunità lodigiana.</p>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 py-12 space-y-16">
+
+            <!-- 1. LA NOSTRA STORIA -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-4">
+                    <div class="inline-block bg-brandRed/10 text-brandRed font-extrabold text-xs px-3 py-1 rounded uppercase tracking-wider">La Nostra Storia</div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-brandDark uppercase tracking-tight">Radici Profonde, Valori Immutati</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Fondata nel <strong>1952</strong>, l'<strong>A.S.D. Nuova Lodi</strong> rappresenta una colonna portante dello sport giovanile lodigiano. Nata con l'obiettivo di offrire ai giovani un luogo sano, sicuro e stimolante in cui crescere, la nostra società ha fatto dell'educazione sportiva la propria missione.
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Dai primi passi sui campi parrocchiali fino alle moderne strutture sportive di oggi, la Nuova Lodi continua a trasmettere i valori fondamentali del calcio: rispetto, lealtà, spirito di squadra e inclusione.
+                    </p>
+                </div>
+                <div class="bg-gray-200 rounded-lg h-72 flex items-center justify-center border border-gray-300 shadow-inner">
+                    <span class="text-gray-400 font-semibold text-sm"><i class="fa-solid fa-image text-3xl block text-center mb-2"></i>[Foto Storica / Archivio Nuova Lodi]</span>
+                </div>
+            </section>
+
+            <!-- 2. STORIA DI UN NONNO -->
+            <section class="space-y-6">
+                <div class="border-b-2 border-brandRed pb-3">
+                    <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight flex items-center gap-2">
+                        <i class="fa-solid fa-book-open text-brandRed"></i> Storia di un Nonno
+                    </h2>
+                    <p class="text-xs text-gray-500 font-medium">I ricordi di Lino Fondrini per i cinquant'anni della Nuova Lodi.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md border border-gray-200 p-6 md:p-8 space-y-6 text-gray-700 text-sm leading-relaxed">
+                    
+                    <div class="border-b pb-4">
+                        <h3 class="text-xl font-extrabold text-brandRed uppercase">RICORDI DI UN NONNO.</h3>
+                        <p class="text-xs font-bold text-gray-500 uppercase tracking-wider">I cinquant'anni della Nuova Lodi</p>
+                    </div>
+
+                    <p>
+                        Era il 1949 quando un gruppo di ragazzi, di età compresa tra i 13 e 14 anni desiderosi di praticare attività sportiva, si unirono costituendo il primo nucleo sportivo della futura parrocchia di santa Cabrini[cite: 2].
+                    </p>
+                    <p>
+                        Era una squadra di calcio composta da 6 giocatori, gli "Aquilotti", ovvero i pulcini dell'Aquila, la squadra dei più grandi, sempre della zona[cite: 2].
+                    </p>
+                    <p>
+                        Alvaro Giardini era il "mister" e Bruno Brunetti il capitano; si giocava prevalentemente sul "campin" dell'Oratorio san Luigi (l'attuale Casa della Gioventù) e si andava spesso in trasferta a Lodivecchio ove il campo da gioco era più grande ed accogliente[cite: 2]. Erano accoglienti pure i prati del cav. Rocco Bosoni e quelli del sig. Paulin Invernizzi, specie appena dopo il taglio del "maggengo"[cite: 2].
+                    </p>
+                    <p>
+                        L'Aquila e gli Aquilotti furono rispettivamente le radici e il seme della futura polisportiva Nuova Lodi che sarebbe sbocciata tre anni dopo[cite: 2]. Il 24 dicembre 1951, vigilia di Natale, nel cortile di casa Bondioli, in attesa che arrivassero le 21, ora fissata per l'appuntamento con il cav. Luigi Bondioli, un gruppo di uomini più o menos giovani, discutevano su come si sarebbe chiamata la sportiva oratoriana che stava per nascere[cite: 2].
+                    </p>
+
+                    <div class="pt-2">
+                        <h4 class="font-extrabold text-brandDark text-base uppercase mb-2">Una nuova società in viola e giallo</h4>
+                        <p>
+                            Fu Alvaro ("el Toro", perché tifoso del Torino), forse il più giovane dei presenti che suggerì: "Visto che qui sta sorgendo la nuova Città, perché non la chiamiamo Nuova Lodi?"[cite: 2]. Alcune ore più tardi, dopo la messa di mezzanotte celebrata nella rimessa di casa Bondioli, nell'adiacente "Bar Grillo" Un brindisi beneaugurate suggellava la nascita della polisportiva Nuova Lodi[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            Furono decisi i colori sociali: maglia viola con colletto e polsi gialli, calzoncini bianchi, calzettoni viola con risvolti gialli[cite: 2]. Una divisa non solo appariscente, ma anche elegante[cite: 2]. E' il 1952 l'anno in cui ha inizio l'attività sportiva della Nuova lodi; quindi sono passati 50 anni[cite: 2]. Cinquant'anni di attività agonistica sportiva, dal tennis da tavolo alle bocce, dal calcio al ciclismo, dall'atletica alla pallavolo, alla pallacanestro[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            Cinquant'anni che non hanno cancellato i ricordi dell'adolescenza[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            I nonni di oggi sono i ragazzi in viola degli anni '50, i papà sono gli stessi ragazzi che negli anni successivi rincorrevano e davano calci a un pallone nel campo delle Baste, che schiacciavano la palla al di là della rete nelle indimenticabili sfide con il Codogno e il Lodivecchio[cite: 2]. Gli stessi ragazzi che con le scarpe chiodate correvano i sentieri ghiacciati della campagna lodigiana inseguendo il titolo di campione lodigiano di corsa campestre[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            L'8 di dicembre dello stesso anno1952, festa dell'Immacolata, alla messa delle 9 erano presenti i giovani in maglia viola con bordi gialli: la polisportiva Nuova Lodi veniva ufficialmente presentata alla Comunità parrocchiale[cite: 2].
+                        </p>
+                    </div>
+
+                    <div class="pt-2">
+                        <h4 class="font-extrabold text-brandDark text-base uppercase mb-2">Un esordio grintoso</h4>
+                        <p>
+                            La stagione calcistica 1952-53 vede per la prima volta la partecipazione della Nuova Lodi al Campionato Lodigiano Ragazzi C.S.I.[cite: 2]
+                        </p>
+                        <p class="mt-3">
+                            La squadra, guidata dai tecnici Merlo-Cappellini-Gariboldi vince il titolo lodigiano, ma viene poi eliminata nelle fasi regionali in una sfortunata partita giocata a Bergamo[cite: 2]. Era una compagine veramente forte, però imbottita di "oriundi" provenienti dai vari rioni della città[cite: 2]. Dura solo una stagione[cite: 2]. I ragazzi delle Fanfani non vogliono solo veder vincere, vogliono anche giocare e magari perdere[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            A fine estate 1953 si rilancia l'attività sportiva con spirito rinnovato, forse meno agonistico ma più sportivo, meno vincente ma più divertente[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            È la Nuova lodi di Mainetti Luigi e sono gli ex Aquilotti integrati dai nuovi venuti alle Fanfani che formano un gruppo compatto anche se eterogeneo[cite: 2]. Si vince poco, ma si gioca molto[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            A primavera le trasferte si effettuano in bicicletta, vociando e cantando per tutto il percorso[cite: 2]. Sconfitti e stanchi, il ritorno è duro; il poco fiato rimasto è appena sufficiente per spingere sui pedali[cite: 2].
+                        </p>
+                    </div>
+
+                    <div class="pt-2">
+                        <h4 class="font-extrabold text-brandDark text-base uppercase mb-2">Calcio, ma non solo</h4>
+                        <p>
+                            Se è comprensibile che l'attività calcistica con le sue quattro squadre, più i tornei interni per i più piccoli, ha sempre assorbito il maggior impegno della Polisportiva, non vanno dimenticate le altre attività ed alcune figure di atleti più o meno dotati che ne fecero parte[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            Come l'Inter di Milano che negli anni '50 schierava Angelillo, un campione italo-argentino, anche la Nuova Lodi aveva il suo Angelillo, amico di Gianpiero[cite: 2]. La carriera di Angelillo si fermò al campo delle Baste e Giampiero Marini divenne campione del mondo in Spagna nel 1982[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            L'atletica ebbe due momenti felici negli anni '50[cite: 2]. Rino Scarpanti e Vittorio Cirini per più anni furono gli insuperabili campioni lodigiani di corsa campestre[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            Nel 1978 e 79 mio figlio Paolo vinse il titolo lodigiano allievi di cross, e partecipò il 1 aprile 1979 con la selezione lodigiana alla 47esima edizione della cinque mulini di san Vittore Olona, gara internazionale riservata agli allievi e prologo della più famosa gara alla quale partecipano i forti atleti Keniani ed Etiopi[cite: 2].
+                        </p>
+                    </div>
+
+                    <div class="pt-2">
+                        <h4 class="font-extrabold text-brandDark text-base uppercase mb-2">"Cipu" e la maratona delle Fanfani</h4>
+                        <p>
+                            Per anni, in occasione della sagra, "Cipu" (Carminati Domenico) organizzava la "maratona delle Fanfani"[cite: 2]. Pochi erano i partecipanti; l'attore principale era sempre lui, "Cipu" che doveva mantenere fede alle tante scritte di incitamento che sulla salita delle Baste e lungo viale Madre Cabrini inneggiavano alla sua vittoria e che erano sua stessa opera della notte precedente la gara[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            Imbattibile la squadra di pallavolo voluta da un gruppo di giovani che frequentavano il Bassi[cite: 2]. Instancabile l'opera di Tranquillo Locatelli, dirigente responsabile, poi sportivo appassionato e più tardi valido tecnico del Voley lodigiano[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            Indimenticabili le gare-sfida con il Codogno, il Lodivecchio, il Secugnago[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            Due campionati disputati e un titolo di Campione lodigiano conquistato[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            Con orgoglio si può ben affermare che la Nuova Lodi pallavolo è stata alle origini di tutta la pallavolo cittadina[cite: 2].
+                        </p>
+                    </div>
+
+                    <div class="pt-2">
+                        <h4 class="font-extrabold text-brandDark text-base uppercase mb-2">Tanti nomi, tanti ricordi</h4>
+                        <p>
+                            Quest'anno la Nuova Lodi compie dunque 50 anni; è un anniversario che deve essere ricordato e devono essere ricordati pure tutti coloro che a partire da Mainetti si sono presi cura del tempo libero dei nostri ragazzi, io compreso, quando l'8 dicembre 1952 ho vestito per la prima volta la casacca viola-gialla della Nuova Lodi e prima ancora la maglia bianco-nera degli Aquilotti[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            Come non ricordare Alvaro, l'impegno di Carmelino (Merletti Vittorio), di Biloni Francesco e poi più avanti l'indimenticabile lavoro di Lorenzo Musitelli, Luciano Beccarini, Santino Garotta; Angelo Marini che con la squadra da lui diretta (terza categoria) sfiora la Coppa Lodi gareggiando alla pari con squadre di ben altra levatura, come il Pantigliate e il Borgo Lombardo; Gianni Santi che con paradisi e i fratelli Mulazzi organizzava l'attività dei più piccoli con veri e propri campionati patrocinati dal CSI e per tutte le società di Lodi e dei paesi vicini[cite: 2].
+                        </p>
+                        <p class="mt-3">
+                            E l'elenco potrebbe e dovrebbe continuare, come memoria e riconoscente ricordo di tutti coloro che hanno consentito continuità alla Nuova Lodi[cite: 2].
+                        </p>
+                        <p class="mt-4 font-bold text-right text-brandRed">
+                            Lino Fondrini[cite: 2].
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 3. I NOSTRI IMPIANTI SPORTIVI -->
+            <section class="space-y-6">
+                <div class="border-b-2 border-brandRed pb-3">
+                    <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight flex items-center gap-2">
+                        <i class="fa-solid fa-map-location-dot text-brandRed"></i> I Nostri Impianti Sportivi
+                    </h2>
+                    <p class="text-xs text-gray-500 font-medium">Dove ci alleniamo e giochiamo le nostre partite in casa.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Impianto 1: Selvagreca -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
+                        <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                            <h3 class="font-extrabold uppercase text-base">C.S. Selvagreca</h3>
+                            <span class="bg-brandRed text-white text-xs px-2.5 py-1 rounded font-bold uppercase">Settore Agonistico</span>
+                        </div>
+                        <div class="p-6 space-y-3 text-sm">
+                            <p class="text-gray-600"><i class="fa-solid fa-location-dot text-brandRed w-6"></i> Via C.S. Selvagreca - Lodi</p>
+                            <p class="text-gray-600"><i class="fa-solid fa-futbol text-brandRed w-6"></i> Campo da Calcio a 11 in Erba Sintetica</p>
+                            <p class="text-gray-600"><i class="fa-solid fa-users text-brandRed w-6"></i> Tribuna coperta e spogliatoi moderni</p>
+                            <div class="mt-4 pt-3 border-t text-xs text-gray-500">
+                                Sede ufficiale di gara per Prima Squadra, Terza Categoria U21, Juniores, Allievi, Giovanissimi ed Esordienti U13.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Impianto 2: Cabrini -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
+                        <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                            <h3 class="font-extrabold uppercase text-base">Oratorio S. Francesca Cabrini</h3>
+                            <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold uppercase">Scuola Calcio</span>
+                        </div>
+                        <div class="p-6 space-y-3 text-sm">
+                            <p class="text-gray-600"><i class="fa-solid fa-location-dot text-brandRed w-6"></i> Corso Archinti / Lodi</p>
+                            <p class="text-gray-600"><i class="fa-solid fa-futbol text-brandRed w-6"></i> Campi ridotti per attività di base</p>
+                            <p class="text-gray-600"><i class="fa-solid fa-child text-brandRed w-6"></i> Ambiente protetto e a misura di bambino</p>
+                            <div class="mt-4 pt-3 border-t text-xs text-gray-500">
+                                Sede storica riservata agli allenamenti e ai tornei di Pulcini, Primi Calci e Piccoli Amici.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. ORGANIGRAMMA SOCIETARIO -->
+            <section class="space-y-6">
+                <div class="border-b-2 border-brandRed pb-3">
+                    <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight flex items-center gap-2">
+                        <i class="fa-solid fa-sitemap text-brandRed"></i> Organigramma Societario
+                    </h2>
+                    <p class="text-xs text-gray-500 font-medium">Le persone che guidano la nostra società con passione e dedizione.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-200 text-center space-y-2">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full mx-auto flex items-center justify-center text-brandRed text-2xl">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase text-brandRed block tracking-wider">Presidente</span>
+                        <h4 class="font-extrabold text-gray-800 text-base">Nome Cognome</h4>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-200 text-center space-y-2">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full mx-auto flex items-center justify-center text-brandRed text-2xl">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase text-brandRed block tracking-wider">Vice Presidente</span>
+                        <h4 class="font-extrabold text-gray-800 text-base">Nome Cognome</h4>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-200 text-center space-y-2">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full mx-auto flex items-center justify-center text-brandRed text-2xl">
+                            <i class="fa-solid fa-clipboard-user"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase text-brandRed block tracking-wider">Direttore Sportivo</span>
+                        <h4 class="font-extrabold text-gray-800 text-base">Nome Cognome</h4>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-200 text-center space-y-2">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full mx-auto flex items-center justify-center text-brandRed text-2xl">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase text-brandRed block tracking-wider">Segreteria</span>
+                        <h4 class="font-extrabold text-gray-800 text-base">Nome Cognome</h4>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- ================================================================= -->
+    <!-- PAGINA 3: SQUADRE                                                 -->
+    <!-- ================================================================= -->
+    <main id="page-squadre" class="hidden">
+        <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+            <div class="max-w-7xl mx-auto text-center space-y-2">
+                <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">Stagione 2026/2027</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Le Nostre Squadre</h1>
+                <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">Dalla Scuola Calcio alla Prima Squadra: il percorso di crescita rosso-giallo.</p>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 py-12 space-y-16">
+
+            <!-- 1. SEZIONE AGONISTICA -->
+            <section>
+                <div class="flex items-center space-x-3 mb-6 pb-2 border-b-2 border-brandRed">
+                    <i class="fa-solid fa-trophy text-brandRed text-2xl"></i>
+                    <div>
+                        <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight">Settore Agonistico</h2>
+                        <p class="text-xs text-gray-500 font-medium">Campo di riferimento: <span class="text-brandDark font-bold">Centro Sportivo Selvagreca (Lodi)</span></p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Prima Squadra -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandRed text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Prima Squadra</h3>
+                                <span class="bg-brandDark text-brandYellow text-xs px-2.5 py-1 rounded font-bold">FIGC</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                                <p class="text-gray-600"><i class="fa-solid fa-location-dot w-5 text-brandRed"></i> C.S. Selvagreca</p>
+                                <p class="text-gray-600"><i class="fa-solid fa-user-tie w-5 text-brandRed"></i> Staff Tecnico Qualificato</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="openRosa('Prima Squadra')" class="w-full bg-brandDark text-white hover:bg-brandRed transition text-xs font-bold py-2.5 rounded flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa & Staff
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Terza Categoria U21 -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandRed text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">3ª Categoria U21</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 21</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                                <p class="text-gray-600"><i class="fa-solid fa-location-dot w-5 text-brandRed"></i> C.S. Selvagreca</p>
+                                <p class="text-gray-600"><i class="fa-solid fa-user-tie w-5 text-brandRed"></i> Staff Tecnico Qualificato</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="openRosa('Terza Categoria U21')" class="w-full bg-brandDark text-white hover:bg-brandRed transition text-xs font-bold py-2.5 rounded flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa & Staff
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Juniores -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Juniores</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 19</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                                <p class="text-gray-600"><i class="fa-solid fa-location-dot w-5 text-brandRed"></i> C.S. Selvagreca</p>
+                                <p class="text-gray-600"><i class="fa-solid fa-user-tie w-5 text-brandRed"></i> Staff Tecnico Qualificato</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="openRosa('Juniores')" class="w-full bg-brandDark text-white hover:bg-brandRed transition text-xs font-bold py-2.5 rounded flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa & Staff
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Allievi -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Allievi</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 17</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                                <p class="text-gray-600"><i class="fa-solid fa-location-dot w-5 text-brandRed"></i> C.S. Selvagreca</p>
+                                <p class="text-gray-600"><i class="fa-solid fa-user-tie w-5 text-brandRed"></i> Staff Tecnico Qualificato</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="openRosa('Allievi')" class="w-full bg-brandDark text-white hover:bg-brandRed transition text-xs font-bold py-2.5 rounded flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa & Staff
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Giovanissimi -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Giovanissimi</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 15</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                                <p class="text-gray-600"><i class="fa-solid fa-location-dot w-5 text-brandRed"></i> C.S. Selvagreca</p>
+                                <p class="text-gray-600"><i class="fa-solid fa-user-tie w-5 text-brandRed"></i> Staff Tecnico Qualificato</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="openRosa('Giovanissimi')" class="w-full bg-brandDark text-white hover:bg-brandRed transition text-xs font-bold py-2.5 rounded flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa & Staff
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Esordienti U13 (NUOVA CATEGORIA AGGIUNTA) -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Esordienti U13</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 13</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                                <p class="text-gray-600"><i class="fa-solid fa-location-dot w-5 text-brandRed"></i> C.S. Selvagreca</p>
+                                <p class="text-gray-600"><i class="fa-solid fa-user-tie w-5 text-brandRed"></i> Staff Tecnico Qualificato</p>
+                            </div>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <button onclick="openRosa('Esordienti U13')" class="w-full bg-brandDark text-white hover:bg-brandRed transition text-xs font-bold py-2.5 rounded flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa & Staff
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 2. SCUOLA CALCIO -->
+            <section>
+                <div class="flex items-center space-x-3 mb-6 pb-2 border-b-2 border-brandYellow">
+                    <i class="fa-solid fa-child text-yellow-600 text-2xl"></i>
+                    <div>
+                        <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight">Scuola Calcio & Attività di Base</h2>
+                        <p class="text-xs text-gray-500 font-medium">Campo di riferimento: <span class="text-brandDark font-bold">Oratorio S. F. Cabrini (Lodi)</span></p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-md border border-yellow-300 p-5">
+                        <h3 class="font-extrabold uppercase text-lg text-brandDark">Pulcini</h3>
+                        <p class="text-xs text-gray-500 mt-1">Sviluppo della tecnica e del gioco di squadra.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md border border-yellow-300 p-5">
+                        <h3 class="font-extrabold uppercase text-lg text-brandDark">Primi Calci</h3>
+                        <p class="text-xs text-gray-500 mt-1">Primi confronti ludico-motori.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md border border-yellow-300 p-5">
+                        <h3 class="font-extrabold uppercase text-lg text-brandDark">Piccoli Amici</h3>
+                        <p class="text-xs text-gray-500 mt-1">Attività motoria di base e gioco.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- ================================================================= -->
+    <!-- PAGINA 4: SCHEDA DETTAGLIO ROSA (Generata Dinamicamente)          -->
+    <!-- ================================================================= -->
+    <main id="page-rosa" class="hidden">
+        <section class="bg-brandDark text-white py-10 px-4 border-b-4 border-brandRed">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <button onclick="showPage('squadre')" class="text-brandYellow hover:underline text-xs font-bold uppercase mb-2 inline-flex items-center">
+                        <i class="fa-solid fa-arrow-left mr-1"></i> Torna all'elenco squadre
+                    </button>
+                    <h1 id="rosa-squadra-title" class="text-3xl md:text-4xl font-black uppercase tracking-tight">Nome Squadra</h1>
+                    <p class="text-gray-300 text-xs mt-1">Rosa Atleti Tesserati - Stagione 2026/2027</p>
+                </div>
+                <div class="bg-white/10 p-3 rounded-lg backdrop-blur text-right">
+                    <span class="text-xs text-gray-300 block">Campo di gioco:</span>
+                    <span class="font-bold text-sm text-brandYellow"><i class="fa-solid fa-location-dot"></i> C.S. Selvagreca (Lodi)</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 py-12 space-y-10">
+
+            <!-- TABELLA / LISTA ATLETI -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="rosa-container">
+                <!-- Verrà popolato dinamicamente tramite Javascript -->
+            </div>
+
+            <!-- STAFF TECNICO -->
+            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                <h3 class="font-extrabold text-lg text-brandDark uppercase mb-4 border-b pb-2 flex items-center">
+                    <i class="fa-solid fa-user-tie text-brandRed mr-2"></i> Staff Tecnico e Dirigenziale
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm" id="staff-container">
+                    <!-- Popolato dinamicamente -->
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ================================================================= -->
+<!-- PAGINA: SEGRETERIA & ISCRIZIONI                                    -->
+<!-- ================================================================= -->
+<main id="page-iscrizioni" class="hidden">
+    <!-- Banner Introduttivo -->
+    <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+        <div class="max-w-7xl mx-auto text-center space-y-2">
+            <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">Stagione Sportiva 2026/2027</span>
+            <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Segreteria & Iscrizioni</h1>
+            <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">
+                Informazioni, procedure per il tesseramento, visite mediche e modulistica scaricabile per tutte le attività societarie.
+            </p>
+        </div>
+    </section>
+
+    <div class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+
+        <!-- 1. ORARI SEGRETERIA E CONTATTI RAPIDI -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex items-start space-x-4">
+                <div class="w-12 h-12 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-xl shrink-0">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                    <h3 class="font-extrabold text-brandDark uppercase text-sm mb-1">Orari di Apertura</h3>
+                    <p class="text-xs text-gray-600">Dal Lunedì al Venerdì: 17:00 - 19:30</p>
+                    <p class="text-xs text-gray-600">Sabato: 09:30 - 12:00 (su appuntamento)</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex items-start space-x-4">
+                <div class="w-12 h-12 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-xl shrink-0">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                    <h3 class="font-extrabold text-brandDark uppercase text-sm mb-1">Contatti Amministrazione</h3>
+                    <p class="text-xs text-gray-600">Email: <a href="mailto:segreteria@nuovalodi.it" class="text-brandRed hover:underline">segreteria@nuovalodi.it</a></p>
+                    <p class="text-xs text-gray-600">Tel: +39 0371 123456</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex items-start space-x-4">
+                <div class="w-12 h-12 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-xl shrink-0">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                    <h3 class="font-extrabold text-brandDark uppercase text-sm mb-1">Sede Segreteria</h3>
+                    <p class="text-xs text-gray-600">Presso Oratorio S. Francesca Cabrini</p>
+                    <p class="text-xs text-gray-600">Corso Archinti - Lodi</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. GUIDA ALL'ISCRIZIONE (STEP BY STEP) -->
+        <section class="space-y-6">
+            <div class="border-b-2 border-brandRed pb-3">
+                <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight flex items-center gap-2">
+                    <i class="fa-solid fa-user-plus text-brandRed"></i> Come Iscriversi
+                </h2>
+                <p class="text-xs text-gray-500 font-medium">I passaggi necessari per completare il tesseramento per la nuova stagione.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Step 1 -->
+                <div class="bg-white p-5 rounded-lg shadow border-t-4 border-brandRed space-y-2">
+                    <span class="text-xs font-black text-brandRed bg-brandRed/10 px-2.5 py-1 rounded-full uppercase">Passo 1</span>
+                    <h3 class="font-bold text-gray-800 text-sm">Modulo d'Iscrizione</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">Scarica e compila il modulo di tesseramento societario in tutte le sue parti.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white p-5 rounded-lg shadow border-t-4 border-brandRed space-y-2">
+                    <span class="text-xs font-black text-brandRed bg-brandRed/10 px-2.5 py-1 rounded-full uppercase">Passo 2</span>
+                    <h3 class="font-bold text-gray-800 text-sm">Visita Medica</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">Consegna il certificato medico di idoneità agonistica (o non agonistica per i più piccoli).</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white p-5 rounded-lg shadow border-t-4 border-brandRed space-y-2">
+                    <span class="text-xs font-black text-brandRed bg-brandRed/10 px-2.5 py-1 rounded-full uppercase">Passo 3</span>
+                    <h3 class="font-bold text-gray-800 text-sm">Documenti d'Identità</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">Fornisci copia del documento d'identità, codice fiscale e foto tessera dell'atleta.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-white p-5 rounded-lg shadow border-t-4 border-brandRed space-y-2">
+                    <span class="text-xs font-black text-brandRed bg-brandRed/10 px-2.5 py-1 rounded-full uppercase">Passo 4</span>
+                    <h3 class="font-bold text-gray-800 text-sm">Quota di Iscrizione</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">Effettua il saldo della quota tramite bonifico o direttamente in segreteria.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. AREA MODULISTICA & DOCUMENTI DOWNLOAD -->
+        <section class="space-y-6">
+            <div class="border-b-2 border-brandRed pb-3">
+                <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight flex items-center gap-2">
+                    <i class="fa-solid fa-file-pdf text-brandRed"></i> Modulistica Download
+                </h2>
+                <p class="text-xs text-gray-500 font-medium">Scarica i documenti necessari da stampare, compilare e consegnare.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 flex items-center justify-between hover:border-brandRed transition">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-file-pdf text-brandRed text-2xl"></i>
+                        <div>
+                            <h4 class="font-bold text-sm text-brandDark">Modulo Iscrizione 2026/2027</h4>
+                            <p class="text-xs text-gray-500">Modulo generale per il tesseramento atleti</p>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-brandDark text-white hover:bg-brandRed text-xs font-bold px-3 py-2 rounded transition flex items-center gap-1">
+                        <i class="fa-solid fa-download"></i> Scarica
+                    </a>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 flex items-center justify-between hover:border-brandRed transition">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-file-pdf text-brandRed text-2xl"></i>
+                        <div>
+                            <h4 class="font-bold text-sm text-brandDark">Richiesta Visita Medica Agonistica</h4>
+                            <p class="text-xs text-gray-500">Modulo da presentare al centro medico per la richiesta FIGC</p>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-brandDark text-white hover:bg-brandRed text-xs font-bold px-3 py-2 rounded transition flex items-center gap-1">
+                        <i class="fa-solid fa-download"></i> Scarica
+                    </a>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 flex items-center justify-between hover:border-brandRed transition">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-file-pdf text-brandRed text-2xl"></i>
+                        <div>
+                            <h4 class="font-bold text-sm text-brandDark">Informativa Privacy e Diritti Immagine</h4>
+                            <p class="text-xs text-gray-500">Consenso al trattamento dati personali e liberatoria foto/video</p>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-brandDark text-white hover:bg-brandRed text-xs font-bold px-3 py-2 rounded transition flex items-center gap-1">
+                        <i class="fa-solid fa-download"></i> Scarica
+                    </a>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 flex items-center justify-between hover:border-brandRed transition">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-file-pdf text-brandRed text-2xl"></i>
+                        <div>
+                            <h4 class="font-bold text-sm text-brandDark">Regolamento Interno & Codice Etico</h4>
+                            <p class="text-xs text-gray-500">Linee guida comportamentali per atleti e famiglie</p>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-brandDark text-white hover:bg-brandRed text-xs font-bold px-3 py-2 rounded transition flex items-center gap-1">
+                        <i class="fa-solid fa-download"></i> Scarica
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. INFO PAGAMENTI E COORDINATE BANCARIE -->
+        <section class="bg-white p-6 rounded-lg shadow-md border border-gray-200 space-y-4">
+            <h3 class="text-lg font-extrabold text-brandDark uppercase border-b pb-2 flex items-center gap-2">
+                <i class="fa-solid fa-credit-card text-brandRed"></i> Coordinate per i Pagamenti
+            </h3>
+            <p class="text-xs text-gray-600">
+                I pagamenti delle quote di iscrizione o del materiale sportivo possono essere effettuati tramite bonifico bancario inserendo come causale: <strong>"Nome Cognome Atleta - Categoria - Quota 2026/2027"</strong>.
+            </p>
+
+            <div class="bg-gray-50 p-4 rounded border border-gray-200 font-mono text-xs space-y-1 text-gray-700">
+                <p><strong>Beneficiario:</strong> A.S.D. Nuova Lodi 1952</p>
+                <p><strong>Banca:</strong> Banca Popolare di Lodi / Gruppo Banco BPM</p>
+                <p><strong>IBAN:</strong> IT 00 X 00000 00000 000000000000</p>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+
+<!-- ================================================================= -->
+<!-- PAGINA: NEWS & EVENTI (Archivio Completo)                         -->
+<!-- ================================================================= -->
+<main id="page-news" class="hidden">
+    <!-- Banner Introduttivo -->
+    <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+        <div class="max-w-7xl mx-auto text-center space-y-2">
+            <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">A.S.D. Nuova Lodi 1952</span>
+            <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">News & Eventi</h1>
+            <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">
+                Tutti gli aggiornamenti, i comunicati ufficiali, le cronache delle gare ed i prossimi appuntamenti della società.
+            </p>
+        </div>
+    </section>
+
+    <div class="max-w-7xl mx-auto px-4 py-12 space-y-8">
+        <!-- Filtro/Info Cronologica -->
+        <div class="flex justify-between items-center border-b pb-4">
+            <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">
+                <i class="fa-solid fa-arrow-down-wide-short text-brandRed mr-1"></i> Ordine cronologico: Dal più recente al più datato
+            </span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full font-semibold" id="news-count-badge">
+                Totale notizie: 0
+            </span>
+        </div>
+
+        <!-- GRIGLIA TUTTE LE NEWS -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="all-news-container">
+            <!-- Popolato dinamicamente da JavaScript -->
+        </div>
+    </div>
+</main>
+
+<!-- ================================================================= -->
+<!-- PAGINA: SPONSOR & PARTNER                                         -->
+<!-- ================================================================= -->
+<main id="page-sponsor" class="hidden">
+    <!-- Banner Introduttivo -->
+    <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+        <div class="max-w-7xl mx-auto text-center space-y-2">
+            <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">A.S.D. Nuova Lodi 1952</span>
+            <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">I Nostri Partner</h1>
+            <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">
+                Ringraziamo le aziende e le realtà locali che sostengono la nostra attività sportiva ed educativa ogni giorno.
+            </p>
+        </div>
+    </section>
+
+    <div class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+
+        <!-- SEZIONE 1: MAIN SPONSORS -->
+        <section class="space-y-6">
+            <div class="border-b-2 border-brandRed pb-3 flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-bold text-brandRed uppercase tracking-widest">Partner Ufficiali</span>
+                    <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight">Main Sponsor</h2>
+                </div>
+                <i class="fa-solid fa-star text-brandYellow text-xl"></i>
+            </div>
+
+            <!-- Griglia Main Sponsor -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="page-main-sponsors-container">
+                <!-- Popolato da JavaScript -->
+            </div>
+        </section>
+
+        <!-- SEZIONE 2: SOSTENITORI -->
+        <section class="space-y-6">
+            <div class="border-b-2 border-gray-300 pb-3 flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-bold text-gray-500 uppercase tracking-widest">Sostegno Locale</span>
+                    <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight">Sostenitori & Amici del Club</h2>
+                </div>
+                <i class="fa-solid fa-handshake text-gray-400 text-xl"></i>
+            </div>
+
+            <!-- Griglia Sostenitori -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" id="page-sostenitori-container">
+                <!-- Popolato da JavaScript -->
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- ================================================================= -->
+<!-- PAGINA: CONTATTI                                                  -->
+<!-- ================================================================= -->
+<main id="page-contatti" class="hidden">
+    <!-- Banner Introduttivo -->
+    <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+        <div class="max-w-7xl mx-auto text-center space-y-2">
+            <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">A.S.D. Nuova Lodi 1952</span>
+            <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Contatti & Sedi</h1>
+            <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">
+                Siamo a tua disposizione. Trova qui tutti i recapiti ufficiali, i riferimenti per i campi da gioco e i nostri canali social.
+            </p>
+        </div>
+    </section>
+
+    <div class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+
+        <!-- 1. CARDS CANALI DIRETTI (TELEFONO, EMAIL, SOCIAL) -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Telefono & Segreteria -->
+            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center space-y-3 hover:border-brandRed transition">
+                <div class="w-14 h-14 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-2xl mx-auto">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <h3 class="font-extrabold text-brandDark uppercase text-sm">Segreteria Telefonica</h3>
+                <p class="text-xs text-gray-500">Chiamaci o scrivici su WhatsApp per info e tesseramenti.</p>
+                <a href="tel:+393400000000" class="inline-block text-lg font-black text-brandRed hover:underline">
+                    +39 340 000 0000
+                </a>
+            </div>
+
+            <!-- Email Ufficiale -->
+            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center space-y-3 hover:border-brandRed transition">
+                <div class="w-14 h-14 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-2xl mx-auto">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <h3 class="font-extrabold text-brandDark uppercase text-sm">Posta Elettronica</h3>
+                <p class="text-xs text-gray-500">Per comunicazioni generali e informazioni ufficiali.</p>
+                <a href="mailto:info@nuovalodi.it" class="inline-block text-base font-black text-brandDark hover:text-brandRed hover:underline">
+                    info@nuovalodi.it
+                </a>
+            </div>
+
+            <!-- Social Network -->
+            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center space-y-3 hover:border-brandRed transition">
+                <div class="w-14 h-14 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-2xl mx-auto">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                <h3 class="font-extrabold text-brandDark uppercase text-sm">Seguici sui Social</h3>
+                <p class="text-xs text-gray-500">Rimani aggiornato su foto, risultati ed eventi live.</p>
+                <div class="flex justify-center items-center gap-4 pt-1">
+                    <a href="https://www.instagram.com/asd_nuovalodi" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-xs font-bold text-gray-700 hover:text-brandRed">
+                        <i class="fa-brands fa-instagram text-base text-pink-600"></i> asd_nuovalodi
+                    </a>
+                    <span class="text-gray-300">|</span>
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-xs font-bold text-gray-700 hover:text-brandRed">
+                        <i class="fa-brands fa-facebook text-base text-blue-600"></i> Nuova Lodi ASD
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 2. LE NOSTRE SEDI E CAMPI DA GIOCO -->
+        <section class="space-y-6">
+            <div class="border-b-2 border-brandRed pb-3">
+                <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight flex items-center gap-2">
+                    <i class="fa-solid fa-map-location-dot text-brandRed"></i> Sede Legale & Impianti Sportivi
+                </h2>
+                <p class="text-xs text-gray-500 font-medium">Dove trovarci per gli allenamenti, le partite e le pratiche amministrative.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Sede Amministrativa (Oratorio Cabrini) -->
+                <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden space-y-4 p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-brandDark text-brandYellow rounded-lg flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold bg-brandYellow/30 text-brandDark px-2 py-0.5 rounded uppercase">Sede Legale & Segreteria</span>
+                            <h3 class="text-lg font-black text-brandDark uppercase mt-1">Oratorio S. Francesca Cabrini</h3>
+                            <p class="text-xs text-gray-600 font-medium">Corso Archinti - 26900 Lodi (LO)</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600 leading-relaxed border-t pt-3">
+                        Punto di riferimento per le iscrizioni, il tesseramento, gli incontri con le famiglie e la dirigenza societaria.
+                    </p>
+                    <a href="https://maps.google.com/?q=Oratorio+Cabrini+Lodi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold bg-brandDark text-white px-4 py-2 rounded hover:bg-brandRed transition">
+                        <i class="fa-solid fa-location-arrow"></i> Calcola percorso
+                    </a>
+                </div>
+
+                <!-- Campo Sportivo Selvagreca -->
+                <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden space-y-4 p-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-brandRed text-white rounded-lg flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-futbol"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-bold bg-brandRed/10 text-brandRed px-2 py-0.5 rounded uppercase">Impianto Sportivo</span>
+                            <h3 class="text-lg font-black text-brandDark uppercase mt-1">Centro Sportivo Selvagreca</h3>
+                            <p class="text-xs text-gray-600 font-medium">Via Selvagreca - 26900 Lodi (LO)</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600 leading-relaxed border-t pt-3">
+                        Sede delle attività sul campo: allenamenti settimanali e partite casalinghe di campionato per tutte le categorie.
+                    </p>
+                    <a href="https://maps.google.com/?q=Centro+Sportivo+Selvagreca+Lodi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold bg-brandRed text-white px-4 py-2 rounded hover:bg-brandDark transition">
+                        <i class="fa-solid fa-location-arrow"></i> Calcola percorso
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- MODAL PER LETTURA ARTICOLO COMPLETO -->
+<div id="news-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-gray-200">
+        <div class="bg-brandDark text-white p-5 sticky top-0 flex justify-between items-center border-b-4 border-brandRed">
+            <div>
+                <span id="modal-category" class="text-[10px] font-bold bg-brandRed text-white px-2 py-0.5 rounded uppercase">Categoria</span>
+                <span id="modal-date" class="text-xs text-gray-300 ml-2">Data</span>
+            </div>
+            <button onclick="closeNewsModal()" class="text-gray-300 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="p-6 space-y-4">
+            <h2 id="modal-title" class="text-xl md:text-2xl font-black text-brandDark uppercase leading-snug">Titolo Notizia</h2>
+            <div id="modal-body" class="text-gray-700 text-sm leading-relaxed space-y-3 border-t pt-4">
+                <!-- Testo articolo -->
+            </div>
+        </div>
+        <div class="p-4 bg-gray-50 border-t text-right">
+            <button onclick="closeNewsModal()" class="bg-brandDark text-white hover:bg-brandRed text-xs font-bold px-4 py-2 rounded transition">
+                Chiudi
+            </button>
+        </div>
+    </div>
+</div>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandDark text-white mt-auto border-t-4 border-brandRed">
+        <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+            <div>
+                <h4 class="font-extrabold text-base mb-3 text-brandYellow">A.S.D. NUOVA LODI 1952</h4>
+                <p class="text-gray-400 text-xs leading-relaxed mb-3">Società sportiva dilettantistica affiliata alla F.I.G.C.</p>
+            </div>
+            <div>
+                <h4 class="font-extrabold text-base mb-3 text-brandYellow">CONTATTI</h4>
+                <p class="text-xs text-gray-300"><i class="fa-solid fa-envelope mr-2 text-brandRed"></i> info@nuovalodi.it</p>
+            </div>
+            <div>
+                <h4 class="font-extrabold text-base mb-3 text-brandYellow">LINK UTILI</h4>
+                <a href="#" class="text-xs text-gray-300 hover:text-brandYellow block">FIGC Lombardia</a>
+            </div>
+        </div>
+        <div class="bg-black/40 py-4 text-center text-xs text-gray-500 border-t border-gray-800">
+            © 2026 A.S.D. Nuova Lodi 1952. Tutti i diritti riservati.
+        </div>
+    </footer>
+
+
+    <!-- SCRIPT GESTIONE PAGINE, ROSE E MENU -->
+    <script>
+
+
+        // Funzione di navigazione (aggiornata con la pagina 'sponsor')
+function showPage(pageId) {
+    const pages = ['home', 'societa', 'squadre', 'rosa', 'iscrizioni', 'news', 'contatti', 'sponsor'];
+    pages.forEach(p => {
+        const el = document.getElementById('page-' + p);
+        if (el) el.classList.add('hidden');
+    });
+
+    const targetPage = document.getElementById('page-' + pageId);
+    if (targetPage) targetPage.classList.remove('hidden');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+        const roseData = {
+            "Prima Squadra": {
+                staff: [
+                    { ruolo: "Allenatore", nome: "Mario Rossi" },
+                    { ruolo: "Vice Allenatore", nome: "Giuseppe Bianchi" },
+                    { ruolo: "Dirigente Accompagnatore", nome: "Luigi Verdi" }
+                ],
+                giocatori: {
+                    Portieri: ["Rossi Marco", "Ferrari Luca"],
+                    Difensori: ["Bianchi Andrea", "Esposito Matteo", "Ricci Alessandro", "Colombo Davide"],
+                    Centrocampisti: ["Verdi Stefano", "Conti Simone", "Galli Lorenzo", "Martini Filippo"],
+                    Attaccanti: ["Romano Gabriele", "Marini Tommaso", "Barbieri Christian"]
+                }
+            },
+            "Terza Categoria U21": {
+                staff: [
+                    { ruolo: "Allenatore", nome: "Antonio Villa" },
+                    { ruolo: "Dirigente", nome: "Paolo Riva" }
+                ],
+                giocatori: {
+                    Portieri: ["Guerra Matteo"],
+                    Difensori: ["Santi Kevin", "Brambilla Luca", "Fontana Jacopo", "Marchesi Fabio"],
+                    Centrocampisti: ["Rizzo Mattia", "Lombardi Manuel", "Serra Edoardo"],
+                    Attaccanti: ["Gatti Riccardo", "Moretti Nicolas"]
+                }
+            },
+            "Juniores": {
+                staff: [{ ruolo: "Allenatore", nome: "Roberto Fontana" }],
+                giocatori: {
+                    Portieri: ["Villa Samuele"],
+                    Difensori: ["Costa Daniele", "Longo Pietro"],
+                    Centrocampisti: ["Martinelli Alex", "De Luca Cristian"],
+                    Attaccanti: ["Sartori Thomas"]
+                }
+            },
+            "Allievi": {
+                staff: [{ ruolo: "Allenatore", nome: "Claudio Franchi" }],
+                giocatori: {
+                    Portieri: ["Sala Federico"],
+                    Difensori: ["Piras Alessio"],
+                    Centrocampisti: ["Galli Niccolò"],
+                    Attaccanti: ["Basile Leo"]
+                }
+            },
+            "Giovanissimi": {
+                staff: [{ ruolo: "Allenatore", nome: "Daniele Grossi" }],
+                giocatori: {
+                    Portieri: ["Gatti Andrea"],
+                    Difensori: ["Neri Matteo"],
+                    Centrocampisti: ["Greco Luca"],
+                    Attaccanti: ["Rinaldi Elia"]
+                }
+            },
+            "Esordienti U13": {
+                staff: [
+                    { ruolo: "Allenatore", nome: "Andrea Conti" },
+                    { ruolo: "Dirigente Accompagnatore", nome: "Stefano Brambilla" }
+                ],
+                giocatori: {
+                    Portieri: ["Neri Giacomo"],
+                    Difensori: ["Marchesi Leonardo", "Santi Filippo", "Villa Diego"],
+                    Centrocampisti: ["Colombo Tommaso", "Galli Lorenzo", "Riva Matteo"],
+                    Attaccanti: ["Ferrari Samuele", "Barbieri Pietro"]
+                }
+            }
+        };
+
+// ARCHIVIO NOTIZIE (In ordine cronologico decrescente: dalla più recente alla più vecchia)
+const newsData = [
+    {
+        id: 1,
+        titolo: "Aperte le iscrizioni per la Stagione 2026/2027",
+        data: "20 Luglio 2026",
+        categoria: "Iscrizioni",
+        coloreCat: "bg-brandRed/10 text-brandRed",
+        estratto: "Aperte ufficialmente le iscrizioni per tutti i gruppi della Scuola Calcio e del Settore Giovanile. Scopri le modalità e le date dei raduni.",
+        testoCompleto: "Siamo felici di annunciare l'apertura ufficiale delle iscrizioni per la stagione sportiva 2026/2027. Le segreterie presso l'Oratorio Cabrini sono operative dal lunedì al venerdì dalle 17:00 alle 19:30. Tutti i moduli sono disponibili anche nella sezione Segreteria del sito. Vi aspettiamo per una nuova grande stagione insieme!"
+    },
+    {
+        id: 2,
+        titolo: "Grande successo per il Torneo Giovanile di Primavera",
+        data: "15 Giugno 2026",
+        categoria: "Tornei",
+        coloreCat: "bg-brandYellow/40 text-brandDark",
+        estratto: "Si è conclusa con una grande festa di sport la quinta edizione del torneo presso l'Oratorio Cabrini. Ringraziamo tutte le squadre partecipanti.",
+        testoCompleto: "Una straordinaria cornice di pubblico ha fatto da sfondo alla finale del Torneo di Primavera. Più di 200 ragazzi si sono affrontati sul campo all'insegna del rispetto e dell'amicizia. Complimenti alla categoria Pulcini per l'ottimo secondo posto conquistato."
+    },
+    {
+        id: 3,
+        titolo: "Aggiornamento Policy Safeguarding & Tutela Minori",
+        data: "01 Maggio 2026",
+        categoria: "Società",
+        coloreCat: "bg-brandDark text-white",
+        estratto: "L'A.S.D. Nuova Lodi rinnova il proprio impegno per la sicurezza dei ragazzi con le nuove linee guida F.I.G.C. consultabili sul sito.",
+        testoCompleto: "In conformità alle direttive F.I.G.C. e CONI, il Consiglio Direttivo ha approvato l'aggiornamento delle policy sulla tutela dei minori ed il codice etico per dirigenti e tecnici. La documentazione completa è liberamente scaricabile dal sito."
+    },
+    {
+        id: 4,
+        titolo: "Raduno di inizio stagione e presentazione staff tecnico",
+        data: "10 Aprile 2026",
+        categoria: "Eventi",
+        coloreCat: "bg-brandRed/10 text-brandRed",
+        estratto: "Fissata la data per il primo incontro con le famiglie e la presentazione dei nuovi mister del settore agonistico.",
+        testoCompleto: "Il giorno 10 Aprile presso la sala conferenze dell'Oratorio Cabrini si terrà la presentazione dello staff tecnico per la nuova stagione. Un momento importante per condividere gli obiettivi tecnici ed educativi con atleti e famiglie."
+    },
+    {
+        id: 5,
+        titolo: "Lavori di ammodernamento al Centro Sportivo Selvagreca",
+        data: "20 Febbraio 2026",
+        categoria: "Impianti",
+        coloreCat: "bg-brandDark text-white",
+        estratto: "Completata la riqualificazione dell'impianto di illuminazione a LED del campo principale per un maggiore risparmio energetico.",
+        testoCompleto: "Grazie al supporto dei nostri partner, abbiamo terminato l'installazione dei nuovi proiettori a LED presso il C.S. Selvagreca. Il nuovo impianto permetterà una visibilità ottimale durante gli allenamenti e le gare in notturna."
+    }
+];
+
+
+// Generazione card HTML per singola notizia
+function createNewsCard(news) {
+    return `
+        <div class="bg-white rounded-lg shadow border border-gray-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+            <div>
+                <div class="h-44 bg-gray-200 flex items-center justify-center text-gray-400">
+                    <i class="fa-solid fa-newspaper text-3xl"></i>
+                </div>
+                <div class="p-5 space-y-2">
+                    <span class="text-[11px] font-bold ${news.coloreCat} px-2 py-0.5 rounded">${news.categoria}</span>
+                    <span class="text-[11px] text-gray-400 block float-right">${news.data}</span>
+                    <h3 class="font-extrabold text-brandDark text-base leading-snug pt-1">${news.titolo}</h3>
+                    <p class="text-gray-600 text-xs line-clamp-3">${news.estratto}</p>
+                </div>
+            </div>
+            <div class="p-5 pt-0">
+                <button onclick="openNewsModal(${news.id})" class="text-xs font-bold text-brandRed hover:underline flex items-center gap-1">
+                    Leggi di più <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+            </div>
+        </div>
+    `;
+}
+
+// Renderizzatore delle news (3 in Home, tutte nella Pagina News)
+function renderNews() {
+    const homeContainer = document.getElementById('home-news-container');
+    const allContainer = document.getElementById('all-news-container');
+    const countBadge = document.getElementById('news-count-badge');
+
+    if (homeContainer) {
+        // Prende solo le prime 3 (più recenti)
+        homeContainer.innerHTML = newsData.slice(0, 3).map(createNewsCard).join('');
+    }
+
+    if (allContainer) {
+        // Prende tutte le notizie
+        allContainer.innerHTML = newsData.map(createNewsCard).join('');
+    }
+
+    if (countBadge) {
+        countBadge.innerText = `Totale notizie: ${newsData.length}`;
+    }
+}
+
+// Modal lettura notizia
+function openNewsModal(newsId) {
+    const news = newsData.find(n => n.id === newsId);
+    if (!news) return;
+
+    document.getElementById('modal-title').innerText = news.titolo;
+    document.getElementById('modal-date').innerText = news.data;
+    document.getElementById('modal-category').innerText = news.categoria;
+    document.getElementById('modal-body').innerHTML = `<p>${news.testoCompleto}</p>`;
+
+    document.getElementById('news-modal').classList.remove('hidden');
+}
+
+function closeNewsModal() {
+    document.getElementById('news-modal').classList.add('hidden');
+}
+
+// Inizializzazione al caricamento della pagina
+document.addEventListener('DOMContentLoaded', () => {
+    renderNews();
+});
+
+        function openRosa(squadraNome) {
+            const data = roseData[squadraNome];
+            if (!data) return;
+
+            document.getElementById('rosa-squadra-title').innerText = squadraNome;
+
+            const container = document.getElementById('rosa-container');
+            container.innerHTML = '';
+
+            for (const [ruolo, lista] of Object.entries(data.giocatori)) {
+                let cardHTML = `
+                    <div class="bg-white rounded-lg shadow border border-gray-200 overflow-hidden">
+                        <div class="bg-brandDark text-brandYellow px-4 py-2.5 font-extrabold text-sm uppercase flex justify-between items-center">
+                            <span>${ruolo}</span>
+                            <span class="bg-brandRed text-white text-xs px-2 py-0.5 rounded-full">${lista.length}</span>
+                        </div>
+                        <ul class="divide-y divide-gray-100 text-sm">
+                `;
+                lista.forEach(giocatore => {
+                    cardHTML += `<li class="px-4 py-2.5 text-gray-700 hover:bg-gray-50 flex items-center gap-2"><i class="fa-solid fa-shirt text-brandRed/40 text-xs"></i> ${giocatore}</li>`;
+                });
+                cardHTML += `</ul></div>`;
+                container.innerHTML += cardHTML;
+            }
+
+            const staffContainer = document.getElementById('staff-container');
+            staffContainer.innerHTML = '';
+            data.staff.forEach(s => {
+                staffContainer.innerHTML += `
+                    <div class="p-3 bg-gray-50 rounded border border-gray-200">
+                        <span class="text-xs font-bold text-brandRed block uppercase">${s.ruolo}</span>
+                        <span class="font-bold text-gray-800">${s.nome}</span>
+                    </div>
+                `;
+            });
+
+            showPage('rosa');
+        }
+
+        function toggleMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+
+        // ARCHIVIO DATI SPONSOR
+const sponsorData = [
+    // MAIN SPONSORS
+    {
+        id: 1,
+        nome: "Banca Popolare di Lodi",
+        tipo: "main",
+        descrizione: "Sostenitore principale delle nostre squadre giovanili e delle strutture sportive.",
+        sito: "https://www.bancobpm.it",
+        logoText: "BPL BANCA"
+    },
+    {
+        id: 2,
+        nome: "Lodi Sport & Fitness",
+        tipo: "main",
+        descrizione: "Fornitore ufficiale di abbigliamento e attrezzatura tecnica per la stagione.",
+        sito: "#",
+        logoText: "LODI SPORT"
+    },
+    {
+        id: 3,
+        nome: "Gruppo Immobiliare Laudense",
+        tipo: "main",
+        descrizione: "Partner etico per i progetti sociali e la tutela dei giovani atleti.",
+        sito: "#",
+        logoText: "IMMOBILIARE"
+    },
+
+    // SOSTENITORI
+    { id: 4, nome: "Farmacia San Francesco", tipo: "sostenitore", sito: "#" },
+    { id: 5, nome: "Pizzeria Cabrini", tipo: "sostenitore", sito: "#" },
+    { id: 6, nome: "Autofficina Lodigiana", tipo: "sostenitore", sito: "#" },
+    { id: 7, nome: "Ottica Archinti", tipo: "sostenitore", sito: "#" },
+    { id: 8, nome: "Caffè della Piazza", tipo: "sostenitore", sito: "#" },
+    { id: 9, nome: "Macelleria Rossi", tipo: "sostenitore", sito: "#" }
+];
+
+// Generazione Card HTML per MAIN SPONSOR (Pagina ed Home)
+function createMainSponsorCard(sponsor) {
+    return `
+        <div class="bg-white p-6 rounded-lg shadow border border-gray-200 flex flex-col justify-between hover:border-brandRed transition">
+            <div class="space-y-4">
+                <div class="h-28 bg-gray-100 rounded-lg flex items-center justify-center border border-dashed border-gray-300">
+                    <span class="font-black text-xl text-gray-500 uppercase tracking-wider">${sponsor.logoText || sponsor.nome}</span>
+                </div>
+                <div>
+                    <h3 class="font-extrabold text-brandDark text-base uppercase">${sponsor.nome}</h3>
+                    <p class="text-xs text-gray-600 mt-1 leading-relaxed">${sponsor.descrizione}</p>
+                </div>
+            </div>
+            ${sponsor.sito !== '#' ? `
+                <div class="pt-4 mt-2 border-t border-gray-100">
+                    <a href="${sponsor.sito}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-brandRed hover:underline inline-flex items-center gap-1">
+                        Visita il sito <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+            ` : ''}
+        </div>
+    `;
+}
+
+// Generazione Card HTML per SOSTENITORI (Pagina Sponsor)
+function createSostenitoreCard(sponsor) {
+    return `
+        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 text-center flex items-center justify-center hover:border-brandRed transition h-20">
+            <span class="font-extrabold text-xs text-brandDark uppercase">${sponsor.nome}</span>
+        </div>
+    `;
+}
+
+// Renderizzatore degli sponsor nei vari contenitori
+function renderSponsors() {
+    const mainSponsors = sponsorData.filter(s => s.tipo === 'main');
+    const sostenitori = sponsorData.filter(s => s.tipo === 'sostenitore');
+
+    // Home Page: Solo Main Sponsor
+    const homeContainer = document.getElementById('home-sponsors-container');
+    if (homeContainer) {
+        homeContainer.innerHTML = mainSponsors.map(createMainSponsorCard).join('');
+    }
+
+    // Pagina Sponsor: Main Sponsor
+    const pageMainContainer = document.getElementById('page-main-sponsors-container');
+    if (pageMainContainer) {
+        pageMainContainer.innerHTML = mainSponsors.map(createMainSponsorCard).join('');
+    }
+
+    // Pagina Sponsor: Sostenitori
+    const pageSostenitoriContainer = document.getElementById('page-sostenitori-container');
+    if (pageSostenitoriContainer) {
+        pageSostenitoriContainer.innerHTML = sostenitori.map(createSostenitoreCard).join('');
+    }
+}
+
+// Inizializzazione al caricamento
+document.addEventListener('DOMContentLoaded', () => {
+    renderSponsors();
+    // Se era già presente la chiamata a renderNews():
+    if (typeof renderNews === 'function') renderNews();
+});
+
+    </script>
+</body>
+</html>
