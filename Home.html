@@ -1513,20 +1513,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <script>
 async function loadDynamicNews() {
+  console.log("1. Inizio esecuzione loadDynamicNews");
   const container = document.getElementById('news-container');
 
   try {
-    // Sostituisci NOME_UTENTE e NOME_REPO con i tuoi dati reali
-    const response = await fetch('https://api.github.com/repos/NOME_UTENTE/NOME_REPO/contents/content/news');
+    const url = 'https://api.github.com/repos/NOME_UTENTE/NOME_REPO/contents/content/news';
+    console.log("2. Chiamata API a:", url);
+
+    const response = await fetch(url);
+    console.log("3. Stato risposta HTTP:", response.status, response.statusText);
     
     if (!response.ok) {
-      throw new Error('Impossibile recuperare le news dal repository');
+      throw new Error(`Errore HTTP: ${response.status}`);
     }
 
     const files = await response.json();
+    console.log("4. Elenco file trovati nella cartella GitHub:", files);
+
     const newsFiles = files.filter(f => f.name.endsWith('.md') || f.name.endsWith('.json'));
+    console.log("5. File filtrati (.md o .json):", newsFiles);
 
     if (newsFiles.length === 0) {
+      console.log("Nessun file .md o .json trovato.");
       container.innerHTML = '<p class="col-span-full text-center text-gray-500">Nessuna notizia presente al momento.</p>';
       return;
     }
@@ -1534,15 +1542,16 @@ async function loadDynamicNews() {
     container.innerHTML = '';
 
     for (const file of newsFiles) {
+      console.log("6. Scarico contenuto del file:", file.name);
       const res = await fetch(file.download_url);
       const text = await res.text();
+      console.log("7. Contenuto grezzo del file:\n", text);
 
       let news = {};
 
       if (file.name.endsWith('.json')) {
         news = JSON.parse(text);
       } else if (file.name.endsWith('.md')) {
-        // Estrazione e parsing avanzato del Frontmatter YAML (tra i --- iniziali)
         const frontmatterMatch = text.match(/^---\s*[\r\n]+([\s\S]*?)[\r\n]+---/);
         
         if (frontmatterMatch) {
@@ -1554,29 +1563,22 @@ async function loadDynamicNews() {
             if (colonIndex !== -1) {
               const key = line.slice(0, colonIndex).trim();
               let val = line.slice(colonIndex + 1).trim();
-
-              // Rimuove virgolette singole o doppie all'inizio e alla fine
               val = val.replace(/^["']|["']$/g, '');
-
               if (key) {
                 news[key] = val;
               }
             }
           });
 
-          // Se non è stato specificato un summary, estrae il testo principale dal corpo del file .md
           const bodyContent = text.replace(/^---\s*[\r\n]+[\s\S]*?[\r\n]+---/, '').trim();
           if (!news.summary && bodyContent) {
-            // Rimuove tag HTML/Markdown basici per l'anteprima
             news.summary = bodyContent.replace(/[#*`_]/g, '').substring(0, 120) + '...';
           }
         }
       }
 
-      // Log di controllo in console (apri F12 -> Console sul browser per verificare i campi estratti)
-      console.log('Dati notizia caricati:', news);
+      console.log("8. Dati notizia estratti:", news);
 
-      // Supporto per chiavi alternative che il CMS potrebbe usare
       const title = news.title || news.titolo || news.heading || 'Senza Titolo';
       const summary = news.summary || news.description || news.sommario || news.body || '';
       const image = news.image || news.immagine || news.thumbnail || news.cover || '';
@@ -1611,7 +1613,7 @@ async function loadDynamicNews() {
     }
 
   } catch (err) {
-    console.error('Errore nel caricamento delle news:', err);
+    console.error('ERRORE RISCONTRATO:', err);
     container.innerHTML = '<p class="col-span-full text-center text-gray-500">Errore nel caricamento delle notizie.</p>';
   }
 }
