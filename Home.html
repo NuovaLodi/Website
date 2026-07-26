@@ -1618,7 +1618,13 @@ async function loadDynamicNews() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', loadDynamicNews);
+// Questo avvia la funzione quando la pagina è pronta
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadDynamicNews);
+    } else {
+      loadDynamicNews(); // Esegue subito se il DOM è già pronto
+    }
+    
 </script>
     
 </body>
