@@ -27,6 +27,9 @@
             }
         }
     </script>
+    
+    <!-- Widget Netlify Identity per gestire inviti e reset password -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
 
@@ -1492,5 +1495,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
     </script>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    
 </body>
 </html>
