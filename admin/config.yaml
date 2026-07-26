@@ -1,12 +1,11 @@
 backend:
   name: git-gateway
-  branch: main # Il ramo principale del vostro repository
+  branch: main
 
-media_folder: "assets/uploads" # Cartella dove verranno salvate le immagini caricate
+media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
-# Lingua dell'interfaccia
-locale: 'it'
+locale: "it"
 
 collections:
   # -------------------------------------------------------------
@@ -21,9 +20,9 @@ collections:
       - { label: "Categoria", name: "categoria", widget: "select", options: ["Prima Squadra", "Juniores U19", "Allievi U17", "Giovanissimi U15", "Esordienti U13", "Pulcini U11"] }
       - { label: "Squadra Casa", name: "squadraCasa", widget: "string" }
       - { label: "Squadra Ospite", name: "squadraOspite", widget: "string" }
-      - { label: "Data e Ora", name: "dataOra", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ" }
+      - { label: "Data e Ora", name: "dataOra", widget: "datetime" }
       - { label: "Luogo / Campo", name: "luogo", widget: "select", options: ["C.S. Selvagreca (Lodi)", "Oratorio Cabrini (Lodi)", "Trasferta"] }
-      - { label: "Indirizzo Trasferta (se applicabile)", name: "indirizzoTrasferta", widget: "string", required: false, hint: "Esempio: Via Roma 15, Sant'Angelo Lodigiano" }
+      - { label: "Indirizzo Trasferta", name: "indirizzoTrasferta", widget: "string", required: false, hint: "Esempio: Via Roma 15, Sant'Angelo Lodigiano" }
       - { label: "Stato Partita", name: "stato", widget: "select", options: ["Programmata", "Conclusa", "Rinviata"], default: "Programmata" }
       - { label: "Gol Squadra Casa", name: "golCasa", widget: "number", value_type: "int", required: false }
       - { label: "Gol Squadra Ospite", name: "golOspite", widget: "number", value_type: "int", required: false }
@@ -51,9 +50,10 @@ collections:
     label: "Sponsor & Partner"
     folder: "content/sponsor"
     create: true
+    slug: "{{slug}}"
     fields:
       - { label: "Nome Azienda", name: "nome", widget: "string" }
       - { label: "Tipologia", name: "tipo", widget: "select", options: ["main", "sostenitore"] }
-      - { label: "Descrizione (solo per Main Sponsor)", name: "descrizione", widget: "text", required: false }
-      - { label: "Link Sito Web", name: "sito", widget: "string", required: false, default: "#" }
+      - { label: "Descrizione", name: "descrizione", widget: "text", required: false }
+      - { label: "Link Sito Web", name: "sito", widget: "string", required: false }
       - { label: "Logo", name: "logo", widget: "image", required: false }
