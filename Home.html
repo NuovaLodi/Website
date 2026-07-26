@@ -923,6 +923,13 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="all-news-container">
             <!-- Popolato dinamicamente da JavaScript -->
         </div>
+
+        <!-- Contenitore News -->
+        <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Le news verranno inserite qui dallo script -->
+          <p class="text-gray-500">Caricamento notizie in corso...</p>
+        </div>
+        
     </div>
 </main>
 
@@ -1507,6 +1514,75 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
     </script>
+
+    <script>
+      async function loadNews() {
+        const container = document.getElementById('news-container');
+    
+    try {
+      // 1. Chiedi a GitHub / server l'elenco dei file nella cartella content/news
+      // Nota: Se hai poche news, puoi anche caricare direttamente il file index o l'API locale
+      const response = await fetch('https://api.github.com/repos/NuovaLodi/nuova-lodi-website/contents/content/news');
+      
+      if (!response.ok) {
+        throw new Error('Impossibile recuperare l\'elenco delle news');
+      }
+
+      const files = await response.json();
+      
+      // Filtra solo i file .json
+      const jsonFiles = files.filter(file => file.name.endsWith('.json'));
+
+      if (jsonFiles.length === 0) {
+        container.innerHTML = '<p class="col-span-full text-center text-gray-500">Nessuna notizia pubblicata al momento.</p>';
+        return;
+      }
+
+      container.innerHTML = ''; // Pulisci il messaggio di caricamento
+
+      // 2. Leggi ogni singolo file JSON della news
+      for (const file of jsonFiles) {
+        const newsRes = await fetch(file.download_url);
+        const news = await newsRes.json();
+
+        // Formatta la data
+        const dateFormatted = new Date(news.date).toLocaleDateString('it-IT', {
+          day: '2-digit',
+          month: 'long',
+          year: 'numeric'
+        });
+
+        // 3. Genera la card HTML con Tailwind (colori rosso/giallo Nuova Lodi)
+        const newsCard = `
+          <article class="bg-white rounded-lg shadow-md overflow-hidden border-t-4 border-red-600 flex flex-col">
+            ${news.image ? `<img src="${news.image}" alt="${news.title}" class="w-full h-48 object-cover">` : ''}
+            <div class="p-5 flex-1 flex flex-col justify-between">
+              <div>
+                <span class="text-xs font-semibold text-yellow-600 uppercase tracking-wider">${dateFormatted}</span>
+                <h3 class="text-xl font-bold text-gray-900 mt-1 mb-2">${news.title}</h3>
+                <p class="text-gray-600 text-sm mb-4">${news.summary || news.body.substring(0, 100) + '...'}</p>
+              </div>
+              <div class="pt-2 border-t border-gray-100">
+                <span class="text-red-600 font-bold text-sm inline-flex items-center hover:underline cursor-pointer">
+                  Leggi di più &rarr;
+                </span>
+              </div>
+            </div>
+          </article>
+        `;
+
+        container.innerHTML += newsCard;
+      }
+
+    } catch (error) {
+      console.error('Errore:', error);
+      container.innerHTML = '<p class="col-span-full text-center text-red-500">Errore durante il caricamento delle notizie.</p>';
+    }
+  }
+
+  // Avvia il caricamento all'apertura della pagina
+  document.addEventListener('DOMContentLoaded', loadNews);
+</script>
     
 </body>
 </html>
