@@ -1,5 +1,5 @@
 ---
 categoria: Prima Squadra
-ruolo: Vide Allenatore
+ruolo: Vice Allenatore
 nome: Gigio Ghitti
 ---
