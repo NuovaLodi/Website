@@ -1,6 +1,53 @@
 import { CONFIG } from '../config.js';
 import { listFolder, loadJsonOrFrontmatter } from '../github.js';
 
+function normalizeImagePath(image) {
+    if (!image) {
+        return '';
+    }
+
+    const imagePath = image.toString().trim();
+
+    if (!imagePath) {
+        return '';
+    }
+
+    if (/^(https?:)?\/\//i.test(imagePath) || imagePath.startsWith('data:')) {
+        return imagePath;
+    }
+
+    return imagePath.replace(/^\/+/, '');
+}
+
+function escapeHTML(value) {
+    return (value || '')
+        .toString()
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+function createNewsImageHTML(item) {
+    const image = normalizeImagePath(item.image);
+
+    if (!image) {
+        return `
+                    <div class="h-44 bg-gray-200 flex items-center justify-center text-gray-400">
+                        <i class="fa-solid fa-newspaper text-3xl"></i>
+                    </div>`;
+    }
+
+    return `
+                    <div class="h-44 bg-gray-200 overflow-hidden">
+                        <img src="${escapeHTML(image)}" alt="${escapeHTML(item.title)}" class="w-full h-full object-cover" loading="lazy" onerror="this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');">
+                        <div class="hidden flex w-full h-full items-center justify-center text-gray-400">
+                            <i class="fa-solid fa-newspaper text-3xl"></i>
+                        </div>
+                    </div>`;
+}
+
 export async function loadDynamicNews() {
     const homeContainer = document.getElementById('home-news-container');
     const newsContainer = document.getElementById('news-container');
@@ -37,7 +84,7 @@ export async function loadDynamicNews() {
                 title: news.title || news.titolo || news.heading || 'Senza Titolo',
                 summary: news.summary || news.description || news.sommario || '',
                 body: news.body || news.bodyContent || news.testoCompleto || news.summary || '',
-                image: news.image || news.immagine || news.thumbnail || news.cover || '',
+                image: news.image || news.immagine || news.foto || news.thumbnail || news.cover || '',
                 category: news.category || news.categoria || 'News',
                 dateObj: dateObj,
                 dateFormatted: (!isNaN(dateObj) && dateObj.getTime() !== 0)
@@ -51,9 +98,7 @@ export async function loadDynamicNews() {
         const createCardHTML = (item, index) => `
             <div class="bg-white rounded-lg shadow border border-gray-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
                 <div>
-                    <div class="h-44 bg-gray-200 flex items-center justify-center text-gray-400">
-                        <i class="fa-solid fa-newspaper text-3xl"></i>
-                    </div>
+                    ${createNewsImageHTML(item)}
                     <div class="p-5 space-y-2">
                         <span class="text-[11px] font-bold bg-brandRed/10 text-brandRed px-2 py-0.5 rounded">${item.category}</span>
                         ${item.dateFormatted ? `<span class="text-[11px] text-gray-400 block float-right">${item.dateFormatted}</span>` : ''}
@@ -116,4 +161,3 @@ export function initNews() {
 
 window.loadDynamicNews = loadDynamicNews;
 window.openDynamicModal = openDynamicModal;
-
