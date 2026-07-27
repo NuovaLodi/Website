@@ -42,6 +42,13 @@ async function loadManifest() {
 }
 
 async function listFolder(path) {
+    const manifest = await loadManifest().catch(() => null);
+    const localFiles = manifest?.[path];
+
+    if (localFiles) {
+        return localFiles;
+    }
+
     try {
         const response = await fetch(`${API_BASE}/${path}?ref=${CONFIG.github.branch}`);
 
@@ -51,8 +58,7 @@ async function listFolder(path) {
 
         return response.json();
     } catch (error) {
-        const manifest = await loadManifest();
-        const fallbackFiles = manifest[path];
+        const fallbackFiles = manifest?.[path];
 
         if (!fallbackFiles) {
             throw error;
