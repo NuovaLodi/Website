@@ -17,7 +17,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Categoria", name: "categoria", widget: "select", options: ["Prima Squadra", "Juniores U19", "Allievi U17", "Giovanissimi U15", "Esordienti U13", "Pulcini U11"] }
+      - { label: "Categoria", name: "categoria", widget: "select", options: ["Prima Squadra", "Terza Categoria U21", "Juniores U19", "Allievi U17", "Giovanissimi U15", "Esordienti U13", "Pulcini U11"] }
       - { label: "Squadra Casa", name: "squadraCasa", widget: "string" }
       - { label: "Squadra Ospite", name: "squadraOspite", widget: "string" }
       - { label: "Data e Ora", name: "dataOra", widget: "datetime" }
