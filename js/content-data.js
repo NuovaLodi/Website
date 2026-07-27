@@ -4,9 +4,9 @@ window.NUOVA_LODI_CONTENT = {
       "name": "2026-07-26-map-titolo-la-nuova-lodi-è-promossa-in-seconda-categoria-data-2026-07-23t14-08-00-000-02-00-categoria-società-estratto-estratto-breve-body-testo-articolo.md",
       "path": "content/news/2026-07-26-map-titolo-la-nuova-lodi-è-promossa-in-seconda-categoria-data-2026-07-23t14-08-00-000-02-00-categoria-società-estratto-estratto-breve-body-testo-articolo.md",
       "type": "file",
-      "size": 159,
+      "size": 196,
       "download_url": "content/news/2026-07-26-map-titolo-la-nuova-lodi-è-promossa-in-seconda-categoria-data-2026-07-23t14-08-00-000-02-00-categoria-società-estratto-estratto-breve-body-testo-articolo.md",
-      "text": "---\ntitolo: La Nuova Lodi è promossa in Seconda Categoria\ndata: 2026-07-23T14:08:00.000+02:00\ncategoria: Società\nestratto: Estratto breve\n---\nTesto articolo\n"
+      "text": "---\ntitolo: La Nuova Lodi è promossa in Seconda Categoria\ndata: 2026-07-23T14:08:00.000+02:00\ncategoria: Società\nestratto: Estratto breve\nimmagine: images/NLcircolare-PNG.png\n---\nTesto articolo\n"
     }
   ],
   "content/partite": [
@@ -91,6 +91,22 @@ window.NUOVA_LODI_CONTENT = {
       "size": 75,
       "download_url": "content/rose/2026-07-26-prima-squadra-viceallenatore-ghitti.md",
       "text": "---\ncategoria: Prima Squadra\nruolo: Vice Allenatore\nnome: Gigio Ghitti\n---\n"
+    },
+    {
+      "name": "2026-07-26-u21-squadra-allenatore-martiri.md",
+      "path": "content/rose/2026-07-26-u21-squadra-allenatore-martiri.md",
+      "type": "file",
+      "size": 78,
+      "download_url": "content/rose/2026-07-26-u21-squadra-allenatore-martiri.md",
+      "text": "---\ncategoria: Terza Categoria U21\nruolo: Allenatore\nnome: Stefano Martiri\n---"
+    },
+    {
+      "name": "2026-07-26-u21-squadra-centrocampista-fenocchi.md",
+      "path": "content/rose/2026-07-26-u21-squadra-centrocampista-fenocchi.md",
+      "type": "file",
+      "size": 82,
+      "download_url": "content/rose/2026-07-26-u21-squadra-centrocampista-fenocchi.md",
+      "text": "---\ncategoria: Terza Categoria U21\nruolo: Centrocampista\nnome: Matteo Fenocchi\n---"
     },
     {
       "name": "2026-07-27-prima-squadra-allenatore-desantis.md",
@@ -234,7 +250,7 @@ window.NUOVA_LODI_CONTENT = {
       "type": "file",
       "size": 74,
       "download_url": "content/rose/2026-07-27-prima-squadra-viceallenatore-ghitti.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Vide Allenatore\nnome: Gigio Ghitti\n---"
+      "text": "---\ncategoria: Prima Squadra\nruolo: Vice Allenatore\nnome: Gigio Ghitti\n---"
     }
   ],
   "documenti": [
