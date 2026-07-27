@@ -22,16 +22,30 @@ async function loadManifest() {
     return manifestCache;
 }
 
-export async function listFolder(path) {
-    const manifest = await loadManifest().catch(() => null);
-    const localFiles = manifest?.[path];
+function shouldUseLocalContentFirst() {
+    return (
+        window.location.protocol === 'file:' ||
+        window.location.hostname === 'localhost' ||
+        window.location.hostname === '127.0.0.1'
+    );
+}
 
-    if (localFiles) {
-        return localFiles;
+export async function listFolder(path) {
+    let manifest = null;
+
+    if (shouldUseLocalContentFirst()) {
+        manifest = await loadManifest().catch(() => null);
+        const localFiles = manifest?.[path];
+
+        if (localFiles) {
+            return localFiles;
+        }
     }
 
     try {
-        const response = await fetch(`${API_BASE}/${path}?ref=${CONFIG.github.branch}`);
+        const response = await fetch(`${API_BASE}/${path}?ref=${CONFIG.github.branch}`, {
+            cache: 'no-store'
+        });
 
         if (!response.ok) {
             throw new Error(`Errore risposta GitHub: ${response.status}`);
@@ -39,6 +53,10 @@ export async function listFolder(path) {
 
         return response.json();
     } catch (error) {
+        if (!manifest) {
+            manifest = await loadManifest().catch(() => null);
+        }
+
         const fallbackFiles = manifest?.[path];
 
         if (!fallbackFiles) {
@@ -55,7 +73,9 @@ export async function getTextFile(file) {
         return file.text;
     }
 
-    const response = await fetch(file.download_url);
+    const response = await fetch(file.download_url, {
+        cache: 'no-store'
+    });
 
     if (!response.ok) {
         throw new Error(`Errore lettura file ${file.name}: ${response.status}`);
