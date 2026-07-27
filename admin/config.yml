@@ -42,6 +42,7 @@ collections:
       - { label: "Categoria", name: "categoria", widget: "select", options: ["Iscrizioni", "Tornei", "Società", "Eventi", "Impianti"] }
       - { label: "Estratto Breve", name: "estratto", widget: "text" }
       - { label: "Testo Articolo", name: "body", widget: "markdown" }
+      - { label: "Immagine", name: "immagine", widget: "image", required: false }
 
   # -------------------------------------------------------------
   # 3. GESTIONE SPONSOR
