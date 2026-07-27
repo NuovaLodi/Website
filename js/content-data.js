@@ -4,9 +4,9 @@ window.NUOVA_LODI_CONTENT = {
       "name": "2026-07-26-map-titolo-la-nuova-lodi-è-promossa-in-seconda-categoria-data-2026-07-23t14-08-00-000-02-00-categoria-società-estratto-estratto-breve-body-testo-articolo.md",
       "path": "content/news/2026-07-26-map-titolo-la-nuova-lodi-è-promossa-in-seconda-categoria-data-2026-07-23t14-08-00-000-02-00-categoria-società-estratto-estratto-breve-body-testo-articolo.md",
       "type": "file",
-      "size": 196,
+      "size": 201,
       "download_url": "content/news/2026-07-26-map-titolo-la-nuova-lodi-è-promossa-in-seconda-categoria-data-2026-07-23t14-08-00-000-02-00-categoria-società-estratto-estratto-breve-body-testo-articolo.md",
-      "text": "---\ntitolo: La Nuova Lodi è promossa in Seconda Categoria\ndata: 2026-07-23T14:08:00.000+02:00\ncategoria: Società\nestratto: Estratto breve\nimmagine: images/NLcircolare-PNG.png\n---\nTesto articolo\n"
+      "text": "---\ntitolo: La Nuova Lodi è promossa in Seconda Categoria\ndata: 2026-07-23T14:08:00.000+02:00\ncategoria: Società\nestratto: Estratto breve\nimmagine: images/NEWS-0001-PROMOZIONE.PNG\n---\nTesto articolo\n"
     }
   ],
   "content/partite": [
