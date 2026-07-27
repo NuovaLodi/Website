@@ -1,0 +1,175 @@
+<main id="page-squadre" class="hidden">
+        <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+            <div class="max-w-7xl mx-auto text-center space-y-2">
+                <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">Stagione 2026/2027</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Le Nostre Squadre</h1>
+                <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">Dalla Scuola Calcio alla Prima Squadra: il percorso di crescita rosso-giallo.</p>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 py-12 space-y-16">
+
+            <!-- 1. SEZIONE AGONISTICA -->
+            <section>
+                <div class="flex items-center space-x-3 mb-6 pb-2 border-b-2 border-brandRed">
+                    <i class="fa-solid fa-trophy text-brandRed text-2xl"></i>
+                    <div>
+                        <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight">Settore Agonistico</h2>
+                        <p class="text-xs text-gray-500 font-medium">Campo di riferimento: <span class="text-brandDark font-bold">Centro Sportivo Selvagreca (Lodi)</span></p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Prima Squadra -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandRed text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Prima Squadra</h3>
+                                <span class="bg-brandDark text-brandYellow text-xs px-2.5 py-1 rounded font-bold">LND</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                            </div>
+                        </div>
+                        <div class="flex gap-2 p-5 pt-0">
+                            <button onclick="mostraRosaCategoria('Prima Squadra')" class="flex-1 bg-brandRed text-white py-2 px-3 rounded text-xs font-bold hover:bg-red-700 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa e Staff
+                            </button>
+                            <button onclick="openCalendarioModal('Prima Squadra')" class="flex-1 bg-brandDark text-white py-2 px-3 rounded text-xs font-bold hover:bg-gray-800 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-calendar-days"></i> Calendario
+                            </button>
+                        </div>                    
+                    </div>
+
+                    <!-- Terza Categoria U21 -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandRed text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">3ª Categoria U21</h3>
+                                <span class="bg-brandDark text-brandYellow text-xs px-2.5 py-1 rounded font-bold">LND</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                            </div>
+                        </div>
+                        <div class="flex gap-2 p-5 pt-0">
+                            <button onclick="mostraRosaCategoria('Terza Categoria U21')" class="flex-1 bg-brandRed text-white py-2 px-3 rounded text-xs font-bold hover:bg-red-700 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa e Staff
+                            </button>
+                            <button onclick="openCalendarioModal('Terza Categoria U21')" class="flex-1 bg-brandDark text-white py-2 px-3 rounded text-xs font-bold hover:bg-gray-800 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-calendar-days"></i> Calendario
+                            </button>
+                        </div>                    
+                    </div>
+
+                    <!-- Juniores -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Juniores</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 19</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                            </div>
+                        </div>
+                        <div class="flex gap-2 p-5 pt-0">
+                            <button onclick="mostraRosaCategoria('Juniores')" class="flex-1 bg-brandRed text-white py-2 px-3 rounded text-xs font-bold hover:bg-red-700 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa e Staff
+                            </button>
+                            <button onclick="openCalendarioModal('Juniores')" class="flex-1 bg-brandDark text-white py-2 px-3 rounded text-xs font-bold hover:bg-gray-800 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-calendar-days"></i> Calendario
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Allievi -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Allievi</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 17</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                            </div>
+                        </div>
+                        <div class="flex gap-2 p-5 pt-0">
+                            <button onclick="mostraRosaCategoria('Allievi')" class="flex-1 bg-brandRed text-white py-2 px-3 rounded text-xs font-bold hover:bg-red-700 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa e Staff
+                            </button>
+                            <button onclick="openCalendarioModal('Allievi')" class="flex-1 bg-brandDark text-white py-2 px-3 rounded text-xs font-bold hover:bg-gray-800 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-calendar-days"></i> Calendario
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Giovanissimi -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Giovanissimi</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 15</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                            </div>
+                        </div>
+                        <div class="flex gap-2 p-5 pt-0">
+                            <button onclick="mostraRosaCategoria('Giovanissimi')" class="flex-1 bg-brandRed text-white py-2 px-3 rounded text-xs font-bold hover:bg-red-700 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa e Staff
+                            </button>
+                            <button onclick="openCalendarioModal('Giovanissimi')" class="flex-1 bg-brandDark text-white py-2 px-3 rounded text-xs font-bold hover:bg-gray-800 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-calendar-days"></i> Calendario
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Esordienti -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Esordienti</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 13</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                                <p class="text-gray-600"><i class="fa-solid fa-location-dot w-5 text-brandRed"></i> C.S. Selvagreca</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 p-5 pt-0">
+                            <button onclick="mostraRosaCategoria('Esordienti')" class="flex-1 bg-brandRed text-white py-2 px-3 rounded text-xs font-bold hover:bg-red-700 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa e Staff
+                            </button>
+                            <button onclick="openCalendarioModal('Esordienti')" class="flex-1 bg-brandDark text-white py-2 px-3 rounded text-xs font-bold hover:bg-gray-800 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-calendar-days"></i> Calendario
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 2. SCUOLA CALCIO -->
+            <section>
+                <div class="flex items-center space-x-3 mb-6 pb-2 border-b-2 border-brandYellow">
+                    <i class="fa-solid fa-child text-yellow-600 text-2xl"></i>
+                    <div>
+                        <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight">Scuola Calcio & Attività di Base</h2>
+                        <p class="text-xs text-gray-500 font-medium">Campo di riferimento: <span class="text-brandDark font-bold">Oratorio S. F. Cabrini (Lodi)</span></p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-md border border-yellow-300 p-5">
+                        <h3 class="font-extrabold uppercase text-lg text-brandDark">Pulcini</h3>
+                        <p class="text-xs text-gray-500 mt-1">Sviluppo della tecnica e del gioco di squadra.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md border border-yellow-300 p-5">
+                        <h3 class="font-extrabold uppercase text-lg text-brandDark">Primi Calci</h3>
+                        <p class="text-xs text-gray-500 mt-1">Primi confronti ludico-motori.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md border border-yellow-300 p-5">
+                        <h3 class="font-extrabold uppercase text-lg text-brandDark">Piccoli Amici</h3>
+                        <p class="text-xs text-gray-500 mt-1">Attività motoria di base e gioco.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>

@@ -1,0 +1,194 @@
+<main id="page-home">
+        <!-- HERO BANNER -->
+        <section class="relative bg-cover bg-center text-white py-24 md:py-32 px-4" style="background-image: url('images/hero-bg.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-brandRed/40"></div>
+            <div class="relative max-w-5xl mx-auto text-center space-y-6">
+                <span class="bg-brandYellow text-brandDark font-bold text-xs uppercase px-4 py-1.5 rounded-full tracking-wider shadow">
+                    Stagione Sportiva 2026/2027
+                </span>
+                <h1 class="text-3xl md:text-6xl font-extrabold uppercase tracking-tight leading-tight text-white drop-shadow-md">
+                    Passione, Crescita e Valori<br class="hidden sm:inline"> nel Calcio Lodigiano
+                </h1>
+                <p class="text-gray-200 text-sm md:text-xl max-w-2xl mx-auto font-medium drop-shadow">
+                    Dalla Scuola Calcio alla Prima Squadra. Entra a far parte della grande famiglia dell'A.S.D. Nuova Lodi.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                </div>
+            </div>
+        </section>
+
+        <!-- MATCH CENTER HOME PAGE (CON TABS E CLASSIFICA) -->
+        <section class="relative z-20 max-w-5xl mx-auto px-4 -mt-12 md:-mt-16">
+            <div class="bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden">
+                
+                <!-- Intestazione Box con Navigazione Tab -->
+                <div class="bg-gray-900 text-white px-4 md:px-6 py-3 flex flex-wrap justify-between items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-wider border-b border-gray-800">
+                    <span class="flex items-center"><i class="fa-solid fa-trophy text-brandRed mr-2"></i> Match Center — Prima Squadra</span>
+                    
+                    <!-- Tab Switcher -->
+                    <div class="flex bg-gray-800 p-1 rounded-lg gap-1 border border-gray-700">
+                        <button id="tab-matches-btn" onclick="switchMatchTab('matches')" class="px-3 py-1 rounded text-[11px] md:text-xs font-bold transition-all bg-brandRed text-white">
+                            <i class="fa-solid fa-calendar-days mr-1"></i> Partite
+                        </button>
+                        <button id="tab-classifica-btn" onclick="switchMatchTab('classifica')" class="px-3 py-1 rounded text-[11px] md:text-xs font-bold text-gray-400 hover:text-white transition-all">
+                            <i class="fa-solid fa-list-ol mr-1"></i> Classifica
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tab 1: Match Center View -->
+                <div id="tab-matches-view" class="p-4 md:p-6 grid grid-cols-1 md:grid-cols-2 gap-6 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                    <!-- Loader iniziale -->
+                    <div class="col-span-full py-8 text-center text-gray-400 font-medium text-sm">
+                        <i class="fa-solid fa-circle-notch fa-spin text-brandRed mr-2"></i> Aggiornamento dati in corso...
+                    </div>
+                </div>
+
+                <!-- Tab 2: Classifica View -->
+                <div id="tab-classifica-view" class="hidden p-4 md:p-6 space-y-4">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="border-b-2 border-gray-200 text-[11px] md:text-xs font-black text-gray-500 uppercase tracking-wider bg-gray-50">
+                                    <th class="py-2.5 px-3">Pos</th>
+                                    <th class="py-2.5 px-3">Squadra</th>
+                                    <th class="py-2.5 px-3 text-center">G</th>
+                                    <th class="py-2.5 px-3 text-center">V</th>
+                                    <th class="py-2.5 px-3 text-center">P</th>
+                                    <th class="py-2.5 px-3 text-center">S</th>
+                                    <th class="py-2.5 px-3 text-center font-bold text-brandDark">Pt</th>
+                                </tr>
+                            </thead>
+                            <tbody id="classificaTableBody" class="divide-y divide-gray-100 text-xs md:text-sm">
+                                <tr>
+                                    <td colspan="7" class="py-8 text-center text-gray-400">
+                                        <i class="fa-solid fa-circle-notch fa-spin text-brandRed mr-2"></i> Calcolo classifica in corso...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pt-2 text-right">
+                        <button onclick="switchMatchTab('matches')" class="text-xs font-bold text-brandRed hover:underline inline-flex items-center gap-1">
+                            <i class="fa-solid fa-arrow-left text-[10px]"></i> Torna ai risultati
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEZIONE ULTIME NOTIZIE / EVENTI (HOME PAGE) -->
+        <section id="news-section" class="max-w-7xl mx-auto px-4 py-10">
+            <div class="flex justify-between items-end border-b-2 border-brandRed pb-3 mb-8">
+                <div>
+                    <span class="text-xs font-bold text-brandRed uppercase tracking-widest">Informativa & Media</span>
+                    <h2 class="text-2xl md:text-3xl font-extrabold uppercase text-brandDark">Ultime Notizie</h2>
+                </div>
+                <a href="#" onclick="showPage('news')" class="text-xs font-bold text-brandRed hover:underline uppercase flex items-center gap-1">
+                    Tutte le news <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </a>
+            </div>
+
+            <!-- Verranno caricate automaticamente solo le 3 news più recenti -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="home-news-container">
+                <!-- Popolato dinamicamente da JavaScript -->
+            </div>
+        </section>
+
+        <!-- ================= SEZIONE UTILITÀ ================= -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Titolo Sezione con Linea Rossa -->
+                <div class="mb-8 border-b-2 border-gray-100 pb-3">
+                    <h2 class="text-2xl md:text-3xl font-black text-gray-900 uppercase tracking-tight relative inline-block">
+                        Utilità
+                        <span class="absolute bottom-0 left-0 w-full h-1 bg-brandRed -mb-3 rounded-full"></span>
+                    </h2>
+                </div>
+
+                <!-- Griglia a 2 Box -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- Box 1: Modulistica (Apre la Modale) -->
+                    <button onclick="apriModaleModulistica()" class="group p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-brandRed hover:shadow-md transition-all duration-200 flex items-start space-x-4 text-left w-full cursor-pointer">
+                        <div class="w-12 h-12 rounded-lg bg-red-100 text-brandRed flex items-center justify-center shrink-0 group-hover:bg-brandRed group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-file-pdf text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-lg group-hover:text-brandRed transition-colors">Modulistica</h3>
+                            <p class="text-sm text-gray-500 mt-1">Scarica i moduli ufficiali, regolamenti e documenti per l'iscrizione.</p>
+                        </div>
+                    </button>
+
+                    <!-- Box 2: Contatti (Punta alla stessa sezione del Menù) -->
+                    <a onclick="showPage('contatti')" class="group p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-brandRed hover:shadow-md transition-all duration-200 flex items-start space-x-4 cursor-pointer">
+                        <div class="w-12 h-12 rounded-lg bg-red-100 text-brandRed flex items-center justify-center shrink-0 group-hover:bg-brandRed group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-address-book text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-lg group-hover:text-brandRed transition-colors">Contatti</h3>
+                            <p class="text-sm text-gray-500 mt-1">Orari di segreteria, mappa del centro sportivo, telefoni ed e-mail.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= MODALE MODULISTICA ================= -->
+        <div id="modaleModulistica" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-gray-900/60 backdrop-blur-sm p-4">
+            <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden border border-gray-100">
+                
+                <!-- Intestazione Modale -->
+                <div class="bg-gray-900 text-white px-6 py-4 flex justify-between items-center shrink-0">
+                    <h3 class="font-black text-lg uppercase tracking-wide flex items-center gap-2">
+                        <i class="fa-solid fa-file-pdf text-brandRed"></i> Modulistica & Documenti
+                    </h3>
+                    <button onclick="chiudiModaleModulistica()" class="text-gray-400 hover:text-white transition-colors text-xl font-bold p-1">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Corpo Modale con lista PDF -->
+                <div id="documentiContainerModal" class="p-6 overflow-y-auto space-y-4 flex-grow">
+                    <!-- Loader iniziale -->
+                    <div class="text-center py-8 text-gray-400">
+                        <i class="fa-solid fa-circle-notch fa-spin text-2xl text-brandRed mb-2"></i>
+                        <p class="text-sm">Caricamento documenti in corso...</p>
+                    </div>
+                </div>
+
+                <!-- Piè di pagina Modale -->
+                <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 flex justify-end shrink-0">
+                    <button onclick="chiudiModaleModulistica()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xs font-bold py-2 px-4 rounded-lg transition-colors">
+                        Chiudi
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SEZIONE MAIN SPONSOR (HOME PAGE) -->
+        <section class="bg-gray-50 py-12 border-t border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 space-y-8">
+                <div class="flex justify-between items-end border-b-2 border-brandRed pb-3">
+                    <div>
+                        <span class="text-xs font-bold text-brandRed uppercase tracking-widest">Insieme Cresciamo</span>
+                        <h2 class="text-2xl md:text-3xl font-extrabold uppercase text-brandDark">Main Sponsor</h2>
+                    </div>
+                    <a href="#" onclick="showPage('sponsor')" class="text-xs font-bold text-brandRed hover:underline uppercase flex items-center gap-1">
+                        Tutti i partner <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Contenitore per i Main Sponsor in Home -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="home-sponsors-container">
+                    <!-- Popolato da JavaScript -->
+                </div>
+            </div>
+        </section>
+
+    </main>

@@ -1,0 +1,61 @@
+export function showPage(pageId) {
+    const pages = ['home', 'societa', 'squadre', 'rosa', 'iscrizioni', 'news', 'contatti', 'sponsor'];
+    pages.forEach(p => {
+        const el = document.getElementById('page-' + p);
+        if (el) el.classList.add('hidden');
+    });
+
+    const targetPage = document.getElementById('page-' + pageId);
+    if (targetPage) targetPage.classList.remove('hidden');
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+export function closeNewsModal() {
+    document.getElementById('news-modal')?.classList.add('hidden');
+}
+
+export function toggleMenu() {
+    document.getElementById('mobile-menu')?.classList.toggle('hidden');
+}
+
+export function switchMatchTab(tab) {
+    const matchesView = document.getElementById('tab-matches-view');
+    const classificaView = document.getElementById('tab-classifica-view');
+    const matchesBtn = document.getElementById('tab-matches-btn');
+    const classificaBtn = document.getElementById('tab-classifica-btn');
+
+    if (!matchesView || !classificaView || !matchesBtn || !classificaBtn) {
+        return;
+    }
+
+    if (tab === 'matches') {
+        matchesView.classList.remove('hidden');
+        classificaView.classList.add('hidden');
+        matchesBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold transition-all bg-brandRed text-white';
+        classificaBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold text-gray-400 hover:text-white transition-all';
+    } else {
+        matchesView.classList.add('hidden');
+        classificaView.classList.remove('hidden');
+        classificaBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold transition-all bg-brandRed text-white';
+        matchesBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold text-gray-400 hover:text-white transition-all';
+    }
+}
+
+export function initNavigation() {
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', user => {
+            if (!user) {
+                window.netlifyIdentity.on('login', () => {
+                    document.location.href = '/admin/';
+                });
+            }
+        });
+    }
+}
+
+window.showPage = showPage;
+window.closeNewsModal = closeNewsModal;
+window.toggleMenu = toggleMenu;
+window.switchMatchTab = switchMatchTab;
+
