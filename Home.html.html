@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.S.D. Nuova Lodi 1952 - Sito Ufficiale</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#D32F2F',
+                        brandYellow: '#FFD54F',
+                        brandDark: '#1E293B',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Widget Netlify Identity per gestire inviti e reset password -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <!-- 1. TOP BAR INFO -->
+    <div class="bg-brandDark text-gray-300 text-xs py-2 px-4 border-b border-gray-700">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+            </div>
+            <div class="flex items-center gap-3">
+                <span><i class="fa-solid fa-envelope text-brandYellow mr-1"></i> info@nuovalodi.it</span>
+                <a href="#" class="hover:text-brandYellow"><i class="fa-brands fa-facebook-f"></i> Nuova Lodi ASD</a>
+                <a href="#" class="hover:text-brandYellow"><i class="fa-brands fa-instagram"></i> asd_nuovalodi</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. HEADER & NAVIGATION -->
+    <header class="bg-brandRed text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo & Nome -->
+            <a href="#" onclick="showPage('home')" class="flex items-center space-x-3">
+                <div class="w-14 h-14 bg-white rounded-full p-1 shadow flex items-center justify-center">
+                    <img src="images/NLcircolare-PNG.png" alt="A.S.D. Nuova Lodi Logo" class="w-full h-full object-contain">
+                </div>
+                <div>
+                    <span class="block font-extrabold text-lg tracking-wider leading-none">NUOVA LODI</span>
+                    <span class="text-xs text-brandYellow font-semibold tracking-widest">DAL 1952</span>
+                </div>
+            </a>
+
+            <!-- Menu Desktop -->
+            <nav class="hidden md:flex space-x-6 font-semibold text-sm">
+                <a href="#" id="nav-home" onclick="showPage('home')" class="hover:text-brandYellow transition pb-1">HOME</a>
+                <a href="#" id="nav-societa" onclick="showPage('societa')" class="hover:text-brandYellow transition pb-1">SOCIETÀ</a>
+                <a href="#" id="nav-squadre" onclick="showPage('squadre')" class="hover:text-brandYellow transition pb-1">SQUADRE</a>
+                <a href="#" id="nav-iscrizioni" onclick="showPage('iscrizioni')" class="hover:text-brandYellow transition pb-1">SEGRETERIA</a>
+                <a href="#" id="nav-news" onclick="showPage('news')" class="hover:text-brandYellow transition pb-1">NEWS & EVENTI</a>
+                <a href="#" id="nav-sponsor" onclick="showPage('sponsor')" class="hover:text-brandYellow transition pb-1">SPONSOR</a>
+                <a href="#" id="nav-contatti" onclick="showPage('contatti')" class="hover:text-brandYellow transition pb-1">CONTATTI</a>
+            </nav>
+
+            <!-- Tasto Menu Mobile -->
+            <button class="md:hidden text-white text-2xl focus:outline-none" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brandDark text-white px-4 py-3 space-y-2 border-t border-gray-700 font-semibold text-sm">
+            <a href="#" onclick="showPage('home'); toggleMenu();" class="block hover:text-brandYellow">HOME</a>
+            <a href="#" onclick="showPage('societa'); toggleMenu();" class="block hover:text-brandYellow">SOCIETÀ</a>
+            <a href="#" onclick="showPage('squadre'); toggleMenu();" class="block hover:text-brandYellow">SQUADRE</a>
+            <a href="#" onclick="showPage('iscrizioni'); toggleMenu();" class="block hover:text-brandYellow">ISCRIZIONI</a>
+            <a href="#news-section" onclick="showPage('home'); toggleMenu();" class="block hover:text-brandYellow">NEWS & EVENTI</a>
+            <a href="#sponsor-section" onclick="showPage('home'); toggleMenu();" class="block hover:text-brandYellow">SPONSOR</a>
+            <a href="#" onclick="showPage('contatti'); toggleMenu();" class="block hover:text-brandYellow">CONTATTI</a>
+        </div>
+    </header>
+
+
+    <!-- ================================================================= -->
+    <!-- PAGINA 1: HOME PAGE                                               -->
+    <!-- ================================================================= -->
+    <main id="page-home">
+        <!-- HERO BANNER -->
+        <section class="relative bg-cover bg-center text-white py-24 md:py-32 px-4" style="background-image: url('images/hero-bg.jpg');">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-brandRed/40"></div>
+            <div class="relative max-w-5xl mx-auto text-center space-y-6">
+                <span class="bg-brandYellow text-brandDark font-bold text-xs uppercase px-4 py-1.5 rounded-full tracking-wider shadow">
+                    Stagione Sportiva 2026/2027
+                </span>
+                <h1 class="text-3xl md:text-6xl font-extrabold uppercase tracking-tight leading-tight text-white drop-shadow-md">
+                    Passione, Crescita e Valori<br class="hidden sm:inline"> nel Calcio Lodigiano
+                </h1>
+                <p class="text-gray-200 text-sm md:text-xl max-w-2xl mx-auto font-medium drop-shadow">
+                    Dalla Scuola Calcio alla Prima Squadra. Entra a far parte della grande famiglia dell'A.S.D. Nuova Lodi.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                </div>
+            </div>
+        </section>
+
+        <!-- MATCH CENTER HOME PAGE (CON TABS E CLASSIFICA) -->
+        <section class="relative z-20 max-w-5xl mx-auto px-4 -mt-12 md:-mt-16">
+            <div class="bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden">
+                
+                <!-- Intestazione Box con Navigazione Tab -->
+                <div class="bg-gray-900 text-white px-4 md:px-6 py-3 flex flex-wrap justify-between items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-wider border-b border-gray-800">
+                    <span class="flex items-center"><i class="fa-solid fa-trophy text-brandRed mr-2"></i> Match Center — Prima Squadra</span>
+                    
+                    <!-- Tab Switcher -->
+                    <div class="flex bg-gray-800 p-1 rounded-lg gap-1 border border-gray-700">
+                        <button id="tab-matches-btn" onclick="switchMatchTab('matches')" class="px-3 py-1 rounded text-[11px] md:text-xs font-bold transition-all bg-brandRed text-white">
+                            <i class="fa-solid fa-calendar-days mr-1"></i> Partite
+                        </button>
+                        <button id="tab-classifica-btn" onclick="switchMatchTab('classifica')" class="px-3 py-1 rounded text-[11px] md:text-xs font-bold text-gray-400 hover:text-white transition-all">
+                            <i class="fa-solid fa-list-ol mr-1"></i> Classifica
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tab 1: Match Center View -->
+                <div id="tab-matches-view" class="p-4 md:p-6 grid grid-cols-1 md:grid-cols-2 gap-6 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                    <!-- Loader iniziale -->
+                    <div class="col-span-full py-8 text-center text-gray-400 font-medium text-sm">
+                        <i class="fa-solid fa-circle-notch fa-spin text-brandRed mr-2"></i> Aggiornamento dati in corso...
+                    </div>
+                </div>
+
+                <!-- Tab 2: Classifica View -->
+                <div id="tab-classifica-view" class="hidden p-4 md:p-6 space-y-4">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="border-b-2 border-gray-200 text-[11px] md:text-xs font-black text-gray-500 uppercase tracking-wider bg-gray-50">
+                                    <th class="py-2.5 px-3">Pos</th>
+                                    <th class="py-2.5 px-3">Squadra</th>
+                                    <th class="py-2.5 px-3 text-center">G</th>
+                                    <th class="py-2.5 px-3 text-center">V</th>
+                                    <th class="py-2.5 px-3 text-center">P</th>
+                                    <th class="py-2.5 px-3 text-center">S</th>
+                                    <th class="py-2.5 px-3 text-center font-bold text-brandDark">Pt</th>
+                                </tr>
+                            </thead>
+                            <tbody id="classificaTableBody" class="divide-y divide-gray-100 text-xs md:text-sm">
+                                <tr>
+                                    <td colspan="7" class="py-8 text-center text-gray-400">
+                                        <i class="fa-solid fa-circle-notch fa-spin text-brandRed mr-2"></i> Calcolo classifica in corso...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="pt-2 text-right">
+                        <button onclick="switchMatchTab('matches')" class="text-xs font-bold text-brandRed hover:underline inline-flex items-center gap-1">
+                            <i class="fa-solid fa-arrow-left text-[10px]"></i> Torna ai risultati
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEZIONE ULTIME NOTIZIE / EVENTI (HOME PAGE) -->
+        <section id="news-section" class="max-w-7xl mx-auto px-4 py-10">
+            <div class="flex justify-between items-end border-b-2 border-brandRed pb-3 mb-8">
+                <div>
+                    <span class="text-xs font-bold text-brandRed uppercase tracking-widest">Informativa & Media</span>
+                    <h2 class="text-2xl md:text-3xl font-extrabold uppercase text-brandDark">Ultime Notizie</h2>
+                </div>
+                <a href="#" onclick="showPage('news')" class="text-xs font-bold text-brandRed hover:underline uppercase flex items-center gap-1">
+                    Tutte le news <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </a>
+            </div>
+
+            <!-- Verranno caricate automaticamente solo le 3 news più recenti -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="home-news-container">
+                <!-- Popolato dinamicamente da JavaScript -->
+            </div>
+        </section>
+
+        <!-- ================= SEZIONE UTILITÀ ================= -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Titolo Sezione con Linea Rossa -->
+                <div class="mb-8 border-b-2 border-gray-100 pb-3">
+                    <h2 class="text-2xl md:text-3xl font-black text-gray-900 uppercase tracking-tight relative inline-block">
+                        Utilità
+                        <span class="absolute bottom-0 left-0 w-full h-1 bg-brandRed -mb-3 rounded-full"></span>
+                    </h2>
+                </div>
+
+                <!-- Griglia a 2 Box -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- Box 1: Modulistica (Apre la Modale) -->
+                    <button onclick="apriModaleModulistica()" class="group p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-brandRed hover:shadow-md transition-all duration-200 flex items-start space-x-4 text-left w-full cursor-pointer">
+                        <div class="w-12 h-12 rounded-lg bg-red-100 text-brandRed flex items-center justify-center shrink-0 group-hover:bg-brandRed group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-file-pdf text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-lg group-hover:text-brandRed transition-colors">Modulistica</h3>
+                            <p class="text-sm text-gray-500 mt-1">Scarica i moduli ufficiali, regolamenti e documenti per l'iscrizione.</p>
+                        </div>
+                    </button>
+
+                    <!-- Box 2: Contatti (Punta alla stessa sezione del Menù) -->
+                    <a onclick="showPage('contatti')" class="group p-6 bg-gray-50 rounded-xl border border-gray-100 hover:border-brandRed hover:shadow-md transition-all duration-200 flex items-start space-x-4 cursor-pointer">
+                        <div class="w-12 h-12 rounded-lg bg-red-100 text-brandRed flex items-center justify-center shrink-0 group-hover:bg-brandRed group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-address-book text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-lg group-hover:text-brandRed transition-colors">Contatti</h3>
+                            <p class="text-sm text-gray-500 mt-1">Orari di segreteria, mappa del centro sportivo, telefoni ed e-mail.</p>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= MODALE MODULISTICA ================= -->
+        <div id="modaleModulistica" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-gray-900/60 backdrop-blur-sm p-4">
+            <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden border border-gray-100">
+                
+                <!-- Intestazione Modale -->
+                <div class="bg-gray-900 text-white px-6 py-4 flex justify-between items-center shrink-0">
+                    <h3 class="font-black text-lg uppercase tracking-wide flex items-center gap-2">
+                        <i class="fa-solid fa-file-pdf text-brandRed"></i> Modulistica & Documenti
+                    </h3>
+                    <button onclick="chiudiModaleModulistica()" class="text-gray-400 hover:text-white transition-colors text-xl font-bold p-1">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Corpo Modale con lista PDF -->
+                <div id="documentiContainerModal" class="p-6 overflow-y-auto space-y-4 flex-grow">
+                    <!-- Loader iniziale -->
+                    <div class="text-center py-8 text-gray-400">
+                        <i class="fa-solid fa-circle-notch fa-spin text-2xl text-brandRed mb-2"></i>
+                        <p class="text-sm">Caricamento documenti in corso...</p>
+                    </div>
+                </div>
+
+                <!-- Piè di pagina Modale -->
+                <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 flex justify-end shrink-0">
+                    <button onclick="chiudiModaleModulistica()" class="bg-gray-200 hover:bg-gray-300 text-gray-800 text-xs font-bold py-2 px-4 rounded-lg transition-colors">
+                        Chiudi
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SCRIPT GESTIONE MODALE E FETCH PDF -->
+        <script>
+        let documentiCaricati = false;
+
+        function apriModaleModulistica() {
+            const modale = document.getElementById('modaleModulistica');
+            if (modale) {
+                modale.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+                
+                if (!documentiCaricati) {
+                    caricaDocumentiModal();
+                }
+            }
+        }
+
+        function chiudiModaleModulistica() {
+            const modale = document.getElementById('modaleModulistica');
+            if (modale) {
+                modale.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.getElementById('modaleModulistica')?.addEventListener('click', function(e) {
+            if (e.target === this) {
+                chiudiModaleModulistica();
+            }
+        });
+
+        async function caricaDocumentiModal() {
+            const container = document.getElementById('documentiContainerModal');
+            if (!container) return;
+
+            const urlAPI = 'https://api.github.com/repos/NuovaLodi/Website/contents/documenti';
+
+            try {
+                const response = await fetch(urlAPI);
+
+                if (response.status === 404) {
+                    container.innerHTML = `
+                        <div class="text-center py-8 text-gray-500">
+                            <i class="fa-solid fa-folder-open text-4xl text-gray-300 mb-2"></i>
+                            <p class="text-sm font-medium">Nessun documento trovato nella cartella <code>documenti/</code>.</p>
+                        </div>`;
+                    return;
+                }
+
+                if (!response.ok) {
+                    throw new Error(`Errore Server: ${response.status}`);
+                }
+
+                const files = await response.json();
+                const pdfFiles = files.filter(file => file.name.toLowerCase().endsWith('.pdf'));
+
+                if (pdfFiles.length === 0) {
+                    container.innerHTML = `
+                        <div class="text-center py-8 text-gray-500">
+                            <i class="fa-solid fa-file-pdf text-4xl text-gray-300 mb-2"></i>
+                            <p class="text-sm font-medium">Al momento non ci sono file PDF disponibili.</p>
+                        </div>`;
+                    return;
+                }
+
+                let html = '';
+
+                pdfFiles.forEach(file => {
+                    let nomePulito = file.name
+                        .replace(/\.pdf$/i, '')
+                        .replace(/[-_]/g, ' ');
+
+                    nomePulito = nomePulito.charAt(0).toUpperCase() + nomePulito.slice(1);
+
+                    const sizeKB = (file.size / 1024).toFixed(1);
+                    const sizeText = sizeKB > 1024 ? (sizeKB / 1024).toFixed(1) + ' MB' : sizeKB + ' KB';
+
+                    html += `
+                    <div class="bg-gray-50 hover:bg-red-50/50 rounded-xl p-4 border border-gray-200 transition-colors flex items-center justify-between gap-3">
+                        <div class="flex items-center space-x-3 min-w-0">
+                            <div class="w-10 h-10 rounded-lg bg-red-100 text-brandRed flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-file-pdf text-lg"></i>
+                            </div>
+                            <div class="min-w-0">
+                                <h4 class="font-bold text-gray-800 text-sm md:text-base truncate">${nomePulito}</h4>
+                                <p class="text-xs text-gray-400">PDF • ${sizeText}</p>
+                            </div>
+                        </div>
+                        <a href="${file.download_url}" target="_blank" download class="shrink-0 bg-gray-900 hover:bg-brandRed text-white text-xs font-bold py-2 px-3 rounded-lg transition-colors flex items-center gap-1.5">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Scarica</span>
+                        </a>
+                    </div>`;
+                });
+
+                container.innerHTML = html;
+                documentiCaricati = true;
+
+            } catch (err) {
+                console.error("Errore caricamento modulistica:", err);
+                container.innerHTML = `
+                    <div class="bg-red-50 text-red-600 p-4 rounded-xl text-center text-xs">
+                        Impossibile scaricare l'elenco dei documenti. Riprova più tardi.
+                    </div>`;
+            }
+        }
+        </script>
+
+        <!-- SEZIONE MAIN SPONSOR (HOME PAGE) -->
+        <section class="bg-gray-50 py-12 border-t border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 space-y-8">
+                <div class="flex justify-between items-end border-b-2 border-brandRed pb-3">
+                    <div>
+                        <span class="text-xs font-bold text-brandRed uppercase tracking-widest">Insieme Cresciamo</span>
+                        <h2 class="text-2xl md:text-3xl font-extrabold uppercase text-brandDark">Main Sponsor</h2>
+                    </div>
+                    <a href="#" onclick="showPage('sponsor')" class="text-xs font-bold text-brandRed hover:underline uppercase flex items-center gap-1">
+                        Tutti i partner <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Contenitore per i Main Sponsor in Home -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="home-sponsors-container">
+                    <!-- Popolato da JavaScript -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================================================================= -->
+    <!-- PAGINA 2: SOCIETÀ (CHI SIAMO, STORIA, NONNO, IMPIANTI, ORGANIGR.) -->
+    <!-- ================================================================= -->
+    <main id="page-societa" class="hidden">
+        <!-- Banner Introduttivo -->
+        <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+            <div class="max-w-7xl mx-auto text-center space-y-2">
+                <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">A.S.D. Nuova Lodi 1952</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Chi Siamo</h1>
+                <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">Oltre 70 anni di calcio, educazione e passione nel cuore della comunità lodigiana.</p>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 py-12 space-y-16">
+
+            <!-- 1. LA NOSTRA STORIA -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-4">
+                    <div class="inline-block bg-brandRed/10 text-brandRed font-extrabold text-xs px-3 py-1 rounded uppercase tracking-wider">La Nostra Storia</div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-brandDark uppercase tracking-tight">Radici Profonde, Valori Immutati</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Fondata nel <strong>1952</strong>, l'<strong>A.S.D. Nuova Lodi</strong> rappresenta una colonna portante dello sport giovanile lodigiano. Nata con l'obiettivo di offrire ai giovani un luogo sano, sicuro e stimolante in cui crescere, la nostra società ha fatto dell'educazione sportiva la propria missione.
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Dai primi passi sui campi parrocchiali fino alle moderne strutture sportive di oggi, la Nuova Lodi continua a trasmettere i valori fondamentali del calcio: rispetto, lealtà, spirito di squadra e inclusione.
+                    </p>
+                </div>
+                <div class="bg-gray-200 rounded-lg h-72 flex items-center justify-center border border-gray-300 shadow-inner">
+                    <span class="text-gray-400 font-semibold text-sm"><i class="fa-solid fa-image text-3xl block text-center mb-2"></i>[Foto Storica / Archivio Nuova Lodi]</span>
+                </div>
+            </section>
+
+            <!-- 2. STORIA DI UN NONNO -->
+            <section class="space-y-6">
+                <div class="border-b-2 border-brandRed pb-3">
+                    <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight flex items-center gap-2">
+                        <i class="fa-solid fa-book-open text-brandRed"></i> Storia di un Nonno
+                    </h2>
+                    <p class="text-xs text-gray-500 font-medium">I ricordi di Lino Fondrini per i cinquant'anni della Nuova Lodi.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md border border-gray-200 p-6 md:p-8 space-y-6 text-gray-700 text-sm leading-relaxed">
+                    
+                    <p>
+                        Era il 1949 quando un gruppo di ragazzi, di età compresa tra i 13 e 14 anni desiderosi di praticare attività sportiva, si unirono costituendo il primo nucleo sportivo della futura parrocchia di santa Cabrini.
+                    </p>
+                    <p>
+                        Era una squadra di calcio composta da 6 giocatori, gli "Aquilotti", ovvero i pulcini dell'Aquila, la squadra dei più grandi, sempre della zona.
+                    </p>
+                    <p>
+                        Alvaro Giardini era il "mister" e Bruno Brunetti il capitano; si giocava prevalentemente sul "campin" dell'Oratorio san Luigi (l'attuale Casa della Gioventù) e si andava spesso in trasferta a Lodivecchio ove il campo da gioco era più grande ed accogliente. Erano accoglienti pure i prati del cav. Rocco Bosoni e quelli del sig. Paulin Invernizzi, specie appena dopo il taglio del "maggengo".
+                    </p>
+                    <p>
+                        L'Aquila e gli Aquilotti furono rispettivamente le radici e il seme della futura polisportiva Nuova Lodi che sarebbe sbocciata tre anni dopo. Il 24 dicembre 1951, vigilia di Natale, nel cortile di casa Bondioli, in attesa che arrivassero le 21, ora fissata per l'appuntamento con il cav. Luigi Bondioli, un gruppo di uomini più o meno giovani, discutevano su come si sarebbe chiamata la sportiva oratoriana che stava per nascere.
+                    </p>
+
+                    <div class="pt-2">
+                        <h4 class="font-extrabold text-brandDark text-base uppercase mb-2">Una nuova società in viola e giallo</h4>
+                        <p>
+                            Fu Alvaro ("el Toro", perché tifoso del Torino), forse il più giovane dei presenti che suggerì: "Visto che qui sta sorgendo la nuova Città, perché non la chiamiamo Nuova Lodi?". Alcune ore più tardi, dopo la messa di mezzanotte celebrata nella rimessa di casa Bondioli, nell'adiacente "Bar Grillo" Un brindisi beneaugurate suggellava la nascita della polisportiva Nuova Lodi.
+                        </p>
+                        <p class="mt-3">
+                            Furono decisi i colori sociali: maglia viola con colletto e polsi gialli, calzoncini bianchi, calzettoni viola con risvolti gialli. Una divisa non solo appariscente, ma anche elegante. E' il 1952 l'anno in cui ha inizio l'attività sportiva della Nuova lodi; quindi sono passati 50 anni. Cinquant'anni di attività agonistica sportiva, dal tennis da tavolo alle bocce, dal calcio al ciclismo, dall'atletica alla pallavolo, alla pallacanestro.
+                        </p>
+                        <p class="mt-3">
+                            Cinquant'anni che non hanno cancellato i ricordi dell'adolescenza.
+                        </p>
+                        <p class="mt-3">
+                            I nonni di oggi sono i ragazzi in viola degli anni '50, i papà sono gli stessi ragazzi che negli anni successivi rincorrevano e davano calci a un pallone nel campo delle Baste, che schiacciavano la palla al di là della rete nelle indimenticabili sfide con il Codogno e il Lodivecchio. Gli stessi ragazzi che con le scarpe chiodate correvano i sentieri ghiacciati della campagna lodigiana inseguendo il titolo di campione lodigiano di corsa campestre.
+                        </p>
+                        <p class="mt-3">
+                            L'8 di dicembre dello stesso anno 1952, festa dell'Immacolata, alla messa delle 9 erano presenti i giovani in maglia viola con bordi gialli: la polisportiva Nuova Lodi veniva ufficialmente presentata alla Comunità parrocchiale.
+                        </p>
+                    </div>
+
+                    <div class="pt-2">
+                        <h4 class="font-extrabold text-brandDark text-base uppercase mb-2">Un esordio grintoso</h4>
+                        <p>
+                            La stagione calcistica 1952-53 vede per la prima volta la partecipazione della Nuova Lodi al Campionato Lodigiano Ragazzi C.S.I.
+                        </p>
+                        <p class="mt-3">
+                            La squadra, guidata dai tecnici Merlo-Cappellini-Gariboldi vince il titolo lodigiano, ma viene poi eliminata nelle fasi regionali in una sfortunata partita giocata a Bergamo. Era una compagine veramente forte, però imbottita di "oriundi" provenienti dai vari rioni della città. Dura solo una stagione. I ragazzi delle Fanfani non vogliono solo veder vincere, vogliono anche giocare e magari perdere.
+                        </p>
+                        <p class="mt-3">
+                            A fine estate 1953 si rilancia l'attività sportiva con spirito rinnovato, forse meno agonistico ma più sportivo, meno vincente ma più divertente.
+                        </p>
+                        <p class="mt-3">
+                            È la Nuova lodi di Mainetti Luigi e sono gli ex Aquilotti integrati dai nuovi venuti alle Fanfani che formano un gruppo compatto anche se eterogeneo. Si vince poco, ma si gioca molto.
+                        </p>
+                        <p class="mt-3">
+                            A primavera le trasferte si effettuano in bicicletta, vociando e cantando per tutto il percorso. Sconfitti e stanchi, il ritorno è duro; il poco fiato rimasto è appena sufficiente per spingere sui pedali.
+                        </p>
+                    </div>
+
+                    <div class="pt-2">
+                        <h4 class="font-extrabold text-brandDark text-base uppercase mb-2">Calcio, ma non solo</h4>
+                        <p>
+                            Se è comprensibile che l'attività calcistica con le sue quattro squadre, più i tornei interni per i più piccoli, ha sempre assorbito il maggior impegno della Polisportiva, non vanno dimenticate le altre attività ed alcune figure di atleti più o menos dotati che ne fecero parte.
+                        </p>
+                        <p class="mt-3">
+                            Come l'Inter di Milano che negli anni '50 schierava Angelillo, un campione italo-argentino, anche la Nuova Lodi aveva il suo Angelillo, amico di Gianpiero. La carriera di Angelillo si fermò al campo delle Baste e Giampiero Marini divenne campione del mondo in Spagna nel 1982.
+                        </p>
+                        <p class="mt-3">
+                            L'atletica ebbe due momenti felici negli anni '50. Rino Scarpanti e Vittorio Cirini per più anni furono gli insuperabili campioni lodigiani di corsa campestre.
+                        </p>
+                        <p class="mt-3">
+                            Nel 1978 e 79 mio figlio Paolo vinse il titolo lodigiano allievi di cross, e partecipò il 1 aprile 1979 con la selezione lodigiana alla 47esima edizione della cinque mulini di san Vittore Olona, gara internazionale riservata agli allievi e prologo della più famosa gara alla quale partecipano i forti atleti Keniani ed Etiopi.
+                        </p>
+                    </div>
+
+                    <div class="pt-2">
+                        <h4 class="font-extrabold text-brandDark text-base uppercase mb-2">"Cipu" e la maratona delle Fanfani</h4>
+                        <p>
+                            Per anni, in occasione della sagra, "Cipu" (Carminati Domenico) organizzava la "maratona delle Fanfani". Pochi erano i partecipanti; l'attore principale era sempre lui, "Cipu" che doveva mantenere fede alle tante scritte di incitamento che sulla salita delle Baste e lungo viale Madre Cabrini inneggiavano alla sua vittoria e che erano sua stessa opera della notte precedente la gara.
+                        </p>
+                        <p class="mt-3">
+                            Imbattibile la squadra di pallavolo voluta da un gruppo di giovani che frequentavano il Bassi. Instancabile l'opera di Tranquillo Locatelli, dirigente responsabile, poi sportivo appassionato e più tardi valido tecnico del Voley lodigiano.
+                        </p>
+                        <p class="mt-3">
+                            Indimenticabili le gare-sfida con il Codogno, il Lodivecchio, il Secugnago.
+                        </p>
+                        <p class="mt-3">
+                            Due campionati disputati e un titolo di Campione lodigiano conquistato.
+                        </p>
+                        <p class="mt-3">
+                            Con orgoglio si può ben affermare che la Nuova Lodi pallavolo è stata alle origini di tutta la pallavolo cittadina.
+                        </p>
+                    </div>
+
+                    <div class="pt-2">
+                        <h4 class="font-extrabold text-brandDark text-base uppercase mb-2">Tanti nomi, tanti ricordi</h4>
+                        <p>
+                            Quest'anno la Nuova Lodi compie dunque 50 anni; è un anniversario che deve essere ricordato e devono essere ricordati pure tutti coloro che a partire da Mainetti si sono presi cura del tempo libero dei nostri ragazzi, io compreso, quando l'8 dicembre 1952 ho vestito per la prima volta la casacca viola-gialla della Nuova Lodi e prima ancora la maglia bianco-nera degli Aquilotti.
+                        </p>
+                        <p class="mt-3">
+                            Come non ricordare Alvaro, l'impegno di Carmelino (Merletti Vittorio), di Biloni Francesco e poi più avanti l'indimenticabile lavoro di Lorenzo Musitelli, Luciano Beccarini, Santino Garotta; Angelo Marini che con la squadra da lui diretta (terza categoria) sfiora la Coppa Lodi gareggiando alla pari con squadre di ben altra levatura, come il Pantigliate e il Borgo Lombardo; Gianni Santi che con paradisi e i fratelli Mulazzi organizzava l'attività dei più piccoli con veri e propri campionati patrocinati dal CSI e per tutte le società di Lodi e dei paesi vicini.
+                        </p>
+                        <p class="mt-3">
+                            E l'elenco potrebbe e dovrebbe continuare, come memoria e riconoscente ricordo di tutti coloro che hanno consentito continuità alla Nuova Lodi.
+                        </p>
+                        <p class="mt-4 font-bold text-right text-brandRed">
+                            Lino Fondrini
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 4. ORGANIGRAMMA SOCIETARIO -->
+            <section class="space-y-6">
+                <div class="border-b-2 border-brandRed pb-3">
+                    <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight flex items-center gap-2">
+                        <i class="fa-solid fa-sitemap text-brandRed"></i> Organigramma Societario
+                    </h2>
+                    <p class="text-xs text-gray-500 font-medium">Le persone che guidano la nostra società con passione e dedizione.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-200 text-center space-y-2">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full mx-auto flex items-center justify-center text-brandRed text-2xl">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase text-brandRed block tracking-wider">Presidente</span>
+                        <h4 class="font-extrabold text-gray-800 text-base">Angelo Pistone</h4>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-200 text-center space-y-2">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full mx-auto flex items-center justify-center text-brandRed text-2xl">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase text-brandRed block tracking-wider">Vice Presidente</span>
+                        <h4 class="font-extrabold text-gray-800 text-base">Marco De Santis</h4>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-200 text-center space-y-2">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full mx-auto flex items-center justify-center text-brandRed text-2xl">
+                            <i class="fa-solid fa-clipboard-user"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase text-brandRed block tracking-wider">Direttore Amministrativo</span>
+                        <h4 class="font-extrabold text-gray-800 text-base">Massimo Casanova</h4>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg shadow border border-gray-200 text-center space-y-2">
+                        <div class="w-16 h-16 bg-gray-100 rounded-full mx-auto flex items-center justify-center text-brandRed text-2xl">
+                            <i class="fa-solid fa-id-card"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase text-brandRed block tracking-wider">Segretario</span>
+                        <h4 class="font-extrabold text-gray-800 text-base">Davide Leoni</h4>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- ================================================================= -->
+    <!-- PAGINA 3: SQUADRE                                                 -->
+    <!-- ================================================================= -->
+    <main id="page-squadre" class="hidden">
+        <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+            <div class="max-w-7xl mx-auto text-center space-y-2">
+                <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">Stagione 2026/2027</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Le Nostre Squadre</h1>
+                <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">Dalla Scuola Calcio alla Prima Squadra: il percorso di crescita rosso-giallo.</p>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 py-12 space-y-16">
+
+            <!-- 1. SEZIONE AGONISTICA -->
+            <section>
+                <div class="flex items-center space-x-3 mb-6 pb-2 border-b-2 border-brandRed">
+                    <i class="fa-solid fa-trophy text-brandRed text-2xl"></i>
+                    <div>
+                        <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight">Settore Agonistico</h2>
+                        <p class="text-xs text-gray-500 font-medium">Campo di riferimento: <span class="text-brandDark font-bold">Centro Sportivo Selvagreca (Lodi)</span></p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Prima Squadra -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandRed text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Prima Squadra</h3>
+                                <span class="bg-brandDark text-brandYellow text-xs px-2.5 py-1 rounded font-bold">LND</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                            </div>
+                        </div>
+                        <div class="flex gap-2 p-5 pt-0">
+                            <button onclick="mostraRosaCategoria('Prima Squadra')" class="flex-1 bg-brandRed text-white py-2 px-3 rounded text-xs font-bold hover:bg-red-700 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa e Staff
+                            </button>
+                            <button onclick="openCalendarioModal('Prima Squadra')" class="flex-1 bg-brandDark text-white py-2 px-3 rounded text-xs font-bold hover:bg-gray-800 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-calendar-days"></i> Calendario
+                            </button>
+                        </div>                    
+                    </div>
+
+                    <!-- Terza Categoria U21 -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandRed text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">3ª Categoria U21</h3>
+                                <span class="bg-brandDark text-brandYellow text-xs px-2.5 py-1 rounded font-bold">LND</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                            </div>
+                        </div>
+                        <div class="flex gap-2 p-5 pt-0">
+                            <button onclick="mostraRosaCategoria('Terza Categoria U21')" class="flex-1 bg-brandRed text-white py-2 px-3 rounded text-xs font-bold hover:bg-red-700 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa e Staff
+                            </button>
+                            <button onclick="openCalendarioModal('Terza Categoria U21')" class="flex-1 bg-brandDark text-white py-2 px-3 rounded text-xs font-bold hover:bg-gray-800 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-calendar-days"></i> Calendario
+                            </button>
+                        </div>                    
+                    </div>
+
+                    <!-- Juniores -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Juniores</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 19</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                            </div>
+                        </div>
+                        <div class="flex gap-2 p-5 pt-0">
+                            <button onclick="mostraRosaCategoria('Juniores')" class="flex-1 bg-brandRed text-white py-2 px-3 rounded text-xs font-bold hover:bg-red-700 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa e Staff
+                            </button>
+                            <button onclick="openCalendarioModal('Juniores')" class="flex-1 bg-brandDark text-white py-2 px-3 rounded text-xs font-bold hover:bg-gray-800 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-calendar-days"></i> Calendario
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Allievi -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Allievi</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 17</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                            </div>
+                        </div>
+                        <div class="flex gap-2 p-5 pt-0">
+                            <button onclick="mostraRosaCategoria('Allievi')" class="flex-1 bg-brandRed text-white py-2 px-3 rounded text-xs font-bold hover:bg-red-700 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa e Staff
+                            </button>
+                            <button onclick="openCalendarioModal('Allievi')" class="flex-1 bg-brandDark text-white py-2 px-3 rounded text-xs font-bold hover:bg-gray-800 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-calendar-days"></i> Calendario
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Giovanissimi -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Giovanissimi</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 15</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                            </div>
+                        </div>
+                        <div class="flex gap-2 p-5 pt-0">
+                            <button onclick="mostraRosaCategoria('Giovanissimi')" class="flex-1 bg-brandRed text-white py-2 px-3 rounded text-xs font-bold hover:bg-red-700 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa e Staff
+                            </button>
+                            <button onclick="openCalendarioModal('Giovanissimi')" class="flex-1 bg-brandDark text-white py-2 px-3 rounded text-xs font-bold hover:bg-gray-800 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-calendar-days"></i> Calendario
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Esordienti -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="bg-brandDark text-white p-4 flex justify-between items-center">
+                                <h3 class="font-extrabold uppercase text-lg">Esordienti</h3>
+                                <span class="bg-brandYellow text-brandDark text-xs px-2.5 py-1 rounded font-bold">Under 13</span>
+                            </div>
+                            <div class="p-5 space-y-3 text-sm">
+                                <p class="text-gray-600"><i class="fa-solid fa-location-dot w-5 text-brandRed"></i> C.S. Selvagreca</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 p-5 pt-0">
+                            <button onclick="mostraRosaCategoria('Esordienti')" class="flex-1 bg-brandRed text-white py-2 px-3 rounded text-xs font-bold hover:bg-red-700 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-users"></i> Vedi Rosa e Staff
+                            </button>
+                            <button onclick="openCalendarioModal('Esordienti')" class="flex-1 bg-brandDark text-white py-2 px-3 rounded text-xs font-bold hover:bg-gray-800 transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-calendar-days"></i> Calendario
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 2. SCUOLA CALCIO -->
+            <section>
+                <div class="flex items-center space-x-3 mb-6 pb-2 border-b-2 border-brandYellow">
+                    <i class="fa-solid fa-child text-yellow-600 text-2xl"></i>
+                    <div>
+                        <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight">Scuola Calcio & Attività di Base</h2>
+                        <p class="text-xs text-gray-500 font-medium">Campo di riferimento: <span class="text-brandDark font-bold">Oratorio S. F. Cabrini (Lodi)</span></p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow-md border border-yellow-300 p-5">
+                        <h3 class="font-extrabold uppercase text-lg text-brandDark">Pulcini</h3>
+                        <p class="text-xs text-gray-500 mt-1">Sviluppo della tecnica e del gioco di squadra.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md border border-yellow-300 p-5">
+                        <h3 class="font-extrabold uppercase text-lg text-brandDark">Primi Calci</h3>
+                        <p class="text-xs text-gray-500 mt-1">Primi confronti ludico-motori.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md border border-yellow-300 p-5">
+                        <h3 class="font-extrabold uppercase text-lg text-brandDark">Piccoli Amici</h3>
+                        <p class="text-xs text-gray-500 mt-1">Attività motoria di base e gioco.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- ================================================================= -->
+    <!-- PAGINA 4: SCHEDA DETTAGLIO ROSA (Generata Dinamicamente)          -->
+    <!-- ================================================================= -->
+    <main id="page-rosa" class="hidden">
+        <!-- Verrà costruita e popolata interamente da JS -->
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- PAGINA: SEGRETERIA & ISCRIZIONI                                    -->
+    <!-- ================================================================= -->
+    <main id="page-iscrizioni" class="hidden">
+        <!-- Banner Introduttivo -->
+        <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+            <div class="max-w-7xl mx-auto text-center space-y-2">
+                <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">Stagione Sportiva 2026/2027</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Segreteria & Iscrizioni</h1>
+                <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">
+                    Informazioni, procedure per il tesseramento, visite mediche e modulistica scaricabile per tutte le attività societarie.
+                </p>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+
+            <!-- 1. ORARI SEGRETERIA E CONTATTI RAPIDI -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-extrabold text-brandDark uppercase text-sm mb-1">Orari di Apertura</h3>
+                        <p class="text-xs text-gray-600">Dal Lunedì al Venerdì: 17:00 - 19:30</p>
+                        <p class="text-xs text-gray-600">Sabato: 09:30 - 12:00 (su appuntamento)</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-extrabold text-brandDark uppercase text-sm mb-1">Contatti Amministrazione</h3>
+                        <p class="text-xs text-gray-600">Email: <a href="mailto:segreteria@nuovalodi.it" class="text-brandRed hover:underline">segreteria@nuovalodi.it</a></p>
+                        <p class="text-xs text-gray-600">Tel: +39 0371 123456</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-extrabold text-brandDark uppercase text-sm mb-1">Sede Segreteria</h3>
+                        <p class="text-xs text-gray-600">Presso Oratorio S. Francesca Cabrini</p>
+                        <p class="text-xs text-gray-600">Corso Archinti - Lodi</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. GUIDA ALL'ISCRIZIONE (STEP BY STEP) -->
+            <section class="space-y-6">
+                <div class="border-b-2 border-brandRed pb-3">
+                    <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight flex items-center gap-2">
+                        <i class="fa-solid fa-user-plus text-brandRed"></i> Come Iscriversi
+                    </h2>
+                    <p class="text-xs text-gray-500 font-medium">I passaggi necessari per completare il tesseramento per la nuova stagione.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Step 1 -->
+                    <div class="bg-white p-5 rounded-lg shadow border-t-4 border-brandRed space-y-2">
+                        <span class="text-xs font-black text-brandRed bg-brandRed/10 px-2.5 py-1 rounded-full uppercase">Passo 1</span>
+                        <h3 class="font-bold text-gray-800 text-sm">Modulo d'Iscrizione</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Scarica e compila il modulo di tesseramento societario in tutte le sue parti.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white p-5 rounded-lg shadow border-t-4 border-brandRed space-y-2">
+                        <span class="text-xs font-black text-brandRed bg-brandRed/10 px-2.5 py-1 rounded-full uppercase">Passo 2</span>
+                        <h3 class="font-bold text-gray-800 text-sm">Visita Medica</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Consegna il certificato medico di idoneità agonistica (o non agonistica per i più piccoli).</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white p-5 rounded-lg shadow border-t-4 border-brandRed space-y-2">
+                        <span class="text-xs font-black text-brandRed bg-brandRed/10 px-2.5 py-1 rounded-full uppercase">Passo 3</span>
+                        <h3 class="font-bold text-gray-800 text-sm">Documenti d'Identità</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Fornisci copia del documento d'identità, codice fiscale e foto tessera dell'atleta.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="bg-white p-5 rounded-lg shadow border-t-4 border-brandRed space-y-2">
+                        <span class="text-xs font-black text-brandRed bg-brandRed/10 px-2.5 py-1 rounded-full uppercase">Passo 4</span>
+                        <h3 class="font-bold text-gray-800 text-sm">Quota di Iscrizione</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Effettua il saldo della quota tramite bonifico o direttamente in segreteria.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. AREA MODULISTICA & DOCUMENTI DOWNLOAD -->
+            <section class="space-y-6">
+                <div class="border-b-2 border-brandRed pb-3">
+                    <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight flex items-center gap-2">
+                        <i class="fa-solid fa-file-pdf text-brandRed"></i> Modulistica Download
+                    </h2>
+                    <p class="text-xs text-gray-500 font-medium">Scarica i documenti necessari da stampare, compilare e consegnare.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 flex items-center justify-between hover:border-brandRed transition">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-file-pdf text-brandRed text-2xl"></i>
+                            <div>
+                                <h4 class="font-bold text-sm text-brandDark">Modulo Iscrizione 2026/2027</h4>
+                                <p class="text-xs text-gray-500">Modulo generale per il tesseramento atleti</p>
+                            </div>
+                        </div>
+                        <a href="#" class="bg-brandDark text-white hover:bg-brandRed text-xs font-bold px-3 py-2 rounded transition flex items-center gap-1">
+                            <i class="fa-solid fa-download"></i> Scarica
+                        </a>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 flex items-center justify-between hover:border-brandRed transition">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-file-pdf text-brandRed text-2xl"></i>
+                            <div>
+                                <h4 class="font-bold text-sm text-brandDark">Richiesta Visita Medica Agonistica</h4>
+                                <p class="text-xs text-gray-500">Modulo da presentare al centro medico per la richiesta FIGC</p>
+                            </div>
+                        </div>
+                        <a href="#" class="bg-brandDark text-white hover:bg-brandRed text-xs font-bold px-3 py-2 rounded transition flex items-center gap-1">
+                            <i class="fa-solid fa-download"></i> Scarica
+                        </a>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 flex items-center justify-between hover:border-brandRed transition">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-file-pdf text-brandRed text-2xl"></i>
+                            <div>
+                                <h4 class="font-bold text-sm text-brandDark">Informativa Privacy e Diritti Immagine</h4>
+                                <p class="text-xs text-gray-500">Consenso al trattamento dati personali e liberatoria foto/video</p>
+                            </div>
+                        </div>
+                        <a href="#" class="bg-brandDark text-white hover:bg-brandRed text-xs font-bold px-3 py-2 rounded transition flex items-center gap-1">
+                            <i class="fa-solid fa-download"></i> Scarica
+                        </a>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 flex items-center justify-between hover:border-brandRed transition">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-file-pdf text-brandRed text-2xl"></i>
+                            <div>
+                                <h4 class="font-bold text-sm text-brandDark">Regolamento Interno & Codice Etico</h4>
+                                <p class="text-xs text-gray-500">Linee guida comportamentali per atleti e famiglie</p>
+                            </div>
+                        </div>
+                        <a href="#" class="bg-brandDark text-white hover:bg-brandRed text-xs font-bold px-3 py-2 rounded transition flex items-center gap-1">
+                            <i class="fa-solid fa-download"></i> Scarica
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 4. INFO PAGAMENTI E COORDINATE BANCARIE -->
+            <section class="bg-white p-6 rounded-lg shadow-md border border-gray-200 space-y-4">
+                <h3 class="text-lg font-extrabold text-brandDark uppercase border-b pb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-credit-card text-brandRed"></i> Coordinate per i Pagamenti
+                </h3>
+                <p class="text-xs text-gray-600">
+                    I pagamenti delle quote di iscrizione o del materiale sportivo possono essere effettuati tramite bonifico bancario inserendo come causale: <strong>"Nome Cognome Atleta - Categoria - Quota 2026/2027"</strong>.
+                </p>
+
+                <div class="bg-gray-50 p-4 rounded border border-gray-200 font-mono text-xs space-y-1 text-gray-700">
+                    <p><strong>Beneficiario:</strong> A.S.D. Nuova Lodi 1952</p>
+                    <p><strong>Banca:</strong> Banca Popolare di Lodi / Gruppo Banco BPM</p>
+                    <p><strong>IBAN:</strong> IT 00 X 00000 00000 000000000000</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <!-- ================================================================= -->
+    <!-- PAGINA: NEWS & EVENTI (Archivio Completo)                         -->
+    <!-- ================================================================= -->
+    <main id="page-news" class="hidden">
+        <!-- Banner Introduttivo -->
+        <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+            <div class="max-w-7xl mx-auto text-center space-y-2">
+                <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">A.S.D. Nuova Lodi 1952</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">News & Eventi</h1>
+                <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">
+                    Tutti gli aggiornamenti, i comunicati ufficiali, le cronache delle gare ed i prossimi appuntamenti della società.
+                </p>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 py-12 space-y-8">
+            <!-- Filtro/Info Cronologica -->
+            <div class="flex justify-between items-center border-b pb-4">
+                <span class="text-xs font-bold text-gray-500 uppercase tracking-wider">
+                    <i class="fa-solid fa-arrow-down-wide-short text-brandRed mr-1"></i> Ordine cronologico: Dal più recente al più datato
+                </span>
+                <span class="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full font-semibold" id="news-count-badge">
+                    Totale notizie: 0
+                </span>
+            </div>
+
+            <!-- Contenitore News -->
+            <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Le news verranno inserite qui dallo script -->
+              <p class="text-gray-500">Caricamento notizie in corso...</p>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- PAGINA: SPONSOR & PARTNER                                         -->
+    <!-- ================================================================= -->
+    <main id="page-sponsor" class="hidden">
+        <!-- Banner Introduttivo -->
+        <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+            <div class="max-w-7xl mx-auto text-center space-y-2">
+                <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">A.S.D. Nuova Lodi 1952</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">I Nostri Partner</h1>
+                <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">
+                    Ringraziamo le aziende e le realtà locali che sostengono la nostra attività sportiva ed educativa ogni giorno.
+                </p>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+
+            <!-- SEZIONE 1: MAIN SPONSORS -->
+            <section class="space-y-6">
+                <div class="border-b-2 border-brandRed pb-3 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-brandRed uppercase tracking-widest">Partner Ufficiali</span>
+                        <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight">Main Sponsor</h2>
+                    </div>
+                    <i class="fa-solid fa-star text-brandYellow text-xl"></i>
+                </div>
+
+                <!-- Griglia Main Sponsor -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="page-main-sponsors-container">
+                    <!-- Popolato da JavaScript -->
+                </div>
+            </section>
+
+            <!-- SEZIONE 2: SOSTENITORI -->
+            <section class="space-y-6">
+                <div class="border-b-2 border-gray-300 pb-3 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-gray-500 uppercase tracking-widest">Sostegno Locale</span>
+                        <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight">Sostenitori & Amici del Club</h2>
+                    </div>
+                    <i class="fa-solid fa-handshake text-gray-400 text-xl"></i>
+                </div>
+
+                <!-- Griglia Sostenitori -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" id="page-sostenitori-container">
+                    <!-- Popolato da JavaScript -->
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ================================================================= -->
+    <!-- PAGINA: CONTATTI                                                  -->
+    <!-- ================================================================= -->
+    <main id="page-contatti" class="hidden">
+        <!-- Banner Introduttivo -->
+        <section class="bg-brandDark text-white py-12 px-4 border-b-4 border-brandRed">
+            <div class="max-w-7xl mx-auto text-center space-y-2">
+                <span class="text-brandYellow font-extrabold text-xs uppercase tracking-widest">A.S.D. Nuova Lodi 1952</span>
+                <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight">Contatti & Sedi</h1>
+                <p class="text-gray-300 font-medium text-sm md:text-base max-w-2xl mx-auto">
+                    Siamo a tua disposizione. Trova qui tutti i recapiti ufficiali, i riferimenti per i campi da gioco e i nostri canali social.
+                </p>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 py-12 space-y-12">
+
+            <!-- 1. CARDS CANALI DIRETTI (TELEFONO, EMAIL, SOCIAL) -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Telefono & Segreteria -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center space-y-3 hover:border-brandRed transition">
+                    <div class="w-14 h-14 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-2xl mx-auto">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <h3 class="font-extrabold text-brandDark uppercase text-sm">Segreteria Telefonica</h3>
+                    <p class="text-xs text-gray-500">Chiamaci o skrivici su WhatsApp per info e tesseramenti.</p>
+                    <a href="tel:+393400000000" class="inline-block text-lg font-black text-brandRed hover:underline">
+                        +39 340 000 0000
+                    </a>
+                </div>
+
+                <!-- Email Ufficiale -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center space-y-3 hover:border-brandRed transition">
+                    <div class="w-14 h-14 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-2xl mx-auto">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <h3 class="font-extrabold text-brandDark uppercase text-sm">Posta Elettronica</h3>
+                    <p class="text-xs text-gray-500">Per comunicazioni generali e informazioni ufficiali.</p>
+                    <a href="mailto:info@nuovalodi.it" class="inline-block text-base font-black text-brandDark hover:text-brandRed hover:underline">
+                        info@nuovalodi.it
+                    </a>
+                </div>
+
+                <!-- Social Network -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200 text-center space-y-3 hover:border-brandRed transition">
+                    <div class="w-14 h-14 bg-brandRed/10 text-brandRed rounded-full flex items-center justify-center text-2xl mx-auto">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                    <h3 class="font-extrabold text-brandDark uppercase text-sm">Seguici sui Social</h3>
+                    <p class="text-xs text-gray-500">Rimani aggiornato su foto, risultati ed eventi live.</p>
+                    <div class="flex justify-center items-center gap-4 pt-1">
+                        <a href="https://www.instagram.com/asd_nuovalodi" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-xs font-bold text-gray-700 hover:text-brandRed">
+                            <i class="fa-brands fa-instagram text-base text-pink-600"></i> asd_nuovalodi
+                        </a>
+                        <span class="text-gray-300">|</span>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-xs font-bold text-gray-700 hover:text-brandRed">
+                            <i class="fa-brands fa-facebook text-base text-blue-600"></i> Nuova Lodi ASD
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- 2. LE NOSTRE SEDI E CAMPI DA GIOCO -->
+            <section class="space-y-6">
+                <div class="border-b-2 border-brandRed pb-3">
+                    <h2 class="text-2xl font-extrabold uppercase text-brandDark tracking-tight flex items-center gap-2">
+                        <i class="fa-solid fa-map-location-dot text-brandRed"></i> Sede Legale & Impianti Sportivi
+                    </h2>
+                    <p class="text-xs text-gray-500 font-medium">Dove trovarci per gli allenamenti, le partite e le pratiche amministrative.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Sede Amministrativa (Oratorio Cabrini) -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden space-y-4 p-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brandDark text-brandYellow rounded-lg flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-bold bg-brandYellow/30 text-brandDark px-2 py-0.5 rounded uppercase">Sede Legale & Segreteria</span>
+                                <h3 class="text-lg font-black text-brandDark uppercase mt-1">Oratorio S. Francesca Cabrini</h3>
+                                <p class="text-xs text-gray-600 font-medium">Corso Archinti - 26900 Lodi (LO)</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-600 leading-relaxed border-t pt-3">
+                            Punto di riferimento per le iscrizioni, il tesseramento, gli incontri con le famiglie e la dirigenza societaria.
+                        </p>
+                        <a href="https://maps.google.com/?q=Oratorio+Cabrini+Lodi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold bg-brandDark text-white px-4 py-2 rounded hover:bg-brandRed transition">
+                            <i class="fa-solid fa-location-arrow"></i> Calcola percorso
+                        </a>
+                    </div>
+
+                    <!-- Campo Sportivo Selvagreca -->
+                    <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden space-y-4 p-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-brandRed text-white rounded-lg flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-futbol"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-bold bg-brandRed/10 text-brandRed px-2 py-0.5 rounded uppercase">Impianto Sportivo</span>
+                                <h3 class="text-lg font-black text-brandDark uppercase mt-1">Centro Sportivo Selvagreca</h3>
+                                <p class="text-xs text-gray-600 font-medium">Via Selvagreca - 26900 Lodi (LO)</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-600 leading-relaxed border-t pt-3">
+                            Sede delle attività sul campo: allenamenti settimanali e partite casalinghe di campionato per tutte le categorie.
+                        </p>
+                        <a href="https://maps.google.com/?q=Centro+Sportivo+Selvagreca+Lodi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-bold bg-brandRed text-white px-4 py-2 rounded hover:bg-brandDark transition">
+                            <i class="fa-solid fa-location-arrow"></i> Calcola percorso
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- MODAL PER LETTURA ARTICOLO COMPLETO -->
+    <div id="news-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-gray-200">
+            <div class="bg-brandDark text-white p-5 sticky top-0 flex justify-between items-center border-b-4 border-brandRed">
+                <div>
+                    <span id="modal-category" class="text-[10px] font-bold bg-brandRed text-white px-2 py-0.5 rounded uppercase">Categoria</span>
+                    <span id="modal-date" class="text-xs text-gray-300 ml-2">Data</span>
+                </div>
+                <button onclick="closeNewsModal()" class="text-gray-300 hover:text-white text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-6 space-y-4">
+                <h2 id="modal-title" class="text-xl md:text-2xl font-black text-brandDark uppercase leading-snug">Titolo Notizia</h2>
+                <div id="modal-body" class="text-gray-700 text-sm leading-relaxed space-y-3 border-t pt-4">
+                    <!-- Testo articolo -->
+                </div>
+            </div>
+            <div class="p-4 bg-gray-50 border-t text-right">
+                <button onclick="closeNewsModal()" class="bg-brandDark text-white hover:bg-brandRed text-xs font-bold px-4 py-2 rounded transition">
+                    Chiudi
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-brandDark text-white mt-auto border-t-4 border-brandRed">
+        <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+            <div>
+                <h4 class="font-extrabold text-base mb-3 text-brandYellow">A.S.D. NUOVA LODI 1952</h4>
+                <p class="text-gray-400 text-xs leading-relaxed mb-3">Società sportiva dilettantistica affiliata alla F.I.G.C.</p>
+            </div>
+            <div>
+            </div>
+            <div>
+                <h4 class="font-extrabold text-base mb-3 text-brandYellow">LINK UTILI</h4>
+                <a href="https://figc.it/it" class="text-xs text-gray-300 hover:text-brandYellow block">FIGC</a>
+                <a href="https://www.crlombardia.it/" class="text-xs text-gray-300 hover:text-brandYellow block">FIGC LND Lombardia</a>
+            </div>
+        </div>
+        <div class="bg-black/40 py-4 text-center text-xs text-gray-500 border-t border-gray-800">
+            © 2026 A.S.D. Nuova Lodi 1952. Tutti i diritti riservati.
+        </div>
+    </footer>
+
+
+    <!-- SCRIPT GESTIONE PAGINE, ROSE E MENU -->
+    <script>
+        function showPage(pageId) {
+            const pages = ['home', 'societa', 'squadre', 'rosa', 'iscrizioni', 'news', 'contatti', 'sponsor'];
+            pages.forEach(p => {
+                const el = document.getElementById('page-' + p);
+                if (el) el.classList.add('hidden');
+            });
+
+            const targetPage = document.getElementById('page-' + pageId);
+            if (targetPage) targetPage.classList.remove('hidden');
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function closeNewsModal() {
+            document.getElementById('news-modal').classList.add('hidden');
+        }
+
+        function toggleMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+
+        // SWITCH TAB MATCH CENTER / CLASSIFICA
+        function switchMatchTab(tab) {
+            const matchesView = document.getElementById('tab-matches-view');
+            const classificaView = document.getElementById('tab-classifica-view');
+            const matchesBtn = document.getElementById('tab-matches-btn');
+            const classificaBtn = document.getElementById('tab-classifica-btn');
+
+            if (tab === 'matches') {
+                matchesView.classList.remove('hidden');
+                classificaView.classList.add('hidden');
+                matchesBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold transition-all bg-brandRed text-white';
+                classificaBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold text-gray-400 hover:text-white transition-all';
+            } else {
+                matchesView.classList.add('hidden');
+                classificaView.classList.remove('hidden');
+                classificaBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold transition-all bg-brandRed text-white';
+                matchesBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold text-gray-400 hover:text-white transition-all';
+            }
+        }
+
+        // ARCHIVIO DATI SPONSOR
+        const sponsorData = [
+            // MAIN SPONSORS
+            {
+                id: 1,
+                nome: "Banca Popolare di Lodi",
+                tipo: "main",
+                descrizione: "Sostenitore principale delle nostre squadre giovanili e delle strutture sportive.",
+                sito: "https://www.bancobpm.it",
+                logoText: "BPL BANCA"
+            },
+            {
+                id: 2,
+                nome: "Lodi Sport & Fitness",
+                tipo: "main",
+                descrizione: "Fornitore ufficiale di abbigliamento e attrezzatura tecnica per la stagione.",
+                sito: "#",
+                logoText: "LODI SPORT"
+            },
+            {
+                id: 3,
+                nome: "Gruppo Immobiliare Laudense",
+                tipo: "main",
+                descrizione: "Partner etico per i progetti sociali e la tutela dei giovani atleti.",
+                sito: "#",
+                logoText: "IMMOBILIARE"
+            },
+
+            // SOSTENITORI
+            { id: 4, nome: "Farmacia San Francesco", tipo: "sostenitore", sito: "#" },
+            { id: 5, nome: "Pizzeria Cabrini", tipo: "sostenitore", sito: "#" },
+            { id: 6, nome: "Autofficina Lodigiana", tipo: "sostenitore", sito: "#" },
+            { id: 7, nome: "Ottica Archinti", tipo: "sostenitore", sito: "#" },
+            { id: 8, nome: "Caffè della Piazza", tipo: "sostenitore", sito: "#" },
+            { id: 9, nome: "Macelleria Rossi", tipo: "sostenitore", sito: "#" }
+        ];
+
+        function createMainSponsorCard(sponsor) {
+            return `
+                <div class="bg-white p-6 rounded-lg shadow border border-gray-200 flex flex-col justify-between hover:border-brandRed transition">
+                    <div class="space-y-4">
+                        <div class="h-28 bg-gray-100 rounded-lg flex items-center justify-center border border-dashed border-gray-300">
+                            <span class="font-black text-xl text-gray-500 uppercase tracking-wider">${sponsor.logoText || sponsor.nome}</span>
+                        </div>
+                        <div>
+                            <h3 class="font-extrabold text-brandDark text-base uppercase">${sponsor.nome}</h3>
+                            <p class="text-xs text-gray-600 mt-1 leading-relaxed">${sponsor.descrizione}</p>
+                        </div>
+                    </div>
+                    ${sponsor.sito !== '#' ? `
+                        <div class="pt-4 mt-2 border-t border-gray-100">
+                            <a href="${sponsor.sito}" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-brandRed hover:underline inline-flex items-center gap-1">
+                                Visita il sito <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+
+        function createSostenitoreCard(sponsor) {
+            return `
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 text-center flex items-center justify-center hover:border-brandRed transition h-20">
+                    <span class="font-extrabold text-xs text-brandDark uppercase">${sponsor.nome}</span>
+                </div>
+            `;
+        }
+
+        function renderSponsors() {
+            const mainSponsors = sponsorData.filter(s => s.tipo === 'main');
+            const sostenitori = sponsorData.filter(s => s.tipo === 'sostenitore');
+
+            const homeContainer = document.getElementById('home-sponsors-container');
+            if (homeContainer) {
+                homeContainer.innerHTML = mainSponsors.map(createMainSponsorCard).join('');
+            }
+
+            const pageMainContainer = document.getElementById('page-main-sponsors-container');
+            if (pageMainContainer) {
+                pageMainContainer.innerHTML = mainSponsors.map(createMainSponsorCard).join('');
+            }
+
+            const pageSostenitoriContainer = document.getElementById('page-sostenitori-container');
+            if (pageSostenitoriContainer) {
+                pageSostenitoriContainer.innerHTML = sostenitori.map(createSostenitoreCard).join('');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderSponsors();
+            renderMatchCenter();
+            initPageRosa();
+        });
+
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+
+    <script>
+    async function loadDynamicNews() {
+      const homeContainer = document.getElementById('home-news-container');
+      const newsContainer = document.getElementById('news-container');
+      const countBadge = document.getElementById('news-count-badge');
+
+      const loadingHTML = '<p class="col-span-full text-center text-gray-400 py-8">Caricamento notizie in corso...</p>';
+      if (homeContainer) homeContainer.innerHTML = loadingHTML;
+      if (newsContainer) newsContainer.innerHTML = loadingHTML;
+
+      try {
+        const url = 'https://api.github.com/repos/NuovaLodi/Website/contents/content/news';
+        const response = await fetch(url);
+        
+        if (!response.ok) {
+          throw new Error(`Errore risposta GitHub: ${response.status}`);
+        }
+
+        const files = await response.json();
+        const newsFiles = files.filter(f => f.name.endsWith('.md') || f.name.endsWith('.json'));
+
+        if (newsFiles.length === 0) {
+          const emptyMsg = '<p class="col-span-full text-center text-gray-500 py-8">Nessuna notizia presente al momento.</p>';
+          if (homeContainer) homeContainer.innerHTML = emptyMsg;
+          if (newsContainer) newsContainer.innerHTML = emptyMsg;
+          return;
+        }
+
+        const newsList = [];
+
+        for (const file of newsFiles) {
+          const res = await fetch(file.download_url);
+          const text = await res.text();
+          let news = {};
+
+          if (file.name.endsWith('.json')) {
+            news = JSON.parse(text);
+          } else if (file.name.endsWith('.md')) {
+            const frontmatterMatch = text.match(/^---\s*[\r\n]+([\s\S]*?)[\r\n]+---/);
+            if (frontmatterMatch) {
+              const yamlContent = frontmatterMatch[1];
+              const lines = yamlContent.split('\n');
+
+              lines.forEach(line => {
+                const colonIndex = line.indexOf(':');
+                if (colonIndex !== -1) {
+                  const key = line.slice(0, colonIndex).trim();
+                  let val = line.slice(colonIndex + 1).trim();
+                  val = val.replace(/^["']|["']$/g, '');
+                  if (key) news[key] = val;
+                }
+              });
+
+              const bodyContent = text.replace(/^---\s*[\r\n]+[\s\S]*?[\r\n]+---/, '').trim();
+              if (!news.summary && bodyContent) {
+                news.summary = bodyContent.replace(/[#*`_]/g, '').substring(0, 120) + '...';
+              }
+              news.bodyContent = bodyContent;
+            }
+          }
+
+          const rawDate = news.date || news.data || news.published_at || '';
+          const dateObj = rawDate ? new Date(rawDate) : new Date(0);
+
+          newsList.push({
+            title: news.title || news.titolo || news.heading || 'Senza Titolo',
+            summary: news.summary || news.description || news.sommario || '',
+            body: news.body || news.bodyContent || news.testoCompleto || news.summary || '',
+            image: news.image || news.immagine || news.thumbnail || news.cover || '',
+            category: news.category || news.categoria || 'News',
+            dateObj: dateObj,
+            dateFormatted: (!isNaN(dateObj) && dateObj.getTime() !== 0)
+              ? dateObj.toLocaleDateString('it-IT', { day: '2-digit', month: 'long', year: 'numeric' })
+              : ''
+          });
+        }
+
+        newsList.sort((a, b) => b.dateObj - a.dateObj);
+
+        const createCardHTML = (item, index) => `
+            <div class="bg-white rounded-lg shadow border border-gray-200 overflow-hidden flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="h-44 bg-gray-200 flex items-center justify-center text-gray-400">
+                        <i class="fa-solid fa-newspaper text-3xl"></i>
+                    </div>
+                    <div class="p-5 space-y-2">
+                        <span class="text-[11px] font-bold bg-brandRed/10 text-brandRed px-2 py-0.5 rounded">${item.category}</span>
+                        ${item.dateFormatted ? `<span class="text-[11px] text-gray-400 block float-right">${item.dateFormatted}</span>` : ''}
+                        <h3 class="font-extrabold text-brandDark text-base leading-snug pt-1">${item.title}</h3>
+                        <p class="text-gray-600 text-xs line-clamp-3">${item.summary}</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0">
+                    <button onclick="openDynamicModal(${index})" class="text-xs font-bold text-brandRed hover:underline flex items-center gap-1">
+                        Leggi di più <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+        `;
+
+        window.loadedNews = newsList;
+
+        if (homeContainer) {
+          const top3 = newsList.slice(0, 3);
+          homeContainer.innerHTML = top3.map((item, idx) => createCardHTML(item, idx)).join('');
+        }
+
+        if (newsContainer) {
+          newsContainer.innerHTML = newsList.map((item, idx) => createCardHTML(item, idx)).join('');
+        }
+
+        if (countBadge) {
+          countBadge.innerText = `Totale notizie: ${newsList.length}`;
+        }
+
+      } catch (err) {
+        console.error('Errore nel caricamento notizie:', err);
+        const errorMsg = '<p class="col-span-full text-center text-red-500 py-8">Impossibile caricare le notizie da GitHub.</p>';
+        if (homeContainer) homeContainer.innerHTML = errorMsg;
+        if (newsContainer) newsContainer.innerHTML = errorMsg;
+      }
+    }
+
+    function openDynamicModal(index) {
+      const item = window.loadedNews && window.loadedNews[index];
+      if (!item) return;
+
+      const titleEl = document.getElementById('modal-title');
+      const dateEl = document.getElementById('modal-date');
+      const catEl = document.getElementById('modal-category');
+      const bodyEl = document.getElementById('modal-body');
+      const modal = document.getElementById('news-modal');
+
+      if (titleEl) titleEl.innerText = item.title;
+      if (dateEl) dateEl.innerText = item.dateFormatted;
+      if (catEl) catEl.innerText = item.category;
+      if (bodyEl) bodyEl.innerHTML = `<p class="whitespace-pre-line text-gray-700">${item.body}</p>`;
+
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadDynamicNews);
+    } else {
+      loadDynamicNews();
+    }
+    </script>
+
+    <!-- MODALE CALENDARIO PARTITE -->
+    <div id="calendario-modal" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4">
+      <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[85vh] flex flex-col overflow-hidden">
+        <!-- Header Modale -->
+        <div class="bg-brandDark text-white p-4 flex justify-between items-center border-b border-gray-700">
+          <div>
+            <span class="text-xs uppercase font-semibold text-brandYellow">Stagione 2026/2027</span>
+            <h3 id="cal-modal-squadra" class="text-xl font-bold">Calendario Partite</h3>
+          </div>
+          <button onclick="closeCalendarioModal()" class="text-gray-400 hover:text-white text-2xl font-bold px-2">&times;</button>
+        </div>
+
+        <!-- Contenuto Calendario (Scrollabile) -->
+        <div class="p-4 md:p-6 overflow-y-auto flex-1 space-y-3" id="cal-modal-content">
+          <!-- Le partite verranno inserite qui da JS -->
+        </div>
+
+        <!-- Footer Modale -->
+        <div class="p-3 bg-gray-50 border-t border-gray-100 text-right">
+          <button onclick="closeCalendarioModal()" class="px-4 py-2 bg-gray-200 text-gray-700 font-semibold text-xs rounded hover:bg-gray-300 transition">
+            Chiudi
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    async function openCalendarioModal(categoriaSquadra) {
+      const modal = document.getElementById('calendario-modal');
+      const titleEl = document.getElementById('cal-modal-squadra');
+      const contentEl = document.getElementById('cal-modal-content');
+
+      if (titleEl) titleEl.innerText = `Calendario - ${categoriaSquadra}`;
+      if (contentEl) contentEl.innerHTML = '<p class="text-center text-gray-400 py-6">Caricamento calendario in corso...</p>';
+      if (modal) modal.classList.remove('hidden');
+
+      try {
+        const url = 'https://api.github.com/repos/NuovaLodi/Website/contents/content/partite';
+        const response = await fetch(url);
+
+        if (!response.ok) {
+          throw new Error(`Errore HTTP: ${response.status}`);
+        }
+
+        const files = await response.json();
+        const matchFiles = files.filter(f => f.name.endsWith('.md') || f.name.endsWith('.json'));
+
+        const partite = [];
+
+        for (const file of matchFiles) {
+          try {
+            const res = await fetch(file.download_url);
+            const text = await res.text();
+            let match = {};
+
+            if (file.name.endsWith('.json')) {
+              match = JSON.parse(text);
+            } else if (file.name.endsWith('.md')) {
+              const frontmatterMatch = text.match(/^---\s*[\r\n]+([\s\S]*?)[\r\n]+---/);
+              if (frontmatterMatch) {
+                const yamlContent = frontmatterMatch[1];
+                yamlContent.split('\n').forEach(line => {
+                  const colonIndex = line.indexOf(':');
+                  if (colonIndex !== -1) {
+                    const key = line.slice(0, colonIndex).trim();
+                    let val = line.slice(colonIndex + 1).trim();
+                    val = val.replace(/^["']|["']$/g, '');
+                    if (key) match[key] = val;
+                  }
+                });
+              }
+            }
+
+            const matchCategory = (match.categoria || match.squadra || '').trim().toLowerCase();
+            const targetCategory = categoriaSquadra.trim().toLowerCase();
+
+            if (matchCategory === targetCategory || matchCategory === '') {
+              let formattedDate = '';
+              let formattedTime = '';
+              let timestamp = 0;
+
+              if (match.dataOra) {
+                const d = new Date(match.dataOra);
+                if (!isNaN(d.getTime())) {
+                  timestamp = d.getTime();
+                  formattedDate = d.toLocaleDateString('it-IT', {
+                    day: '2-digit',
+                    month: '2-digit',
+                    year: 'numeric'
+                  });
+                  formattedTime = d.toLocaleTimeString('it-IT', {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                  });
+                }
+              }
+
+              let risultatoStr = '- : -';
+              if (match.stato === 'Conclusa' || (match.golCasa !== undefined && match.golOspite !== undefined && match.golCasa !== '' && match.golOspite !== '')) {
+                risultatoStr = `${match.golCasa} - ${match.golOspite}`;
+              } else if (match.stato) {
+                risultatoStr = match.stato;
+              }
+
+              let luogoFinale = match.indirizzoTrasferta || match.luogo || '';
+
+              partite.push({
+                casa: match.squadraCasa || 'Squadra Casa',
+                ospiti: match.squadraOspite || 'Squadra Ospite',
+                risultato: risultatoStr,
+                luogo: luogoFinale,
+                note: match.note || '',
+                timestamp: timestamp,
+                dateFormatted: formattedDate,
+                timeFormatted: formattedTime
+              });
+            }
+          } catch (fileErr) {
+            console.warn(`Errore durante la lettura del file ${file.name}:`, fileErr);
+          }
+        }
+
+        partite.sort((a, b) => a.timestamp - b.timestamp);
+
+        if (partite.length === 0) {
+          if (contentEl) {
+            contentEl.innerHTML = `
+              <div class="text-center py-8 text-gray-500">
+                <i class="fa-regular fa-calendar-xmark text-4xl mb-2 text-gray-300"></i>
+                <p>Nessuna partita trovata per la categoria <strong>${categoriaSquadra}</strong>.</p>
+              </div>`;
+          }
+          return;
+        }
+
+        if (contentEl) {
+          contentEl.innerHTML = partite.map(p => `
+            <div class="bg-gray-50 border border-gray-200 rounded-lg p-3 hover:border-brandRed transition">
+              <div class="flex justify-between items-center text-xs text-gray-500 mb-2 border-b border-gray-200 pb-1">
+                <span class="font-bold text-brandRed">Partita</span>
+                <span class="font-medium text-gray-700">
+                  <i class="fa-regular fa-calendar mr-1 text-brandRed"></i>${p.dateFormatted || 'Data n.d.'} 
+                  ${p.timeFormatted ? `<i class="fa-regular fa-clock ml-2 mr-1 text-brandRed"></i>${p.timeFormatted}` : ''}
+                </span>
+              </div>
+              
+              <div class="flex items-center justify-between text-sm md:text-base font-bold text-gray-800 my-1">
+                <span class="w-2/5 text-right font-semibold ${p.casa.toLowerCase().includes('lodi') ? 'text-brandRed' : ''}">${p.casa}</span>
+                <span class="px-2.5 py-1 bg-brandDark text-white text-xs rounded font-mono shadow-sm">${p.risultato}</span>
+                <span class="w-2/5 text-left font-semibold ${p.ospiti.toLowerCase().includes('lodi') ? 'text-brandRed' : ''}">${p.ospiti}</span>
+              </div>
+
+              ${p.luogo ? `<div class="text-[11px] text-gray-500 text-center mt-2"><i class="fa-solid fa-location-dot mr-1 text-brandRed"></i>${p.luogo}</div>` : ''}
+              ${p.note ? `<div class="text-[10px] text-gray-400 italic text-center mt-0.5">Marcatori: ${p.note}</div>` : ''}
+            </div>
+          `).join('');
+        }
+
+      } catch (err) {
+        console.error('ERRORE CALENDARIO:', err);
+        if (contentEl) {
+          contentEl.innerHTML = '<p class="text-center text-red-500 py-6">Impossibile caricare il calendario.</p>';
+        }
+      }
+    }
+
+    function closeCalendarioModal() {
+      document.getElementById('calendario-modal').classList.add('hidden');
+    }
+    </script> 
+
+    <script>
+    async function renderMatchCenter() {
+        const container = document.getElementById('tab-matches-view');
+        const classificaTbody = document.getElementById('classificaTableBody');
+        if (!container) return;
+
+        try {
+            const url = 'https://api.github.com/repos/NuovaLodi/Website/contents/content/partite';
+            const response = await fetch(url);
+
+            if (!response.ok) {
+                throw new Error(`Errore risposta GitHub: ${response.status}`);
+            }
+
+            const files = await response.json();
+            const matchFiles = files.filter(f => f.name.endsWith('.md') || f.name.endsWith('.json'));
+
+            const partitePrimaSquadra = [];
+            const classificaMap = {};
+
+            const initTeam = (nome) => {
+                if (!classificaMap[nome]) {
+                    classificaMap[nome] = { nome, giocati: 0, vinti: 0, pari: 0, persi: 0, punti: 0 };
+                }
+            };
+
+            for (const file of matchFiles) {
+                try {
+                    const res = await fetch(file.download_url);
+                    const text = await res.text();
+                    let match = {};
+
+                    if (file.name.endsWith('.json')) {
+                        match = JSON.parse(text);
+                    } else if (file.name.endsWith('.md')) {
+                        const frontmatterMatch = text.match(/^---\s*[\r\n]+([\s\S]*?)[\r\n]+---/);
+                        if (frontmatterMatch) {
+                            const yamlContent = frontmatterMatch[1];
+                            yamlContent.split('\n').forEach(line => {
+                                const colonIndex = line.indexOf(':');
+                                if (colonIndex !== -1) {
+                                    const key = line.slice(0, colonIndex).trim();
+                                    let val = line.slice(colonIndex + 1).trim();
+                                    val = val.replace(/^["']|["']$/g, '');
+                                    if (key) match[key] = val;
+                                }
+                            });
+                        }
+                    }
+
+                    const cat = (match.categoria || match.squadra || '').trim().toLowerCase();
+                    if (cat === 'prima squadra' || cat === '1° squadra' || cat === '1 squadra') {
+                        let timestamp = 0;
+                        let formattedDate = '';
+                        let formattedTime = '';
+
+                        if (match.dataOra) {
+                            const d = new Date(match.dataOra);
+                            if (!isNaN(d.getTime())) {
+                                timestamp = d.getTime();
+                                formattedDate = d.toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit', year: 'numeric' });
+                                formattedTime = d.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
+                            }
+                        }
+
+                        const casa = match.squadraCasa || 'Nuova Lodi';
+                        const ospite = match.squadraOspite || 'Avversario';
+                        const gCasa = match.golCasa !== undefined && match.golCasa !== '' ? parseInt(match.golCasa, 10) : null;
+                        const gOspite = match.golOspite !== undefined && match.golOspite !== '' ? parseInt(match.golOspite, 10) : null;
+
+                        // Calcolo Punti e Classifica se la partita è terminata/conclusa
+                        if (gCasa !== null && gOspite !== null && !isNaN(gCasa) && !isNaN(gOspite)) {
+                            initTeam(casa);
+                            initTeam(ospite);
+
+                            classificaMap[casa].giocati++;
+                            classificaMap[ospite].giocati++;
+
+                            if (gCasa > gOspite) {
+                                classificaMap[casa].vinti++;
+                                classificaMap[casa].punti += 3;
+                                classificaMap[ospite].persi++;
+                            } else if (gCasa < gOspite) {
+                                classificaMap[ospite].vinti++;
+                                classificaMap[ospite].punti += 3;
+                                classificaMap[casa].persi++;
+                            } else {
+                                classificaMap[casa].pari++;
+                                classificaMap[casa].punti += 1;
+                                classificaMap[ospite].pari++;
+                                classificaMap[ospite].punti += 1;
+                            }
+                        }
+
+                        partitePrimaSquadra.push({
+                            squadraCasa: casa,
+                            squadraOspite: ospite,
+                            golCasa: gCasa,
+                            golOspite: gOspite,
+                            stato: match.stato || '',
+                            luogo: match.indirizzoTrasferta || match.luogo || 'C.S. Selvagreca',
+                            timestamp: timestamp,
+                            dateFormatted: formattedDate,
+                            timeFormatted: formattedTime
+                        });
+                    }
+                } catch (fileErr) {
+                    console.warn("Errore lettura file partita:", fileErr);
+                }
+            }
+
+            // RENDER CLASSIFICA
+            if (classificaTbody) {
+                const classificaArray = Object.values(classificaMap).sort((a, b) => b.punti - a.punti || b.vinti - a.vinti);
+                if (classificaArray.length === 0) {
+                    classificaTbody.innerHTML = `<tr><td colspan="7" class="py-4 text-center text-gray-500">Nessun dato di classifica disponibile al momento.</td></tr>`;
+                } else {
+                    classificaTbody.innerHTML = classificaArray.map((t, idx) => {
+                        const isNuovaLodi = t.nome.toLowerCase().includes('lodi');
+                        return `
+                        <tr class="${isNuovaLodi ? 'bg-red-50/80 font-bold text-brandRed' : 'hover:bg-gray-50'} transition">
+                            <td class="py-2.5 px-3 font-bold">${idx + 1}</td>
+                            <td class="py-2.5 px-3 flex items-center gap-2">
+                                ${isNuovaLodi ? '<span class="w-2 h-2 rounded-full bg-brandRed"></span>' : ''}
+                                ${t.nome}
+                            </td>
+                            <td class="py-2.5 px-3 text-center text-gray-600">${t.giocati}</td>
+                            <td class="py-2.5 px-3 text-center text-gray-600">${t.vinti}</td>
+                            <td class="py-2.5 px-3 text-center text-gray-600">${t.pari}</td>
+                            <td class="py-2.5 px-3 text-center text-gray-600">${t.persi}</td>
+                            <td class="py-2.5 px-3 text-center font-extrabold text-brandDark text-sm">${t.punti}</td>
+                        </tr>`;
+                    }).join('');
+                }
+            }
+
+            container.innerHTML = '';
+
+            if (partitePrimaSquadra.length === 0) {
+                container.innerHTML = `<div class="col-span-full text-center text-gray-500 text-sm py-4">Nessun match della Prima Squadra reperibile.</div>`;
+                return;
+            }
+
+            partitePrimaSquadra.sort((a, b) => a.timestamp - b.timestamp);
+
+            const oraAttuale = Date.now();
+            let ultimaPartita = null;
+            let prossimaPartita = null;
+
+            for (let match of partitePrimaSquadra) {
+                if (match.timestamp > 0 && match.timestamp <= oraAttuale) {
+                    ultimaPartita = match;
+                } else if (!prossimaPartita && match.timestamp > oraAttuale) {
+                    prossimaPartita = match;
+                }
+            }
+
+            if (!ultimaPartita && !prossimaPartita && partitePrimaSquadra.length > 0) {
+                ultimaPartita = partitePrimaSquadra[partitePrimaSquadra.length - 1];
+            }
+
+            let htmlContent = '';
+
+            // Blocco 1: Ultimo Turno
+            if (ultimaPartita) {
+                const haRisultato = ultimaPartita.golCasa !== null && ultimaPartita.golOspite !== null;
+                const risultatoTesto = haRisultato ? `${ultimaPartita.golCasa} - ${ultimaPartita.golOspite}` : (ultimaPartita.stato || 'FINALE');
+
+                htmlContent += `
+                <div class="flex flex-col justify-between pt-2 md:pt-0 md:pr-4">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-bold text-gray-500 uppercase tracking-wider"><i class="fa-solid fa-clock-rotate-left text-brandDark mr-1"></i> Ultimo Turno</span>
+                            <span class="text-xs font-semibold text-gray-600 bg-gray-100 px-2 py-0.5 rounded">${ultimaPartita.dateFormatted}</span>
+                        </div>
+                        <div class="flex items-center justify-between my-3">
+                            <div class="w-2/5 text-right font-bold text-gray-800 text-sm md:text-base">${ultimaPartita.squadraCasa}</div>
+                            <div class="w-1/5 text-center bg-gray-900 text-white font-black text-sm md:text-base py-1 px-2 rounded mx-2 shadow-inner">
+                                ${risultatoTesto}
+                            </div>
+                            <div class="w-2/5 text-left font-bold text-gray-800 text-sm md:text-base">${ultimaPartita.squadraOspite}</div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2">
+                        <p class="text-xs text-gray-500 truncate"><i class="fa-solid fa-location-dot text-brandRed mr-1"></i> ${ultimaPartita.luogo}</p>
+                    </div>
+                </div>`;
+            }
+
+            // Blocco 2: Prossimo Match
+            if (prossimaPartita) {
+                htmlContent += `
+                <div class="flex flex-col justify-between pt-4 md:pt-0 md:pl-4">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-bold text-brandRed uppercase tracking-wider"><i class="fa-solid fa-calendar-day mr-1"></i> Prossimo Match</span>
+                            <span class="text-xs font-semibold text-brandRed bg-red-50 px-2 py-0.5 rounded">
+                                ${prossimaPartita.dateFormatted} ${prossimaPartita.timeFormatted ? '— Ore ' + prossimaPartita.timeFormatted : ''}
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between my-3">
+                            <div class="w-2/5 text-right font-bold text-gray-800 text-sm md:text-base">${prossimaPartita.squadraCasa}</div>
+                            <div class="w-1/5 text-center text-brandRed font-black text-base md:text-lg mx-2">
+                                VS
+                            </div>
+                            <div class="w-2/5 text-left font-bold text-gray-800 text-sm md:text-base">${prossimaPartita.squadraOspite}</div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2">
+                        <p class="text-xs text-gray-500 truncate"><i class="fa-solid fa-location-dot text-brandRed mr-1"></i> ${prossimaPartita.luogo}</p>
+                    </div>
+                </div>`;
+            }
+
+            container.innerHTML = htmlContent;
+
+        } catch (err) {
+            console.error("Errore caricamento Match Center:", err);
+            container.innerHTML = `<div class="col-span-full text-center text-red-500 text-xs py-4">Impossibile caricare i dati del Match Center.</div>`;
+        }
+    }
+    </script>
+
+    <!-- SCRIPT GESTIONE ROSA DINAMICA -->
+    <script>
+    let globalRoseData = [];
+    let categoriaSelezionataDaEsterno = null;
+
+    async function initPageRosa() {
+      const pageContainer = document.getElementById('page-rosa');
+      if (!pageContainer) return;
+
+      try {
+        const response = await fetch('https://api.github.com/repos/NuovaLodi/Website/contents/content/rose');
+        if (!response.ok) throw new Error('Errore nel recupero dei file da GitHub');
+
+        const files = await response.json();
+        const mdFiles = files.filter(f => f.name.endsWith('.md') || f.name.endsWith('.json'));
+
+        const parsedPromises = mdFiles.map(async (file) => {
+          const res = await fetch(file.download_url);
+          const text = await res.text();
+          if (file.name.endsWith('.json')) {
+            return JSON.parse(text);
+          }
+          return parseRosaMarkdown(text);
+        });
+
+        const results = await Promise.all(parsedPromises);
+
+        globalRoseData = results.filter(item => item && (item.nome || item.name) && item.categoria);
+
+        if (globalRoseData.length === 0) {
+          pageContainer.innerHTML = `
+            <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+                <button onclick="showPage('squadre')" class="text-brandRed hover:underline text-xs font-bold uppercase mb-4 inline-flex items-center">
+                    <i class="fa-solid fa-arrow-left mr-1"></i> Torna all'elenco squadre
+                </button>
+                <p class="text-gray-500 py-8">Nessun componente della rosa trovato su GitHub.</p>
+            </div>`;
+          return;
+        }
+
+        renderPageRosaLayout(pageContainer);
+
+      } catch (error) {
+        console.error('Errore nel caricamento della pagina Rosa:', error);
+        pageContainer.innerHTML = `
+            <div class="max-w-7xl mx-auto px-4 py-12 text-center">
+                <button onclick="showPage('squadre')" class="text-brandRed hover:underline text-xs font-bold uppercase mb-4 inline-flex items-center">
+                    <i class="fa-solid fa-arrow-left mr-1"></i> Torna all'elenco squadre
+                </button>
+                <p class="text-red-500 py-8">Si è verificato un errore durante il caricamento dei dati delle rose.</p>
+            </div>`;
+      }
+    }
+
+    function parseRosaMarkdown(text) {
+      const match = text.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+      if (!match) return null;
+
+      const data = {};
+      match[1].split('\n').forEach(line => {
+        const colonIdx = line.indexOf(':');
+        if (colonIdx !== -1) {
+          const key = line.slice(0, colonIdx).trim();
+          const val = line.slice(colonIdx + 1).trim().replace(/^["']|["']$/g, '');
+          if (key && val) data[key] = val;
+        }
+      });
+
+      return data;
+    }
+
+    function renderPageRosaLayout(container) {
+      const categorieUniche = [...new Set(globalRoseData.map(item => item.categoria))];
+
+      let categoriaIniziale = categoriaSelezionataDaEsterno;
+
+      if (!categoriaIniziale || !categorieUniche.includes(categoriaIniziale)) {
+        categoriaIniziale = categorieUniche.includes('Prima Squadra') ? 'Prima Squadra' : categorieUniche[0];
+      }
+
+      let html = `
+        <section class="bg-brandDark text-white py-10 px-4 border-b-4 border-brandRed">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+                <div>
+                    <button onclick="showPage('squadre')" class="text-brandYellow hover:underline text-xs font-bold uppercase mb-2 inline-flex items-center cursor-pointer">
+                        <i class="fa-solid fa-arrow-left mr-1"></i> Torna all'elenco squadre
+                    </button>
+                    <h1 class="text-3xl md:text-4xl font-black uppercase tracking-tight">Rosa e Staff Tecnico</h1>
+                    <p class="text-gray-300 text-xs mt-1">Stagione Sportiva 2026/2027</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 py-10 space-y-8">
+            <div class="flex flex-wrap justify-center gap-2 mb-8" id="rosa-filter-buttons">
+      `;
+
+      categorieUniche.forEach(cat => {
+        const isActive = cat === categoriaIniziale;
+        html += `
+          <button 
+            onclick="switchRosaCategoria('${cat}')" 
+            data-cat="${cat}"
+            class="rosa-btn-filter px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 cursor-pointer ${
+              isActive 
+                ? 'bg-brandRed text-white shadow-md' 
+                : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+            }">
+            ${cat}
+          </button>
+        `;
+      });
+
+      html += `
+            </div>
+            <div id="rosa-grid-container" class="space-y-8"></div>
+        </div>
+      `;
+
+      container.innerHTML = html;
+      renderRosaGrid(categoriaIniziale);
+    }
+
+    function switchRosaCategoria(categoria) {
+      categoriaSelezionataDaEsterno = categoria;
+
+      document.querySelectorAll('.rosa-btn-filter').forEach(btn => {
+        if (btn.getAttribute('data-cat') === categoria) {
+          btn.className = 'rosa-btn-filter px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-brandRed text-white shadow-md cursor-pointer';
+        } else {
+          btn.className = 'rosa-btn-filter px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 bg-gray-200 text-gray-700 hover:bg-gray-300 cursor-pointer';
+        }
+      });
+
+      renderRosaGrid(categoria);
+    }
+
+    function renderRosaGrid(categoria) {
+      const gridContainer = document.getElementById('rosa-grid-container');
+      if (!gridContainer) return;
+
+      const filtrati = globalRoseData.filter(item => item.categoria === categoria);
+
+      if (filtrati.length === 0) {
+        gridContainer.innerHTML = `<p class="text-center text-gray-500 py-8">Nessun atleta o staff trovato per la categoria <strong>${categoria}</strong>.</p>`;
+        return;
+      }
+
+      const ruoli = [...new Set(filtrati.map(item => item.ruolo || 'Giocatore'))];
+      let gridHtml = '';
+
+      ruoli.forEach(ruolo => {
+        const membriRuolo = filtrati.filter(item => (item.ruolo || 'Giocatore') === ruolo);
+
+        gridHtml += `
+          <section class="space-y-4">
+            <h3 class="text-lg font-bold text-brandRed uppercase tracking-wider border-b-2 border-brandRed pb-1 inline-block">
+              ${ruolo}
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        `;
+
+        membriRuolo.forEach(membro => {
+          const nomeMembro = membro.nome || membro.name || 'Atleta';
+          const foto = membro.foto || membro.image || '';
+
+          gridHtml += `
+            <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-200 hover:shadow-md transition-shadow flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-gray-100 border border-gray-300 flex items-center justify-center shrink-0 overflow-hidden">
+                ${foto ? `<img src="${foto}" alt="${nomeMembro}" class="w-full h-full object-cover">` : `<i class="fa-solid fa-user text-gray-400 text-lg"></i>`}
+              </div>
+              <div class="min-w-0 flex-1">
+                <h4 class="font-bold text-brandDark text-sm truncate">${nomeMembro}</h4>
+                <p class="text-xs text-gray-500 capitalize">${membro.ruolo || 'Tesserato'}</p>
+              </div>
+            </div>
+          `;
+        });
+
+        gridHtml += `
+            </div>
+          </section>
+        `;
+      });
+
+      gridContainer.innerHTML = gridHtml;
+    }
+
+    function mostraRosaCategoria(categoria) {
+      categoriaSelezionataDaEsterno = categoria;
+      showPage('rosa');
+      if (globalRoseData.length > 0) {
+        switchRosaCategoria(categoria);
+      }
+    }
+    </script>
+</body>
+</html>
