@@ -82,7 +82,7 @@ export async function loadDynamicNews() {
 
             newsList.push({
                 title: news.title || news.titolo || news.heading || 'Senza Titolo',
-                summary: news.summary || news.description || news.sommario || '',
+                summary: news.summary || news.description || news.sommario || news.estratto || '',
                 body: news.body || news.bodyContent || news.testoCompleto || news.summary || '',
                 image: news.image || news.immagine || news.foto || news.thumbnail || news.cover || '',
                 category: news.category || news.categoria || 'News',
