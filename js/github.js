@@ -8,12 +8,14 @@ async function loadManifest() {
         return manifestCache;
     }
 
-    if (window.NUOVA_LODI_CONTENT) {
+    if (shouldUseLocalContentFirst() && window.NUOVA_LODI_CONTENT) {
         manifestCache = window.NUOVA_LODI_CONTENT;
         return manifestCache;
     }
 
-    const response = await fetch(CONFIG.manifest);
+    const response = await fetch(CONFIG.manifest, {
+        cache: 'no-store'
+    });
     if (!response.ok) {
         throw new Error(`Manifest non disponibile: ${response.status}`);
     }

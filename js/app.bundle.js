@@ -27,12 +27,14 @@ async function loadManifest() {
         return manifestCache;
     }
 
-    if (window.NUOVA_LODI_CONTENT) {
+    if (shouldUseLocalContentFirst() && window.NUOVA_LODI_CONTENT) {
         manifestCache = window.NUOVA_LODI_CONTENT;
         return manifestCache;
     }
 
-    const response = await fetch(CONFIG.manifest);
+    const response = await fetch(CONFIG.manifest, {
+        cache: 'no-store'
+    });
     if (!response.ok) {
         throw new Error(`Manifest non disponibile: ${response.status}`);
     }
@@ -470,7 +472,7 @@ async function loadDynamicNews() {
 
             newsList.push({
                 title: news.title || news.titolo || news.heading || 'Senza Titolo',
-                summary: news.summary || news.description || news.sommario || '',
+                summary: news.summary || news.description || news.sommario || news.estratto || '',
                 body: news.body || news.bodyContent || news.testoCompleto || news.summary || '',
                 image: news.image || news.immagine || news.foto || news.thumbnail || news.cover || '',
                 category: news.category || news.categoria || 'News',
