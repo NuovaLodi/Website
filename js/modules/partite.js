@@ -1,5 +1,5 @@
 import { CONFIG } from '../config.js';
-import { listFolder, loadJsonOrFrontmatter } from '../github.js';
+import { listFolder, loadJsonOrFrontmatterFromSource } from '../github.js';
 import { aggiornaClassifica, renderClassifica } from './classifica.js';
 
 async function loadPartiteFiles() {
@@ -46,7 +46,7 @@ export async function openCalendarioModal(categoriaSquadra) {
 
         for (const file of matchFiles) {
             try {
-                const match = await loadJsonOrFrontmatter(file);
+                const match = await loadJsonOrFrontmatterFromSource(file);
                 const matchCategory = (match.categoria || match.squadra || '').trim().toLowerCase();
                 const targetCategory = categoriaSquadra.trim().toLowerCase();
 
@@ -137,7 +137,7 @@ export async function renderMatchCenter() {
 
         for (const file of matchFiles) {
             try {
-                const match = await loadJsonOrFrontmatter(file);
+                const match = await loadJsonOrFrontmatterFromSource(file);
                 const cat = (match.categoria || match.squadra || '').trim().toLowerCase();
                 if (cat === 'prima squadra' || cat === '1° squadra' || cat === '1 squadra') {
                     const { formattedDate, formattedTime, timestamp } = parseMatchDate(match);
@@ -259,4 +259,3 @@ export function initPartite() {
 window.openCalendarioModal = openCalendarioModal;
 window.closeCalendarioModal = closeCalendarioModal;
 window.renderMatchCenter = renderMatchCenter;
-
