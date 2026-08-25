@@ -78,12 +78,14 @@ export async function listFolder(path) {
     }
 }
 
-export async function getTextFile(file) {
-    if (shouldUseEmbeddedContent() && typeof file.text === 'string') {
+export async function getTextFile(file, options = {}) {
+    const allowEmbedded = options.allowEmbedded !== false;
+
+    if (allowEmbedded && shouldUseEmbeddedContent() && typeof file.text === 'string') {
         return file.text;
     }
 
-    const response = await fetch(addCacheBuster(file.download_url), {
+    const response = await fetch(addCacheBuster(file.download_url || file.path), {
         cache: 'no-store'
     });
 
@@ -118,6 +120,19 @@ export function parseFrontmatter(text) {
 
 export async function loadJsonOrFrontmatter(file) {
     const text = await getTextFile(file);
+
+    if (file.name.endsWith('.json')) {
+        return JSON.parse(text);
+    }
+
+    const parsed = parseFrontmatter(text);
+    return { ...parsed.data, bodyContent: parsed.body };
+}
+
+export async function loadJsonOrFrontmatterFromSource(file) {
+    const text = await getTextFile(file, {
+        allowEmbedded: false
+    });
 
     if (file.name.endsWith('.json')) {
         return JSON.parse(text);

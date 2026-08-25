@@ -97,12 +97,14 @@ async function listFolder(path) {
     }
 }
 
-async function getTextFile(file) {
-    if (shouldUseEmbeddedContent() && typeof file.text === 'string') {
+async function getTextFile(file, options = {}) {
+    const allowEmbedded = options.allowEmbedded !== false;
+
+    if (allowEmbedded && shouldUseEmbeddedContent() && typeof file.text === 'string') {
         return file.text;
     }
 
-    const response = await fetch(addCacheBuster(file.download_url), {
+    const response = await fetch(addCacheBuster(file.download_url || file.path), {
         cache: 'no-store'
     });
 
@@ -137,6 +139,19 @@ function parseFrontmatter(text) {
 
 async function loadJsonOrFrontmatter(file) {
     const text = await getTextFile(file);
+
+    if (file.name.endsWith('.json')) {
+        return JSON.parse(text);
+    }
+
+    const parsed = parseFrontmatter(text);
+    return { ...parsed.data, bodyContent: parsed.body };
+}
+
+async function loadJsonOrFrontmatterFromSource(file) {
+    const text = await getTextFile(file, {
+        allowEmbedded: false
+    });
 
     if (file.name.endsWith('.json')) {
         return JSON.parse(text);
@@ -608,7 +623,7 @@ async function openCalendarioModal(categoriaSquadra) {
 
         for (const file of matchFiles) {
             try {
-                const match = await loadJsonOrFrontmatter(file);
+                const match = await loadJsonOrFrontmatterFromSource(file);
                 const matchCategory = (match.categoria || match.squadra || '').trim().toLowerCase();
                 const targetCategory = categoriaSquadra.trim().toLowerCase();
 
@@ -699,7 +714,7 @@ async function renderMatchCenter() {
 
         for (const file of matchFiles) {
             try {
-                const match = await loadJsonOrFrontmatter(file);
+                const match = await loadJsonOrFrontmatterFromSource(file);
                 const cat = (match.categoria || match.squadra || '').trim().toLowerCase();
                 if (cat === 'prima squadra' || cat === '1° squadra' || cat === '1 squadra') {
                     const { formattedDate, formattedTime, timestamp } = parseMatchDate(match);
