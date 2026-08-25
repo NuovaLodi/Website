@@ -8,7 +8,7 @@ async function loadManifest() {
         return manifestCache;
     }
 
-    if (shouldUseLocalContentFirst() && window.NUOVA_LODI_CONTENT) {
+    if (shouldUseEmbeddedContent() && window.NUOVA_LODI_CONTENT) {
         manifestCache = window.NUOVA_LODI_CONTENT;
         return manifestCache;
     }
@@ -24,18 +24,26 @@ async function loadManifest() {
     return manifestCache;
 }
 
-function shouldUseLocalContentFirst() {
+function shouldUseEmbeddedContent() {
+    return window.location.protocol === 'file:';
+}
+
+function shouldUseManifestFirst() {
     return (
-        window.location.protocol === 'file:' ||
         window.location.hostname === 'localhost' ||
         window.location.hostname === '127.0.0.1'
     );
 }
 
+function addCacheBuster(url) {
+    const separator = url.includes('?') ? '&' : '?';
+    return `${url}${separator}_=${Date.now()}`;
+}
+
 export async function listFolder(path) {
     let manifest = null;
 
-    if (shouldUseLocalContentFirst()) {
+    if (shouldUseEmbeddedContent() || shouldUseManifestFirst()) {
         manifest = await loadManifest().catch(() => null);
         const localFiles = manifest?.[path];
 
@@ -71,11 +79,11 @@ export async function listFolder(path) {
 }
 
 export async function getTextFile(file) {
-    if (typeof file.text === 'string') {
+    if (shouldUseEmbeddedContent() && typeof file.text === 'string') {
         return file.text;
     }
 
-    const response = await fetch(file.download_url, {
+    const response = await fetch(addCacheBuster(file.download_url), {
         cache: 'no-store'
     });
 
