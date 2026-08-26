@@ -254,7 +254,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/rose/2026-07-26-prima-squadra-centrocampista-desantis.md",
       "type": "file",
       "download_url": "content/rose/2026-07-26-prima-squadra-centrocampista-desantis.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Diego De Santis\n---\n"
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---\n"
     },
     {
       "name": "2026-07-26-prima-squadra-difensore-beghi.md",
@@ -306,13 +306,6 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Terza Categoria U21\nruolo: Centrocampista\nnome: Matteo Fenocchi\n---"
     },
     {
-      "name": "map-categoria-prima-squadra-ruolo-allenatore-nome-lorenzo-negri.md",
-      "path": "content/rose/map-categoria-prima-squadra-ruolo-allenatore-nome-lorenzo-negri.md",
-      "type": "file",
-      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-allenatore-nome-lorenzo-negri.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Allenatore\nnome: Lorenzo Negri\n---\n"
-    },
-    {
       "name": "map-categoria-prima-squadra-ruolo-attaccante-nome-alex-bossi.md",
       "path": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-alex-bossi.md",
       "type": "file",
@@ -327,6 +320,13 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Prima Squadra\nruolo: Attaccante\nnome: Emanuel Fortugno\n---\n"
     },
     {
+      "name": "map-categoria-prima-squadra-ruolo-attaccante-nome-lorenzo-negri.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-lorenzo-negri.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-lorenzo-negri.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Attaccante\nnome: Lorenzo Negri\n---\n"
+    },
+    {
       "name": "map-categoria-prima-squadra-ruolo-attaccante-nome-nicholas-peletti.md",
       "path": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-nicholas-peletti.md",
       "type": "file",
@@ -338,49 +338,49 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-abdoulaye-beye.md",
       "type": "file",
       "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-abdoulaye-beye.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Abdoulaye Beye\n---\n"
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Abdoulaye Beye\n---\n"
     },
     {
       "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-christian-lanzetta.md",
       "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-christian-lanzetta.md",
       "type": "file",
       "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-christian-lanzetta.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Christian Lanzetta\n---\n"
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Christian Lanzetta\n---\n"
     },
     {
       "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-davide-bonetti.md",
       "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-davide-bonetti.md",
       "type": "file",
       "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-davide-bonetti.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Davide Bonetti\n---\n"
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Davide Bonetti\n---\n"
     },
     {
       "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-manuel-soresina.md",
       "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-manuel-soresina.md",
       "type": "file",
       "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-manuel-soresina.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Manuel Soresina\n---\n"
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Manuel Soresina\n---\n"
     },
     {
       "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-matteo-annoni.md",
       "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-matteo-annoni.md",
       "type": "file",
       "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-matteo-annoni.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Matteo Annoni\n---\n"
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Matteo Annoni\n---\n"
     },
     {
       "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-mattia-gallizzi.md",
       "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-mattia-gallizzi.md",
       "type": "file",
       "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-mattia-gallizzi.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Mattia Gallizzi\n---\n"
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Mattia Gallizzi\n---\n"
     },
     {
       "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-simone-chiodaroli.md",
       "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-simone-chiodaroli.md",
       "type": "file",
       "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-simone-chiodaroli.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Simone Chiodaroli\n---\n"
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Simone Chiodaroli\n---\n"
     },
     {
       "name": "map-categoria-prima-squadra-ruolo-difensore-nome-alessandro-merletti.md",

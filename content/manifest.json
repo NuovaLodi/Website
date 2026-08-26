@@ -263,12 +263,6 @@
       "download_url": "content/rose/2026-07-26-u21-squadra-centrocampista-fenocchi.md"
     },
     {
-      "name": "map-categoria-prima-squadra-ruolo-allenatore-nome-lorenzo-negri.md",
-      "path": "content/rose/map-categoria-prima-squadra-ruolo-allenatore-nome-lorenzo-negri.md",
-      "type": "file",
-      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-allenatore-nome-lorenzo-negri.md"
-    },
-    {
       "name": "map-categoria-prima-squadra-ruolo-attaccante-nome-alex-bossi.md",
       "path": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-alex-bossi.md",
       "type": "file",
@@ -279,6 +273,12 @@
       "path": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-emanuel-fortugno.md",
       "type": "file",
       "download_url": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-emanuel-fortugno.md"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-attaccante-nome-lorenzo-negri.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-lorenzo-negri.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-lorenzo-negri.md"
     },
     {
       "name": "map-categoria-prima-squadra-ruolo-attaccante-nome-nicholas-peletti.md",
