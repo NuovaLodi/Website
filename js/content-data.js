@@ -254,7 +254,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/rose/2026-07-26-prima-squadra-centrocampista-desantis.md",
       "type": "file",
       "download_url": "content/rose/2026-07-26-prima-squadra-centrocampista-desantis.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---"
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Diego De Santis\n---\n"
     },
     {
       "name": "2026-07-26-prima-squadra-difensore-beghi.md",
@@ -268,14 +268,14 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/rose/2026-07-26-prima-squadra-dirigente-mainetti.md",
       "type": "file",
       "download_url": "content/rose/2026-07-26-prima-squadra-dirigente-mainetti.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Dirigente\nnome: Simone Mainetti\n---"
+      "text": "---\ncategoria: Prima Squadra\nruolo: Vice Allenatore\nnome: Simone Mainetti\n---\n"
     },
     {
       "name": "2026-07-26-prima-squadra-portiere-buongiorno.md",
       "path": "content/rose/2026-07-26-prima-squadra-portiere-buongiorno.md",
       "type": "file",
       "download_url": "content/rose/2026-07-26-prima-squadra-portiere-buongiorno.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Portiere\nnome: Roberto Buongiorno\n---\n"
+      "text": "---\ncategoria: Prima Squadra\nruolo: Vice Allenatore\nnome: Roberto Buongiorno\n---\n"
     },
     {
       "name": "2026-07-26-prima-squadra-portiere-folloni.md",
@@ -304,132 +304,6 @@ window.NUOVA_LODI_CONTENT = {
       "type": "file",
       "download_url": "content/rose/2026-07-26-u21-squadra-centrocampista-fenocchi.md",
       "text": "---\ncategoria: Terza Categoria U21\nruolo: Centrocampista\nnome: Matteo Fenocchi\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-allenatore-desantis.md",
-      "path": "content/rose/2026-07-27-prima-squadra-allenatore-desantis.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-allenatore-desantis.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Allenatore\nnome: Marco De Santis\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-attaccante-gnassi.md",
-      "path": "content/rose/2026-07-27-prima-squadra-attaccante-gnassi.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-attaccante-gnassi.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Attaccante\nnome: Bouba Gnassi\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-centrocampista-desantis copy 10.md",
-      "path": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 10.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 10.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-centrocampista-desantis copy 2.md",
-      "path": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 2.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 2.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-centrocampista-desantis copy 3.md",
-      "path": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 3.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 3.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-centrocampista-desantis copy 4.md",
-      "path": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 4.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 4.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-centrocampista-desantis copy 5.md",
-      "path": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 5.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 5.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-centrocampista-desantis copy 6.md",
-      "path": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 6.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 6.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-centrocampista-desantis copy 7.md",
-      "path": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 7.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 7.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-centrocampista-desantis copy 8.md",
-      "path": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 8.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 8.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-centrocampista-desantis copy 9.md",
-      "path": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 9.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy 9.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-centrocampista-desantis copy.md",
-      "path": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis copy.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-centrocampista-desantis.md",
-      "path": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-centrocampista-desantis.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Centrocampista\nnome: Diego De Santis\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-difensore-beghi.md",
-      "path": "content/rose/2026-07-27-prima-squadra-difensore-beghi.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-difensore-beghi.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Difensore\nnome: Federico Beghi\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-dirigente-mainetti.md",
-      "path": "content/rose/2026-07-27-prima-squadra-dirigente-mainetti.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-dirigente-mainetti.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Dirigente\nnome: Simone Mainetti\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-portiere-buongiorno.md",
-      "path": "content/rose/2026-07-27-prima-squadra-portiere-buongiorno.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-portiere-buongiorno.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Portiere\nnome: Roberto Buongiorno\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-portiere-folloni.md",
-      "path": "content/rose/2026-07-27-prima-squadra-portiere-folloni.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-portiere-folloni.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Portiere\nnome: Andrea Folloni\n---"
-    },
-    {
-      "name": "2026-07-27-prima-squadra-viceallenatore-ghitti.md",
-      "path": "content/rose/2026-07-27-prima-squadra-viceallenatore-ghitti.md",
-      "type": "file",
-      "download_url": "content/rose/2026-07-27-prima-squadra-viceallenatore-ghitti.md",
-      "text": "---\ncategoria: Prima Squadra\nruolo: Vice Allenatore\nnome: Gigio Ghitti\n---"
     }
   ],
   "documenti": [
