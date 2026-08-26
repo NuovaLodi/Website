@@ -1,5 +1,5 @@
 ---
 categoria: Prima Squadra
-ruolo: Dirigente
+ruolo: Vice Allenatore
 nome: Simone Mainetti
 ---
