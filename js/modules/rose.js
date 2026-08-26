@@ -190,7 +190,13 @@ export function renderRosaGrid(categoria) {
 
     ruoli.forEach(ruolo => {
         const ruoloNormalizzato = normalizeRole(ruolo);
-        const membriRuolo = filtrati.filter(item => normalizeRole(item.ruolo || 'Giocatore') === ruoloNormalizzato);
+        const membriRuolo = filtrati
+            .filter(item => normalizeRole(item.ruolo || 'Giocatore') === ruoloNormalizzato)
+            .sort((a, b) => {
+                const nomeA = a.nome || a.name || '';
+                const nomeB = b.nome || b.name || '';
+                return nomeA.localeCompare(nomeB, 'it', { sensitivity: 'base' });
+            });
 
         gridHtml += `
           <section class="space-y-4">
