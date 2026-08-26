@@ -306,11 +306,158 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Terza Categoria U21\nruolo: Centrocampista\nnome: Matteo Fenocchi\n---"
     },
     {
+      "name": "map-categoria-prima-squadra-ruolo-allenatore-nome-lorenzo-negri.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-allenatore-nome-lorenzo-negri.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-allenatore-nome-lorenzo-negri.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Allenatore\nnome: Lorenzo Negri\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-attaccante-nome-alex-bossi.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-alex-bossi.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-alex-bossi.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Attaccante\nnome: Alex Bossi\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-attaccante-nome-emanuel-fortugno.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-emanuel-fortugno.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-emanuel-fortugno.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Attaccante\nnome: Emanuel Fortugno\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-attaccante-nome-nicholas-peletti.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-nicholas-peletti.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-attaccante-nome-nicholas-peletti.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Attaccante\nnome: Nicholas Peletti\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-abdoulaye-beye.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-abdoulaye-beye.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-abdoulaye-beye.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Abdoulaye Beye\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-christian-lanzetta.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-christian-lanzetta.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-christian-lanzetta.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Christian Lanzetta\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-davide-bonetti.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-davide-bonetti.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-davide-bonetti.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Davide Bonetti\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-manuel-soresina.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-manuel-soresina.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-manuel-soresina.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Manuel Soresina\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-matteo-annoni.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-matteo-annoni.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-matteo-annoni.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Matteo Annoni\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-mattia-gallizzi.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-mattia-gallizzi.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-mattia-gallizzi.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Mattia Gallizzi\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-centracampista-nome-simone-chiodaroli.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-simone-chiodaroli.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-centracampista-nome-simone-chiodaroli.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Centracampista\nnome: Simone Chiodaroli\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-difensore-nome-alessandro-merletti.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-alessandro-merletti.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-alessandro-merletti.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Difensore\nnome: Alessandro Merletti\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-difensore-nome-aljosha-scrocciolani.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-aljosha-scrocciolani.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-aljosha-scrocciolani.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Difensore\nnome: Aljosha Scrocciolani\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-difensore-nome-andrea-de-tommaso.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-andrea-de-tommaso.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-andrea-de-tommaso.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Difensore\nnome: Andrea De Tommaso\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-difensore-nome-andrea-visigalli.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-andrea-visigalli.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-andrea-visigalli.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Difensore\nnome: Andrea Visigalli\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-difensore-nome-damiano-bernocchi.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-damiano-bernocchi.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-damiano-bernocchi.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Difensore\nnome: Damiano Bernocchi\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-difensore-nome-leonardo-marelli.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-leonardo-marelli.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-leonardo-marelli.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Difensore\nnome: Leonardo Marelli\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-difensore-nome-lorenzo-filosa.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-lorenzo-filosa.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-lorenzo-filosa.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Difensore\nnome: Lorenzo Filosa\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-difensore-nome-luca-barba.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-luca-barba.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-luca-barba.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Difensore\nnome: Luca Barba\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-difensore-nome-tommaso-ciani.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-tommaso-ciani.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-difensore-nome-tommaso-ciani.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Difensore\nnome: Tommaso Ciani\n---\n"
+    },
+    {
       "name": "map-categoria-prima-squadra-ruolo-dirigente-nome-alex-montaperto.md",
       "path": "content/rose/map-categoria-prima-squadra-ruolo-dirigente-nome-alex-montaperto.md",
       "type": "file",
       "download_url": "content/rose/map-categoria-prima-squadra-ruolo-dirigente-nome-alex-montaperto.md",
       "text": "---\ncategoria: Prima Squadra\nruolo: Dirigente\nnome: Alex Montaperto\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-portiere-nome-nicholas-zatta.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-portiere-nome-nicholas-zatta.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-portiere-nome-nicholas-zatta.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Portiere\nnome: Nicholas Zatta\n---\n"
     },
     {
       "name": "map-categoria-prima-squadra-ruolo-vice-allenatore-nome-giorgio-parisi.md",
