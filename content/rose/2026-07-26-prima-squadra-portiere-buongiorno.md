@@ -1,5 +1,5 @@
 ---
 categoria: Prima Squadra
-ruolo: Portiere
+ruolo: Vice Allenatore
 nome: Roberto Buongiorno
 ---
