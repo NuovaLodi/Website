@@ -1,5 +1,5 @@
 ---
 categoria: Prima Squadra
-ruolo: Dirigente
-nome: Alex Montaperto
+ruolo: Vice Allenatore
+nome: Massimo Brunetti
 ---
