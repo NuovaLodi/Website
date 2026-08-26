@@ -304,6 +304,27 @@ window.NUOVA_LODI_CONTENT = {
       "type": "file",
       "download_url": "content/rose/2026-07-26-u21-squadra-centrocampista-fenocchi.md",
       "text": "---\ncategoria: Terza Categoria U21\nruolo: Centrocampista\nnome: Matteo Fenocchi\n---"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-dirigente-nome-alex-montaperto.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-dirigente-nome-alex-montaperto.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-dirigente-nome-alex-montaperto.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Dirigente\nnome: Alex Montaperto\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-vice-allenatore-nome-giorgio-parisi.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-vice-allenatore-nome-giorgio-parisi.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-vice-allenatore-nome-giorgio-parisi.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Vice Allenatore\nnome: Giorgio Parisi\n---\n"
+    },
+    {
+      "name": "map-categoria-prima-squadra-ruolo-vice-allenatore-nome-massimo-brunetti.md",
+      "path": "content/rose/map-categoria-prima-squadra-ruolo-vice-allenatore-nome-massimo-brunetti.md",
+      "type": "file",
+      "download_url": "content/rose/map-categoria-prima-squadra-ruolo-vice-allenatore-nome-massimo-brunetti.md",
+      "text": "---\ncategoria: Prima Squadra\nruolo: Vice Allenatore\nnome: Massimo Brunetti\n---\n"
     }
   ],
   "documenti": [
