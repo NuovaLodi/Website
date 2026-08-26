@@ -1,4 +1,4 @@
-/* Generated compatibility bundle. Source files are in js/modules. */
+/* Generated from js/modules. Run: sh scripts/build.sh */
 
 /* js/config.js */
 const CONFIG = {
@@ -15,7 +15,6 @@ const CONFIG = {
     },
     manifest: 'content/manifest.json'
 };
-
 
 /* js/github.js */
 
@@ -48,10 +47,7 @@ function shouldUseEmbeddedContent() {
 }
 
 function shouldUseManifestFirst() {
-    return (
-        window.location.hostname === 'localhost' ||
-        window.location.hostname === '127.0.0.1'
-    );
+    return true;
 }
 
 function addCacheBuster(url) {
@@ -149,9 +145,7 @@ async function loadJsonOrFrontmatter(file) {
 }
 
 async function loadJsonOrFrontmatterFromSource(file) {
-    const text = await getTextFile(file, {
-        allowEmbedded: false
-    });
+    const text = await getTextFile(file);
 
     if (file.name.endsWith('.json')) {
         return JSON.parse(text);
@@ -160,7 +154,6 @@ async function loadJsonOrFrontmatterFromSource(file) {
     const parsed = parseFrontmatter(text);
     return { ...parsed.data, bodyContent: parsed.body };
 }
-
 
 /* js/utils.js */
 function onReady(callback) {
@@ -190,10 +183,26 @@ function formatItalianTime(date) {
     });
 }
 
-
-
 /* js/modules/navigation.js */
 function showPage(pageId) {
+    if (document.body.dataset.siteArchitecture === 'multipage') {
+        const routes = {
+            home: 'pages/home.html',
+            societa: 'pages/societa.html',
+            squadre: 'pages/squadre.html',
+            rosa: 'pages/rosa.html',
+            iscrizioni: 'pages/iscrizioni.html',
+            news: 'pages/news.html',
+            sponsor: 'pages/sponsor.html',
+            contatti: 'pages/contatti.html'
+        };
+
+        if (routes[pageId]) {
+            window.location.href = new URL(routes[pageId], document.baseURI).href;
+        }
+        return;
+    }
+
     const pages = ['home', 'societa', 'squadre', 'rosa', 'iscrizioni', 'news', 'contatti', 'sponsor'];
     pages.forEach(p => {
         const el = document.getElementById('page-' + p);
@@ -253,8 +262,6 @@ window.showPage = showPage;
 window.closeNewsModal = closeNewsModal;
 window.toggleMenu = toggleMenu;
 window.switchMatchTab = switchMatchTab;
-
-
 
 /* js/modules/classifica.js */
 function initTeam(classificaMap, nome) {
@@ -319,8 +326,6 @@ function renderClassifica(classificaMap) {
         </tr>`;
     }).join('');
 }
-
-
 
 /* js/modules/sponsor.js */
 const sponsorData = [
@@ -411,7 +416,6 @@ function initSponsors() {
     renderSponsors();
 }
 
-
 /* js/modules/news.js */
 
 function normalizeImagePath(image) {
@@ -465,6 +469,10 @@ async function loadDynamicNews() {
     const homeContainer = document.getElementById('home-news-container');
     const newsContainer = document.getElementById('news-container');
     const countBadge = document.getElementById('news-count-badge');
+
+    if (!homeContainer && !newsContainer) {
+        return;
+    }
 
     const loadingHTML = '<p class="col-span-full text-center text-gray-400 py-8">Caricamento notizie in corso...</p>';
     if (homeContainer) homeContainer.innerHTML = loadingHTML;
@@ -574,8 +582,6 @@ function initNews() {
 
 window.loadDynamicNews = loadDynamicNews;
 window.openDynamicModal = openDynamicModal;
-
-
 
 /* js/modules/partite.js */
 
@@ -837,16 +843,12 @@ window.openCalendarioModal = openCalendarioModal;
 window.closeCalendarioModal = closeCalendarioModal;
 window.renderMatchCenter = renderMatchCenter;
 
-
-
 /* js/models/person.js */
 class Person {
     constructor(data = {}) {
         Object.assign(this, data);
     }
 }
-
-
 
 /* js/modules/rose.js */
 
@@ -1086,8 +1088,6 @@ window.switchRosaCategoria = switchRosaCategoria;
 window.renderRosaGrid = renderRosaGrid;
 window.mostraRosaCategoria = mostraRosaCategoria;
 
-
-
 /* js/modules/documenti.js */
 
 let documentiCaricati = false;
@@ -1196,7 +1196,6 @@ async function caricaDocumentiModal() {
 window.apriModaleModulistica = apriModaleModulistica;
 window.chiudiModaleModulistica = chiudiModaleModulistica;
 window.caricaDocumentiModal = caricaDocumentiModal;
-
 
 /* js/app.js */
 

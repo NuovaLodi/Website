@@ -29,10 +29,7 @@ function shouldUseEmbeddedContent() {
 }
 
 function shouldUseManifestFirst() {
-    return (
-        window.location.hostname === 'localhost' ||
-        window.location.hostname === '127.0.0.1'
-    );
+    return true;
 }
 
 function addCacheBuster(url) {
@@ -130,9 +127,7 @@ export async function loadJsonOrFrontmatter(file) {
 }
 
 export async function loadJsonOrFrontmatterFromSource(file) {
-    const text = await getTextFile(file, {
-        allowEmbedded: false
-    });
+    const text = await getTextFile(file);
 
     if (file.name.endsWith('.json')) {
         return JSON.parse(text);

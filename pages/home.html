@@ -1,4 +1,19 @@
-<main id="page-home">
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.S.D. Nuova Lodi 1952 - Home</title>
+    <base href="../">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <script>tailwind.config = { theme: { extend: { colors: { brandRed: '#D32F2F', brandYellow: '#FFD54F', brandDark: '#1E293B' }, fontFamily: { sans: ['Montserrat', 'sans-serif'] } } } };</script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body data-site-architecture="multipage" data-page="home" class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+    <main id="page-home">
         <!-- HERO BANNER -->
         <section class="relative bg-cover bg-center text-white py-24 md:py-32 px-4" style="background-image: url('images/hero-bg.jpg');">
             <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-brandRed/40"></div>
@@ -192,3 +207,8 @@
         </section>
 
     </main>
+    <script defer src="js/page-layout.js"></script>
+    <script src="js/content-data.js"></script>
+    <script defer src="js/app.bundle.js"></script>
+</body>
+</html>

@@ -1,4 +1,22 @@
 export function showPage(pageId) {
+    if (document.body.dataset.siteArchitecture === 'multipage') {
+        const routes = {
+            home: 'pages/home.html',
+            societa: 'pages/societa.html',
+            squadre: 'pages/squadre.html',
+            rosa: 'pages/rosa.html',
+            iscrizioni: 'pages/iscrizioni.html',
+            news: 'pages/news.html',
+            sponsor: 'pages/sponsor.html',
+            contatti: 'pages/contatti.html'
+        };
+
+        if (routes[pageId]) {
+            window.location.href = new URL(routes[pageId], document.baseURI).href;
+        }
+        return;
+    }
+
     const pages = ['home', 'societa', 'squadre', 'rosa', 'iscrizioni', 'news', 'contatti', 'sponsor'];
     pages.forEach(p => {
         const el = document.getElementById('page-' + p);
@@ -58,4 +76,3 @@ window.showPage = showPage;
 window.closeNewsModal = closeNewsModal;
 window.toggleMenu = toggleMenu;
 window.switchMatchTab = switchMatchTab;
-

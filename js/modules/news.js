@@ -53,6 +53,10 @@ export async function loadDynamicNews() {
     const newsContainer = document.getElementById('news-container');
     const countBadge = document.getElementById('news-count-badge');
 
+    if (!homeContainer && !newsContainer) {
+        return;
+    }
+
     const loadingHTML = '<p class="col-span-full text-center text-gray-400 py-8">Caricamento notizie in corso...</p>';
     if (homeContainer) homeContainer.innerHTML = loadingHTML;
     if (newsContainer) newsContainer.innerHTML = loadingHTML;
