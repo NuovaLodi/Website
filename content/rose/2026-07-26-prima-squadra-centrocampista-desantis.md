@@ -1,5 +1,5 @@
 ---
 categoria: Prima Squadra
-ruolo: Centracampista
+ruolo: Centrocampista
 nome: Diego De Santis
 ---

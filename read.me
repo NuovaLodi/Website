@@ -1,0 +1,8 @@
+========================
+Procedura per aggiornare contenuti rose dopo modifiche con Netlify Admin
+========================
+git pull --ff-only origin main
+sh scripts/build.sh
+git add content/rose js/content-data.js content/manifest.json
+git commit -m "Aggiorna rose squadre"
+git push origin main

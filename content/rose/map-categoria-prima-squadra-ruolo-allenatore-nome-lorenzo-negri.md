@@ -1,5 +1,5 @@
 ---
 categoria: Prima Squadra
-ruolo: Allenatore
+ruolo: Attaccante
 nome: Lorenzo Negri
 ---
