@@ -25,7 +25,7 @@ async function loadManifest() {
 }
 
 function shouldUseEmbeddedContent() {
-    return window.location.protocol === 'file:';
+    return typeof window.NUOVA_LODI_CONTENT === 'object';
 }
 
 function shouldUseManifestFirst() {
