@@ -1,5 +1,5 @@
 ---
 categoria: Prima Squadra
-ruolo: Vice Allenatore
-nome: Giorgio Parisi
+ruolo: Attaccante
+nome: Nicholas Peletti
 ---
