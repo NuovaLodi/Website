@@ -1,5 +1,5 @@
 ---
 categoria: Prima Squadra
-ruolo: Attaccante
-nome: Nicholas Peletti
+ruolo: Centracampista
+nome: Simone Chiodaroli
 ---
