@@ -6,3 +6,14 @@ sh scripts/build.sh
 git add content/rose js/content-data.js content/manifest.json
 git commit -m "Aggiorna rose squadre"
 git push origin main
+
+
+
+========================
+Procedura per aggiornare contenuti calendari dopo modifiche con Netlify Admin
+========================
+sh scripts/build.sh
+git add -A content/partite
+git add content/manifest.json js/content-data.js
+git commit -m "Aggiorna calendari Prima Squadra e Juniores"
+git push origin main
