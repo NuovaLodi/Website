@@ -1,5 +1,5 @@
 ---
-categoria: Seconda Categoria
+categoria: Prima Squadra
 squadraCasa: Atletico Miradolo
 squadraOspite: Nuova Lodi
 dataOra: 2026-12-13T14:30:00.000+01:00

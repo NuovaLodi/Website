@@ -1,5 +1,5 @@
 ---
-categoria: Seconda Categoria
+categoria: Prima Squadra
 squadraCasa: Esorsamma
 squadraOspite: Nuova Lodi
 dataOra: 2026-09-13T15:30:00.000+02:00

@@ -1,5 +1,5 @@
 ---
-categoria: Seconda Categoria
+categoria: Prima Squadra
 squadraCasa: S.Fereolo
 squadraOspite: Nuova Lodi
 dataOra: 2026-11-08T14:30:00.000+01:00

@@ -1,5 +1,5 @@
 ---
-categoria: Seconda Categoria
+categoria: Prima Squadra
 squadraCasa: Nuova Lodi
 squadraOspite: Guardamiglio S.M.V.
 dataOra: 2027-01-24T14:30:00.000+01:00

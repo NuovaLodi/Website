@@ -1,5 +1,5 @@
 ---
-categoria: Seconda Categoria
+categoria: Prima Squadra
 squadraCasa: Nuova Lodi
 squadraOspite: Somaglia
 dataOra: 2027-03-21T14:30:00.000+01:00

@@ -1,5 +1,5 @@
 ---
-categoria: Seconda Categoria
+categoria: Prima Squadra
 squadraCasa: Caselle Landi
 squadraOspite: Nuova Lodi
 dataOra: 2027-04-04T15:30:00.000+02:00

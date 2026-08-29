@@ -1,5 +1,5 @@
 ---
-categoria: Seconda Categoria
+categoria: Prima Squadra
 squadraCasa: Cavenago D Adda 1972
 squadraOspite: Nuova Lodi
 dataOra: 2027-01-31T14:30:00.000+01:00

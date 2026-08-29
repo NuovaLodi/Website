@@ -1,5 +1,5 @@
 ---
-categoria: Seconda Categoria
+categoria: Prima Squadra
 squadraCasa: Nuova Lodi
 squadraOspite: Vidardese
 dataOra: 2026-09-20T15:30:00.000+02:00

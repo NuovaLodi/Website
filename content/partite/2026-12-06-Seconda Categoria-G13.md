@@ -1,5 +1,5 @@
 ---
-categoria: Seconda Categoria
+categoria: Prima Squadra
 squadraCasa: San Fiorano
 squadraOspite: Nuova Lodi
 dataOra: 2026-12-06T14:30:00.000+01:00

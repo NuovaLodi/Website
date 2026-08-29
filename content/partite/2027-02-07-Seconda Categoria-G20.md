@@ -1,5 +1,5 @@
 ---
-categoria: Seconda Categoria
+categoria: Prima Squadra
 squadraCasa: Nuova Lodi
 squadraOspite: Graffignana 2013
 dataOra: 2027-02-07T14:30:00.000+01:00

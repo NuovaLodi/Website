@@ -1,5 +1,5 @@
 ---
-categoria: Seconda Categoria
+categoria: Prima Squadra
 squadraCasa: Nuova Lodi
 squadraOspite: Atletico Miradolo
 dataOra: 2027-04-18T15:30:00.000+02:00

@@ -1,5 +1,5 @@
 ---
-categoria: Seconda Categoria
+categoria: Prima Squadra
 squadraCasa: Vidardese
 squadraOspite: Nuova Lodi
 dataOra: 2027-01-17T14:30:00.000+01:00

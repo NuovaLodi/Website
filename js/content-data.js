@@ -10,25 +10,11 @@ window.NUOVA_LODI_CONTENT = {
   ],
   "content/partite": [
     {
-      "name": "2026-07-26-map-stato-programmata-categoria-prima-squadra-squadracasa-nuova-lodi-squadraospite-azzurra-dataora-2026-08-30t15-30-00-000-02-00-luogo-c-s-selvagreca-lodi-1.md",
-      "path": "content/partite/2026-07-26-map-stato-programmata-categoria-prima-squadra-squadracasa-nuova-lodi-squadraospite-azzurra-dataora-2026-08-30t15-30-00-000-02-00-luogo-c-s-selvagreca-lodi-1.md",
-      "type": "file",
-      "download_url": "content/partite/2026-07-26-map-stato-programmata-categoria-prima-squadra-squadracasa-nuova-lodi-squadraospite-azzurra-dataora-2026-08-30t15-30-00-000-02-00-luogo-c-s-selvagreca-lodi-1.md",
-      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Azzurra\ndataOra: 2026-08-30T15:30:00.000+02:00\nluogo: C.S. Selvagreca (Lodi)\nstato: Programmata\n---\n"
-    },
-    {
-      "name": "2026-07-26-map-stato-programmata-categoria-prima-squadra-squadracasa-nuova-lodi-squadraospite-azzurra-dataora-2026-08-30t15-30-00-000-02-00-luogo-c-s-selvagreca-lodi.md",
-      "path": "content/partite/2026-07-26-map-stato-programmata-categoria-prima-squadra-squadracasa-nuova-lodi-squadraospite-azzurra-dataora-2026-08-30t15-30-00-000-02-00-luogo-c-s-selvagreca-lodi.md",
-      "type": "file",
-      "download_url": "content/partite/2026-07-26-map-stato-programmata-categoria-prima-squadra-squadracasa-nuova-lodi-squadraospite-azzurra-dataora-2026-08-30t15-30-00-000-02-00-luogo-c-s-selvagreca-lodi.md",
-      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: GSO San Fereolo\nsquadraOspite: Nuova Lodi\ndataOra: 2026-07-05T15:30:00.000+02:00\nluogo: Trasferta\nindirizzoTrasferta: Via S. Fereolo, LOD - C.S. San Fereolo\nstato: Programmata\ngolCasa: 0\ngolOspite: 1\nnote: Bouba\n---\n"
-    },
-    {
       "name": "2026-09-13-Seconda Categoria-G1.md",
       "path": "content/partite/2026-09-13-Seconda Categoria-G1.md",
       "type": "file",
       "download_url": "content/partite/2026-09-13-Seconda Categoria-G1.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Esorsamma\nsquadraOspite: Nuova Lodi\ndataOra: 2026-09-13T15:30:00.000+02:00\nluogo: Comunale Colladio, San Martino in Strada\nindirizzoTrasferta: Via Gen. Dalla Chiesa, San Martino in Strada\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Esorsamma\nsquadraOspite: Nuova Lodi\ndataOra: 2026-09-13T15:30:00.000+02:00\nluogo: Comunale Colladio, San Martino in Strada\nindirizzoTrasferta: Via Gen. Dalla Chiesa, San Martino in Strada\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-09-13-U21-G1.md",
@@ -49,7 +35,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-09-20-Seconda Categoria-G2.md",
       "type": "file",
       "download_url": "content/partite/2026-09-20-Seconda Categoria-G2.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: Vidardese\ndataOra: 2026-09-20T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Vidardese\ndataOra: 2026-09-20T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-09-20-U21-G2.md",
@@ -77,7 +63,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-09-27-Seconda Categoria-G3.md",
       "type": "file",
       "download_url": "content/partite/2026-09-27-Seconda Categoria-G3.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Guardamiglio S.M.V.\nsquadraOspite: Nuova Lodi\ndataOra: 2026-09-27T15:30:00.000+02:00\nluogo: C.S. Comunale, Guardamiglio\nindirizzoTrasferta: Via Roma 2, Guardamiglio\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Guardamiglio S.M.V.\nsquadraOspite: Nuova Lodi\ndataOra: 2026-09-27T15:30:00.000+02:00\nluogo: C.S. Comunale, Guardamiglio\nindirizzoTrasferta: Via Roma 2, Guardamiglio\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-10-03-Juniores U19-G3.md",
@@ -91,7 +77,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-10-04-Seconda Categoria-G4.md",
       "type": "file",
       "download_url": "content/partite/2026-10-04-Seconda Categoria-G4.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: Cavenago D Adda 1972\ndataOra: 2026-10-04T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Cavenago D Adda 1972\ndataOra: 2026-10-04T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-10-04-U21-G4.md",
@@ -112,7 +98,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-10-11-Seconda Categoria-G5.md",
       "type": "file",
       "download_url": "content/partite/2026-10-11-Seconda Categoria-G5.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Graffignana 2013\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-11T15:30:00.000+02:00\nluogo: Campo Comunale, Graffignana\nindirizzoTrasferta: Via Dante, Graffignana\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Graffignana 2013\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-11T15:30:00.000+02:00\nluogo: Campo Comunale, Graffignana\nindirizzoTrasferta: Via Dante, Graffignana\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-10-11-U21-G5.md",
@@ -140,7 +126,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-10-18-Seconda Categoria-G6.md",
       "type": "file",
       "download_url": "content/partite/2026-10-18-Seconda Categoria-G6.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: Castelgerundo\ndataOra: 2026-10-18T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Castelgerundo\ndataOra: 2026-10-18T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-10-24-Juniores U19-G6.md",
@@ -154,7 +140,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-10-25-Seconda Categoria-G7.md",
       "type": "file",
       "download_url": "content/partite/2026-10-25-Seconda Categoria-G7.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: G.S. Azzurra 1939\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-25T14:30:00.000+01:00\nluogo: C.S. Comunale Borgo Adda, Lodi\nindirizzoTrasferta: Via Lungo Adda Bonaparte, Lodi\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: G.S. Azzurra 1939\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-25T14:30:00.000+01:00\nluogo: C.S. Comunale Borgo Adda, Lodi\nindirizzoTrasferta: Via Lungo Adda Bonaparte, Lodi\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-10-25-U21-G7.md",
@@ -182,7 +168,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-11-01-Seconda Categoria-G8.md",
       "type": "file",
       "download_url": "content/partite/2026-11-01-Seconda Categoria-G8.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: Aurora Orat. Secugnago\ndataOra: 2026-11-01T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Aurora Orat. Secugnago\ndataOra: 2026-11-01T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-11-07-Juniores U19-G8.md",
@@ -203,7 +189,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-11-08-Seconda Categoria-G9.md",
       "type": "file",
       "download_url": "content/partite/2026-11-08-Seconda Categoria-G9.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: S.Fereolo\nsquadraOspite: Nuova Lodi\ndataOra: 2026-11-08T14:30:00.000+01:00\nluogo: C.S. Comunale \"T. Scudellaro\", Lodi Vecchio\nindirizzoTrasferta: Via Madre Cabrini, Lodi Vecchio\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: S.Fereolo\nsquadraOspite: Nuova Lodi\ndataOra: 2026-11-08T14:30:00.000+01:00\nluogo: C.S. Comunale \"T. Scudellaro\", Lodi Vecchio\nindirizzoTrasferta: Via Madre Cabrini, Lodi Vecchio\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-11-14-Juniores U19-G9.md",
@@ -224,7 +210,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-11-15-Seconda Categoria-G10.md",
       "type": "file",
       "download_url": "content/partite/2026-11-15-Seconda Categoria-G10.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: Borghetto Dil\ndataOra: 2026-11-15T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Borghetto Dil\ndataOra: 2026-11-15T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-11-21-Juniores U19-G10.md",
@@ -238,7 +224,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-11-22-Seconda Categoria-G11.md",
       "type": "file",
       "download_url": "content/partite/2026-11-22-Seconda Categoria-G11.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Somaglia\nsquadraOspite: Nuova Lodi\ndataOra: 2026-11-22T14:30:00.000+01:00\nluogo: Campo Sportivo Comunale, Somaglia\nindirizzoTrasferta: Via Autostrada del Sole, Somaglia\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Somaglia\nsquadraOspite: Nuova Lodi\ndataOra: 2026-11-22T14:30:00.000+01:00\nluogo: Campo Sportivo Comunale, Somaglia\nindirizzoTrasferta: Via Autostrada del Sole, Somaglia\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-11-22-U21-G11.md",
@@ -266,14 +252,14 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-11-29-Seconda Categoria-G12.md",
       "type": "file",
       "download_url": "content/partite/2026-11-29-Seconda Categoria-G12.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: Caselle Landi\ndataOra: 2026-11-29T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Caselle Landi\ndataOra: 2026-11-29T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-12-06-Seconda Categoria-G13.md",
       "path": "content/partite/2026-12-06-Seconda Categoria-G13.md",
       "type": "file",
       "download_url": "content/partite/2026-12-06-Seconda Categoria-G13.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: San Fiorano\nsquadraOspite: Nuova Lodi\ndataOra: 2026-12-06T14:30:00.000+01:00\nluogo: C.S. Comunale - Campo N.1, San Fiorano\nindirizzoTrasferta: Via Milano, 11, San Fiorano\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: San Fiorano\nsquadraOspite: Nuova Lodi\ndataOra: 2026-12-06T14:30:00.000+01:00\nluogo: C.S. Comunale - Campo N.1, San Fiorano\nindirizzoTrasferta: Via Milano, 11, San Fiorano\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-12-06-U21-G13.md",
@@ -301,7 +287,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-12-13-Seconda Categoria-G14.md",
       "type": "file",
       "download_url": "content/partite/2026-12-13-Seconda Categoria-G14.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Atletico Miradolo\nsquadraOspite: Nuova Lodi\ndataOra: 2026-12-13T14:30:00.000+01:00\nluogo: C.S. Comunale, Miradolo Terme\nindirizzoTrasferta: Via del Nerone, 7, Miradolo Terme\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Atletico Miradolo\nsquadraOspite: Nuova Lodi\ndataOra: 2026-12-13T14:30:00.000+01:00\nluogo: C.S. Comunale, Miradolo Terme\nindirizzoTrasferta: Via del Nerone, 7, Miradolo Terme\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-12-19-Juniores U19-G12.md",
@@ -322,14 +308,14 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-12-20-Seconda Categoria-G15.md",
       "type": "file",
       "download_url": "content/partite/2026-12-20-Seconda Categoria-G15.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: Oratorio Livraga\ndataOra: 2026-12-20T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Oratorio Livraga\ndataOra: 2026-12-20T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-01-10-Seconda Categoria-G16.md",
       "path": "content/partite/2027-01-10-Seconda Categoria-G16.md",
       "type": "file",
       "download_url": "content/partite/2027-01-10-Seconda Categoria-G16.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: Esorsamma\ndataOra: 2027-01-10T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Esorsamma\ndataOra: 2027-01-10T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-01-10-U21-G16.md",
@@ -357,7 +343,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-01-17-Seconda Categoria-G17.md",
       "type": "file",
       "download_url": "content/partite/2027-01-17-Seconda Categoria-G17.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Vidardese\nsquadraOspite: Nuova Lodi\ndataOra: 2027-01-17T14:30:00.000+01:00\nluogo: C.S. Comunale (E.A), Castiraga Vidardo\nindirizzoTrasferta: Piazza dello Sport, Castiraga Vidardo\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Vidardese\nsquadraOspite: Nuova Lodi\ndataOra: 2027-01-17T14:30:00.000+01:00\nluogo: C.S. Comunale (E.A), Castiraga Vidardo\nindirizzoTrasferta: Piazza dello Sport, Castiraga Vidardo\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-01-23-Juniores U19-G15.md",
@@ -378,7 +364,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-01-24-Seconda Categoria-G18.md",
       "type": "file",
       "download_url": "content/partite/2027-01-24-Seconda Categoria-G18.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: Guardamiglio S.M.V.\ndataOra: 2027-01-24T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Guardamiglio S.M.V.\ndataOra: 2027-01-24T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-01-30-Juniores U19-G16.md",
@@ -399,7 +385,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-01-31-Seconda Categoria-G19.md",
       "type": "file",
       "download_url": "content/partite/2027-01-31-Seconda Categoria-G19.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Cavenago D Adda 1972\nsquadraOspite: Nuova Lodi\ndataOra: 2027-01-31T14:30:00.000+01:00\nluogo: C.S. Comunale \"A. Foletti\", Cavenago d'Adda\nindirizzoTrasferta: Via Italia, Cavenago d'Adda\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Cavenago D Adda 1972\nsquadraOspite: Nuova Lodi\ndataOra: 2027-01-31T14:30:00.000+01:00\nluogo: C.S. Comunale \"A. Foletti\", Cavenago d'Adda\nindirizzoTrasferta: Via Italia, Cavenago d'Adda\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-02-06-U21-G20.md",
@@ -413,7 +399,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-02-07-Seconda Categoria-G20.md",
       "type": "file",
       "download_url": "content/partite/2027-02-07-Seconda Categoria-G20.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: Graffignana 2013\ndataOra: 2027-02-07T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Graffignana 2013\ndataOra: 2027-02-07T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-02-13-Juniores U19-G18.md",
@@ -434,7 +420,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-02-14-Seconda Categoria-G21.md",
       "type": "file",
       "download_url": "content/partite/2027-02-14-Seconda Categoria-G21.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Castelgerundo\nsquadraOspite: Nuova Lodi\ndataOra: 2027-02-14T15:00:00.000+01:00\nluogo: C.S. Comunale Vittorino Merli, Castelgerundo/Cavacurta\nindirizzoTrasferta: Via Sandro Pertini, Castelgerundo/Cavacurta\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Castelgerundo\nsquadraOspite: Nuova Lodi\ndataOra: 2027-02-14T15:00:00.000+01:00\nluogo: C.S. Comunale Vittorino Merli, Castelgerundo/Cavacurta\nindirizzoTrasferta: Via Sandro Pertini, Castelgerundo/Cavacurta\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-02-20-Juniores U19-G19.md",
@@ -455,7 +441,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-02-21-Seconda Categoria-G22.md",
       "type": "file",
       "download_url": "content/partite/2027-02-21-Seconda Categoria-G22.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: G.S. Azzurra 1939\ndataOra: 2027-02-21T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: G.S. Azzurra 1939\ndataOra: 2027-02-21T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-02-27-Juniores U19-G20.md",
@@ -476,7 +462,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-02-28-Seconda Categoria-G23.md",
       "type": "file",
       "download_url": "content/partite/2027-02-28-Seconda Categoria-G23.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Aurora Orat. Secugnago\nsquadraOspite: Nuova Lodi\ndataOra: 2027-02-28T14:30:00.000+01:00\nluogo: Campo Sportivo Oratorio, Secugnago\nindirizzoTrasferta: Via Roma, 13, Secugnago\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Aurora Orat. Secugnago\nsquadraOspite: Nuova Lodi\ndataOra: 2027-02-28T14:30:00.000+01:00\nluogo: Campo Sportivo Oratorio, Secugnago\nindirizzoTrasferta: Via Roma, 13, Secugnago\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-03-06-Juniores U19-G21.md",
@@ -497,7 +483,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-03-07-Seconda Categoria-G24.md",
       "type": "file",
       "download_url": "content/partite/2027-03-07-Seconda Categoria-G24.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: S.Fereolo\ndataOra: 2027-03-07T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: S.Fereolo\ndataOra: 2027-03-07T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-03-13-Juniores U19-G22.md",
@@ -511,7 +497,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-03-14-Seconda Categoria-G25.md",
       "type": "file",
       "download_url": "content/partite/2027-03-14-Seconda Categoria-G25.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Borghetto Dil\nsquadraOspite: Nuova Lodi\ndataOra: 2027-03-14T14:30:00.000+01:00\nluogo: C.S. Comunale - Stadio, Borghetto Lodigiano\nindirizzoTrasferta: Via Case Braila ang. F. Coppi, Borghetto Lodigiano\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Borghetto Dil\nsquadraOspite: Nuova Lodi\ndataOra: 2027-03-14T14:30:00.000+01:00\nluogo: C.S. Comunale - Stadio, Borghetto Lodigiano\nindirizzoTrasferta: Via Case Braila ang. F. Coppi, Borghetto Lodigiano\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-03-14-U21-G25.md",
@@ -539,7 +525,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-03-21-Seconda Categoria-G26.md",
       "type": "file",
       "download_url": "content/partite/2027-03-21-Seconda Categoria-G26.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: Somaglia\ndataOra: 2027-03-21T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Somaglia\ndataOra: 2027-03-21T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-04-03-Juniores U19-G24.md",
@@ -560,7 +546,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-04-04-Seconda Categoria-G27.md",
       "type": "file",
       "download_url": "content/partite/2027-04-04-Seconda Categoria-G27.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Caselle Landi\nsquadraOspite: Nuova Lodi\ndataOra: 2027-04-04T15:30:00.000+02:00\nluogo: Centro Sportivo Comunale, Caselle Landi\nindirizzoTrasferta: Via Castello, Caselle Landi\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Caselle Landi\nsquadraOspite: Nuova Lodi\ndataOra: 2027-04-04T15:30:00.000+02:00\nluogo: Centro Sportivo Comunale, Caselle Landi\nindirizzoTrasferta: Via Castello, Caselle Landi\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-04-10-Juniores U19-G25.md",
@@ -581,7 +567,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-04-11-Seconda Categoria-G28.md",
       "type": "file",
       "download_url": "content/partite/2027-04-11-Seconda Categoria-G28.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: San Fiorano\ndataOra: 2027-04-11T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: San Fiorano\ndataOra: 2027-04-11T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-04-17-Juniores U19-G26.md",
@@ -595,7 +581,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-04-18-Seconda Categoria-G29.md",
       "type": "file",
       "download_url": "content/partite/2027-04-18-Seconda Categoria-G29.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Nuova Lodi\nsquadraOspite: Atletico Miradolo\ndataOra: 2027-04-18T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Atletico Miradolo\ndataOra: 2027-04-18T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-04-18-U21-G29.md",
@@ -623,7 +609,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-04-25-Seconda Categoria-G30.md",
       "type": "file",
       "download_url": "content/partite/2027-04-25-Seconda Categoria-G30.md",
-      "text": "---\ncategoria: Seconda Categoria\nsquadraCasa: Oratorio Livraga\nsquadraOspite: Nuova Lodi\ndataOra: 2027-04-25T15:30:00.000+02:00\nluogo: Oratorio \"Vittadini\", Livraga\nindirizzoTrasferta: Via Roma 10, Livraga\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Oratorio Livraga\nsquadraOspite: Nuova Lodi\ndataOra: 2027-04-25T15:30:00.000+02:00\nluogo: Oratorio \"Vittadini\", Livraga\nindirizzoTrasferta: Via Roma 10, Livraga\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     }
   ],
   "content/rose": [
