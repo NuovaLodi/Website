@@ -229,20 +229,27 @@ function switchMatchTab(tab) {
     const matchesBtn = document.getElementById('tab-matches-btn');
     const classificaBtn = document.getElementById('tab-classifica-btn');
 
-    if (!matchesView || !classificaView || !matchesBtn || !classificaBtn) {
+    if (!matchesView) {
         return;
     }
 
     if (tab === 'matches') {
         matchesView.classList.remove('hidden');
-        classificaView.classList.add('hidden');
-        matchesBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold transition-all bg-brandRed text-white';
-        classificaBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold text-gray-400 hover:text-white transition-all';
+        classificaView?.classList.add('hidden');
+        if (matchesBtn) {
+            matchesBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold transition-all bg-brandRed text-white';
+        }
+        classificaBtn?.classList.remove('bg-brandRed', 'text-white');
     } else {
+        if (!classificaView || !classificaBtn) {
+            return;
+        }
         matchesView.classList.add('hidden');
         classificaView.classList.remove('hidden');
         classificaBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold transition-all bg-brandRed text-white';
-        matchesBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold text-gray-400 hover:text-white transition-all';
+        if (matchesBtn) {
+            matchesBtn.className = 'px-3 py-1 rounded text-[11px] md:text-xs font-bold text-gray-400 hover:text-white transition-all';
+        }
     }
 }
 
