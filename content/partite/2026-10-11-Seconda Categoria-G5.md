@@ -5,7 +5,7 @@ squadraOspite: Nuova Lodi
 dataOra: 2026-10-11T15:30:00.000+02:00
 luogo: Campo Comunale, Graffignana
 indirizzoTrasferta: Via Dante, Graffignana
-stato: Programmata
+stato: Conclusa
 golCasa: 1
 golOspite: 0
 note: 
