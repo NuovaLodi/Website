@@ -14,7 +14,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-09-13-Seconda Categoria-G1.md",
       "type": "file",
       "download_url": "content/partite/2026-09-13-Seconda Categoria-G1.md",
-      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Esorsamma\nsquadraOspite: Nuova Lodi\ndataOra: 2026-09-13T15:30:00.000+02:00\nluogo: Comunale Colladio, San Martino in Strada\nindirizzoTrasferta: Via Gen. Dalla Chiesa, San Martino in Strada\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Esorsamma\nsquadraOspite: Nuova Lodi\ndataOra: 2026-09-13T15:30:00.000+02:00\nluogo: Comunale Colladio, San Martino in Strada\nindirizzoTrasferta: Via Gen. Dalla Chiesa, San Martino in Strada\nstato: Conclusa\ngolCasa: 0\ngolOspite: 0\nnote: \n---\n"
     },
     {
       "name": "2026-09-13-U21-G1.md",
@@ -35,14 +35,14 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-09-20-Seconda Categoria-G2.md",
       "type": "file",
       "download_url": "content/partite/2026-09-20-Seconda Categoria-G2.md",
-      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Vidardese\ndataOra: 2026-09-20T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Vidardese\ndataOra: 2026-09-20T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Conclusa\ngolCasa: 1\ngolOspite: 2\nnote: Bossi A.\n---\n"
     },
     {
       "name": "2026-09-20-U21-G2.md",
       "path": "content/partite/2026-09-20-U21-G2.md",
       "type": "file",
       "download_url": "content/partite/2026-09-20-U21-G2.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Cavese\nsquadraOspite: Nuova Lodi\ndataOra: 2026-09-20T15:30:00.000+02:00\nluogo: Via F. Cavallotti - C.s. Com. \"Paolino Tacconi\", Cava Manara\nindirizzoTrasferta: Via F. Cavallotti - C.s. Com. \"Paolino Tacconi\", Cava Manara\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Cavese\nsquadraOspite: Nuova Lodi\ndataOra: 2026-09-20T15:30:00.000+02:00\nluogo: Via F. Cavallotti - C.s. Com. \"Paolino Tacconi\", Cava Manara\nindirizzoTrasferta: Via F. Cavallotti - C.s. Com. \"Paolino Tacconi\", Cava Manara\nstato: Conclusa\ngolCasa: 1\ngolOspite: 3\nnote: Khalil Y., Koromo M., Khalil Y.\n---\n"
     },
     {
       "name": "2026-09-26-Juniores U19-G2.md",
@@ -56,14 +56,14 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-09-26-U21-G3.md",
       "type": "file",
       "download_url": "content/partite/2026-09-26-U21-G3.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Riozzese\ndataOra: 2026-09-26T15:00:00.000+02:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Oratorio Don Bosco\ndataOra: 2026-09-26T15:00:00.000+02:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: ConclusA\ngolCasa: 2\ngolOspite: 7\nnote: Khalil Y., Khalil Y.\n---\n"
     },
     {
       "name": "2026-09-27-Seconda Categoria-G3.md",
       "path": "content/partite/2026-09-27-Seconda Categoria-G3.md",
       "type": "file",
       "download_url": "content/partite/2026-09-27-Seconda Categoria-G3.md",
-      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Guardamiglio S.M.V.\nsquadraOspite: Nuova Lodi\ndataOra: 2026-09-27T15:30:00.000+02:00\nluogo: C.S. Comunale, Guardamiglio\nindirizzoTrasferta: Via Roma 2, Guardamiglio\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Guardamiglio S.M.V.\nsquadraOspite: Nuova Lodi\ndataOra: 2026-09-27T15:30:00.000+02:00\nluogo: C.S. Comunale, Guardamiglio\nindirizzoTrasferta: Via Roma 2, Guardamiglio\nstato: Conclusa\ngolCasa: 0\ngolOspite: 2\nnote: Peletti N., Peletti N.\n---\n"
     },
     {
       "name": "2026-10-03-Juniores U19-G3.md",
@@ -77,7 +77,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-10-04-Seconda Categoria-G4.md",
       "type": "file",
       "download_url": "content/partite/2026-10-04-Seconda Categoria-G4.md",
-      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Cavenago D Adda 1972\ndataOra: 2026-10-04T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Cavenago D Adda 1972\ndataOra: 2026-10-04T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Conclusa\ngolCasa: 1\ngolOspite: 2\nnote: Visigalli A.\n---\n"
     },
     {
       "name": "2026-10-04-U21-G4.md",
@@ -98,7 +98,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-10-11-Seconda Categoria-G5.md",
       "type": "file",
       "download_url": "content/partite/2026-10-11-Seconda Categoria-G5.md",
-      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Graffignana 2013\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-11T15:30:00.000+02:00\nluogo: Campo Comunale, Graffignana\nindirizzoTrasferta: Via Dante, Graffignana\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Graffignana 2013\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-11T15:30:00.000+02:00\nluogo: Campo Comunale, Graffignana\nindirizzoTrasferta: Via Dante, Graffignana\nstato: Conclusa\ngolCasa: 1\ngolOspite: 0\nnote: \n---\n"
     },
     {
       "name": "2026-10-11-U21-G5.md",
@@ -126,7 +126,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-10-18-Seconda Categoria-G6.md",
       "type": "file",
       "download_url": "content/partite/2026-10-18-Seconda Categoria-G6.md",
-      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Castelgerundo\ndataOra: 2026-10-18T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Castelgerundo\ndataOra: 2026-10-18T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Conclusa\ngolCasa: 5\ngolOspite: 0\nnote: Peletti N., Bossi A., Peletti N., Gnassi B., Gnassi B.\n---\n"
     },
     {
       "name": "2026-10-24-Juniores U19-G6.md",
