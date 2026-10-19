@@ -56,7 +56,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-09-26-U21-G3.md",
       "type": "file",
       "download_url": "content/partite/2026-09-26-U21-G3.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Oratorio Don Bosco\ndataOra: 2026-09-26T15:00:00.000+02:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: ConclusA\ngolCasa: 2\ngolOspite: 7\nnote: Khalil Y., Khalil Y.\n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Oratorio Don Bosco\ndataOra: 2026-09-26T15:00:00.000+02:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Conclusa\ngolCasa: 2\ngolOspite: 7\nnote: Khalil Y., Khalil Y.\n---\n"
     },
     {
       "name": "2026-09-27-Seconda Categoria-G3.md",
@@ -84,7 +84,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-10-04-U21-G4.md",
       "type": "file",
       "download_url": "content/partite/2026-10-04-U21-G4.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Sangiuliano Cvs\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-04T14:30:00.000+02:00\nluogo: Via Toscana 1 Sesto Ulteriano - C.s. Comunale N.1, San Giuliano Milanese-sesto U.\nindirizzoTrasferta: Via Toscana 1 Sesto Ulteriano - C.s. Comunale N.1, San Giuliano Milanese-sesto U.\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Citta Di Opera\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-04T14:30:00.000+02:00\nluogo: Via F.lli Cervi, 8/10 - C.s. Comunale N.1 (E.a), Opera\nindirizzoTrasferta: Via F.lli Cervi, 8/10 - C.s. Comunale N.1 (E.a), Opera\nstato: Conclusa\ngolCasa: 4\ngolOspite: 0\nnote: \n---\n"
     },
     {
       "name": "2026-10-10-Juniores U19-G4.md",
@@ -94,18 +94,18 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Juniores U19\nsquadraCasa: Nuova Lodi\nsquadraOspite: Fissiraga A.S.D.\ndataOra: 2026-10-10T14:30:00.000+02:00\nluogo: Via Generale Andrea Massena - Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
+      "name": "2026-10-10-U21-G5.md",
+      "path": "content/partite/2026-10-10-U21-G5.md",
+      "type": "file",
+      "download_url": "content/partite/2026-10-10-U21-G5.md",
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Sangiuliano Cvs\ndataOra: 2026-10-10T15:00:00.000+02:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Conclusa\ngolCasa: 1\ngolOspite: 2\nnote: Khalil Y.\n---\n"
+    },
+    {
       "name": "2026-10-11-Seconda Categoria-G5.md",
       "path": "content/partite/2026-10-11-Seconda Categoria-G5.md",
       "type": "file",
       "download_url": "content/partite/2026-10-11-Seconda Categoria-G5.md",
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Graffignana 2013\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-11T15:30:00.000+02:00\nluogo: Campo Comunale, Graffignana\nindirizzoTrasferta: Via Dante, Graffignana\nstato: Conclusa\ngolCasa: 1\ngolOspite: 0\nnote: \n---\n"
-    },
-    {
-      "name": "2026-10-11-U21-G5.md",
-      "path": "content/partite/2026-10-11-U21-G5.md",
-      "type": "file",
-      "download_url": "content/partite/2026-10-11-U21-G5.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Usom Calcio\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-11T15:30:00.000+02:00\nluogo: Largo Crocetta - C.s. Oratorio S. Giuseppe, Melegnano\nindirizzoTrasferta: Largo Crocetta - C.s. Oratorio S. Giuseppe, Melegnano\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-10-17-Juniores U19-G5.md",
@@ -115,18 +115,18 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Juniores U19\nsquadraCasa: G.S. Azzurra 1939\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-17T15:00:00.000+02:00\nluogo: Via Lungo Adda Bonaparte, Lodi\nindirizzoTrasferta: Via Lungo Adda Bonaparte, Lodi\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
-      "name": "2026-10-17-U21-G6.md",
-      "path": "content/partite/2026-10-17-U21-G6.md",
-      "type": "file",
-      "download_url": "content/partite/2026-10-17-U21-G6.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Virtus Binasco\ndataOra: 2026-10-17T15:00:00.000+02:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
-    },
-    {
       "name": "2026-10-18-Seconda Categoria-G6.md",
       "path": "content/partite/2026-10-18-Seconda Categoria-G6.md",
       "type": "file",
       "download_url": "content/partite/2026-10-18-Seconda Categoria-G6.md",
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Castelgerundo\ndataOra: 2026-10-18T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Conclusa\ngolCasa: 5\ngolOspite: 0\nnote: Peletti N., Bossi A., Peletti N., Gnassi B., Gnassi B.\n---\n"
+    },
+    {
+      "name": "2026-10-18-U21-G6.md",
+      "path": "content/partite/2026-10-18-U21-G6.md",
+      "type": "file",
+      "download_url": "content/partite/2026-10-18-U21-G6.md",
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Usom Calcio\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-18T15:30:00.000+02:00\nluogo: Largo Crocetta - C.s. Oratorio S. Giuseppe, Melegnano\nindirizzoTrasferta: Largo Crocetta - C.s. Oratorio S. Giuseppe, Melegnano\nstato: Conclusa\ngolCasa: 1\ngolOspite: 1\nnote: Khalil Y.\n---\n"
     },
     {
       "name": "2026-10-24-Juniores U19-G6.md",
@@ -136,18 +136,18 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Juniores U19\nsquadraCasa: Nuova Lodi\nsquadraOspite: Nuova Zorlesco\ndataOra: 2026-10-24T14:30:00.000+02:00\nluogo: Via Generale Andrea Massena - Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
+      "name": "2026-10-24-U21-G7.md",
+      "path": "content/partite/2026-10-24-U21-G7.md",
+      "type": "file",
+      "download_url": "content/partite/2026-10-24-U21-G7.md",
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Virtus Binasco\ndataOra: 2026-10-24T15:00:00.000+02:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+    },
+    {
       "name": "2026-10-25-Seconda Categoria-G7.md",
       "path": "content/partite/2026-10-25-Seconda Categoria-G7.md",
       "type": "file",
       "download_url": "content/partite/2026-10-25-Seconda Categoria-G7.md",
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: G.S. Azzurra 1939\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-25T14:30:00.000+01:00\nluogo: C.S. Comunale Borgo Adda, Lodi\nindirizzoTrasferta: Via Lungo Adda Bonaparte, Lodi\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
-    },
-    {
-      "name": "2026-10-25-U21-G7.md",
-      "path": "content/partite/2026-10-25-U21-G7.md",
-      "type": "file",
-      "download_url": "content/partite/2026-10-25-U21-G7.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Zibido San Giacomo\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-25T17:45:00.000+01:00\nluogo: Via Lenin 3/ang Risorgimento - C.s. Comunale (E.a), Zibido San Giacomo\nindirizzoTrasferta: Via Lenin 3/ang Risorgimento - C.s. Comunale (E.a), Zibido San Giacomo\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-10-31-Juniores U19-G7.md",
@@ -157,18 +157,18 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Juniores U19\nsquadraCasa: Cavenago D Adda 1972 ASD\nsquadraOspite: Nuova Lodi\ndataOra: 2026-10-31T15:00:00.000+01:00\nluogo: Via Italia snc, Cavenago d'Adda\nindirizzoTrasferta: Via Italia snc, Cavenago d'Adda\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
-      "name": "2026-10-31-U21-G8.md",
-      "path": "content/partite/2026-10-31-U21-G8.md",
-      "type": "file",
-      "download_url": "content/partite/2026-10-31-U21-G8.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Giov. Lungavilla\ndataOra: 2026-10-31T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
-    },
-    {
       "name": "2026-11-01-Seconda Categoria-G8.md",
       "path": "content/partite/2026-11-01-Seconda Categoria-G8.md",
       "type": "file",
       "download_url": "content/partite/2026-11-01-Seconda Categoria-G8.md",
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Aurora Orat. Secugnago\ndataOra: 2026-11-01T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+    },
+    {
+      "name": "2026-11-01-U21-G8.md",
+      "path": "content/partite/2026-11-01-U21-G8.md",
+      "type": "file",
+      "download_url": "content/partite/2026-11-01-U21-G8.md",
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Zibido San Giacomo\nsquadraOspite: Nuova Lodi\ndataOra: 2026-11-01T17:45:00.000+01:00\nluogo: Via Lenin 3/ang Risorgimento - C.s. Comunale (E.a), Zibido San Giacomo\nindirizzoTrasferta: Via Lenin 3/ang Risorgimento - C.s. Comunale (E.a), Zibido San Giacomo\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-11-07-Juniores U19-G8.md",
@@ -182,7 +182,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-11-07-U21-G9.md",
       "type": "file",
       "download_url": "content/partite/2026-11-07-U21-G9.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Gropello S. Giorgio\nsquadraOspite: Nuova Lodi\ndataOra: 2026-11-07T15:00:00.000+01:00\nluogo: Via Vittorio Veneto 27 - Comunale Mascherpa, Gropello Cairoli\nindirizzoTrasferta: Via Vittorio Veneto 27 - Comunale Mascherpa, Gropello Cairoli\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Giov. Lungavilla\ndataOra: 2026-11-07T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-11-08-Seconda Categoria-G9.md",
@@ -203,7 +203,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-11-14-U21-G10.md",
       "type": "file",
       "download_url": "content/partite/2026-11-14-U21-G10.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Siziano Lanterna\ndataOra: 2026-11-14T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Gropello S. Giorgio\nsquadraOspite: Nuova Lodi\ndataOra: 2026-11-14T15:00:00.000+01:00\nluogo: Via Vittorio Veneto 27 - Comunale Mascherpa, Gropello Cairoli\nindirizzoTrasferta: Via Vittorio Veneto 27 - Comunale Mascherpa, Gropello Cairoli\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-11-15-Seconda Categoria-G10.md",
@@ -220,18 +220,18 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Juniores U19\nsquadraCasa: Nuova Lodi\nsquadraOspite: Polisportiva K2 Caselle\ndataOra: 2026-11-21T14:30:00.000+01:00\nluogo: Via Generale Andrea Massena - Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
+      "name": "2026-11-21-U21-G11.md",
+      "path": "content/partite/2026-11-21-U21-G11.md",
+      "type": "file",
+      "download_url": "content/partite/2026-11-21-U21-G11.md",
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Siziano Lanterna\ndataOra: 2026-11-21T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+    },
+    {
       "name": "2026-11-22-Seconda Categoria-G11.md",
       "path": "content/partite/2026-11-22-Seconda Categoria-G11.md",
       "type": "file",
       "download_url": "content/partite/2026-11-22-Seconda Categoria-G11.md",
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Somaglia\nsquadraOspite: Nuova Lodi\ndataOra: 2026-11-22T14:30:00.000+01:00\nluogo: Campo Sportivo Comunale, Somaglia\nindirizzoTrasferta: Via Autostrada del Sole, Somaglia\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
-    },
-    {
-      "name": "2026-11-22-U21-G11.md",
-      "path": "content/partite/2026-11-22-U21-G11.md",
-      "type": "file",
-      "download_url": "content/partite/2026-11-22-U21-G11.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Medigliese\nsquadraOspite: Nuova Lodi\ndataOra: 2026-11-22T15:30:00.000+01:00\nluogo: Via Risorgimento - C.s. Comunale \"E. Vogorelli\" N.1, Mediglia Fraz. Triginto\nindirizzoTrasferta: Via Risorgimento - C.s. Comunale \"E. Vogorelli\" N.1, Mediglia Fraz. Triginto\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-11-28-Juniores U19-G11.md",
@@ -241,18 +241,25 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Juniores U19\nsquadraCasa: C.S.I. Junior Calcio ASD\nsquadraOspite: Nuova Lodi\ndataOra: 2026-11-28T15:30:00.000+01:00\nluogo: Via Volta 17, Sant'Angelo Lodigiano\nindirizzoTrasferta: Via Volta 17, Sant'Angelo Lodigiano\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
-      "name": "2026-11-28-U21-G12.md",
-      "path": "content/partite/2026-11-28-U21-G12.md",
-      "type": "file",
-      "download_url": "content/partite/2026-11-28-U21-G12.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Riozzese\ndataOra: 2026-11-28T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
-    },
-    {
       "name": "2026-11-29-Seconda Categoria-G12.md",
       "path": "content/partite/2026-11-29-Seconda Categoria-G12.md",
       "type": "file",
       "download_url": "content/partite/2026-11-29-Seconda Categoria-G12.md",
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Caselle Landi\ndataOra: 2026-11-29T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+    },
+    {
+      "name": "2026-11-29-U21-G12.md",
+      "path": "content/partite/2026-11-29-U21-G12.md",
+      "type": "file",
+      "download_url": "content/partite/2026-11-29-U21-G12.md",
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Medigliese\nsquadraOspite: Nuova Lodi\ndataOra: 2026-11-29T15:30:00.000+01:00\nluogo: Via Risorgimento - C.s. Comunale \"E. Vogorelli\" N.1, Mediglia Fraz. Triginto\nindirizzoTrasferta: Via Risorgimento - C.s. Comunale \"E. Vogorelli\" N.1, Mediglia Fraz. Triginto\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+    },
+    {
+      "name": "2026-12-05-U21-G13.md",
+      "path": "content/partite/2026-12-05-U21-G13.md",
+      "type": "file",
+      "download_url": "content/partite/2026-12-05-U21-G13.md",
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Riozzese\ndataOra: 2026-12-05T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-12-06-Seconda Categoria-G13.md",
@@ -262,13 +269,6 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: San Fiorano\nsquadraOspite: Nuova Lodi\ndataOra: 2026-12-06T14:30:00.000+01:00\nluogo: C.S. Comunale - Campo N.1, San Fiorano\nindirizzoTrasferta: Via Milano, 11, San Fiorano\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
-      "name": "2026-12-06-U21-G13.md",
-      "path": "content/partite/2026-12-06-U21-G13.md",
-      "type": "file",
-      "download_url": "content/partite/2026-12-06-U21-G13.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: F.c. Milanese\nsquadraOspite: Nuova Lodi\ndataOra: 2026-12-06T15:00:00.000+01:00\nluogo: Via Maritano - C.s. Comunale \"G.p. Squeri\", San Donato Milanese\nindirizzoTrasferta: Via Maritano - C.s. Comunale \"G.p. Squeri\", San Donato Milanese\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
-    },
-    {
       "name": "2026-12-12-Juniores U19-G13.md",
       "path": "content/partite/2026-12-12-Juniores U19-G13.md",
       "type": "file",
@@ -276,18 +276,18 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Juniores U19\nsquadraCasa: Nuova Lodi\nsquadraOspite: Valera Fratta\ndataOra: 2026-12-12T14:30:00.000+01:00\nluogo: Via Generale Andrea Massena - Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
-      "name": "2026-12-12-U21-G14.md",
-      "path": "content/partite/2026-12-12-U21-G14.md",
-      "type": "file",
-      "download_url": "content/partite/2026-12-12-U21-G14.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Citta Di Opera\ndataOra: 2026-12-12T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
-    },
-    {
       "name": "2026-12-13-Seconda Categoria-G14.md",
       "path": "content/partite/2026-12-13-Seconda Categoria-G14.md",
       "type": "file",
       "download_url": "content/partite/2026-12-13-Seconda Categoria-G14.md",
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Atletico Miradolo\nsquadraOspite: Nuova Lodi\ndataOra: 2026-12-13T14:30:00.000+01:00\nluogo: C.S. Comunale, Miradolo Terme\nindirizzoTrasferta: Via del Nerone, 7, Miradolo Terme\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+    },
+    {
+      "name": "2026-12-13-U21-G14.md",
+      "path": "content/partite/2026-12-13-U21-G14.md",
+      "type": "file",
+      "download_url": "content/partite/2026-12-13-U21-G14.md",
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: F.c. Milanese\nsquadraOspite: Nuova Lodi\ndataOra: 2026-12-13T15:00:00.000+01:00\nluogo: Via Maritano - C.s. Comunale \"G.p. Squeri\", San Donato Milanese\nindirizzoTrasferta: Via Maritano - C.s. Comunale \"G.p. Squeri\", San Donato Milanese\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-12-19-Juniores U19-G12.md",
@@ -301,7 +301,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-12-19-U21-G15.md",
       "type": "file",
       "download_url": "content/partite/2026-12-19-U21-G15.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Oratorio Don Bosco\nsquadraOspite: Nuova Lodi\ndataOra: 2026-12-19T18:00:00.000+01:00\nluogo: Via Brescia - C.s. Or. \"Don Bosco\", Valle Salimbene Fr. S. Leonardo\nindirizzoTrasferta: Via Brescia - C.s. Or. \"Don Bosco\", Valle Salimbene Fr. S. Leonardo\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Nuova Bolgiano\ndataOra: 2026-12-19T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-12-20-Seconda Categoria-G15.md",
@@ -357,7 +357,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-01-23-U21-G18.md",
       "type": "file",
       "download_url": "content/partite/2027-01-23-U21-G18.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Riozzese\nsquadraOspite: Nuova Lodi\ndataOra: 2027-01-23T15:00:00.000+01:00\nluogo: Via Iv Novembre - C.s. Comunale Campo 1, Cerro Al Lambro Fraz. Riozzo\nindirizzoTrasferta: Via Iv Novembre - C.s. Comunale Campo 1, Cerro Al Lambro Fraz. Riozzo\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Oratorio Don Bosco\nsquadraOspite: Nuova Lodi\ndataOra: 2027-01-23T18:00:00.000+01:00\nluogo: Via Brescia - C.s. Or. \"Don Bosco\", Valle Salimbene Fr. S. Leonardo\nindirizzoTrasferta: Via Brescia - C.s. Or. \"Don Bosco\", Valle Salimbene Fr. S. Leonardo\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-01-24-Seconda Categoria-G18.md",
@@ -378,7 +378,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-01-30-U21-G19.md",
       "type": "file",
       "download_url": "content/partite/2027-01-30-U21-G19.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Sangiuliano Cvs\ndataOra: 2027-01-30T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Citta Di Opera\ndataOra: 2027-01-30T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-01-31-Seconda Categoria-G19.md",
@@ -388,18 +388,18 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Cavenago D Adda 1972\nsquadraOspite: Nuova Lodi\ndataOra: 2027-01-31T14:30:00.000+01:00\nluogo: C.S. Comunale \"A. Foletti\", Cavenago d'Adda\nindirizzoTrasferta: Via Italia, Cavenago d'Adda\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
-      "name": "2027-02-06-U21-G20.md",
-      "path": "content/partite/2027-02-06-U21-G20.md",
-      "type": "file",
-      "download_url": "content/partite/2027-02-06-U21-G20.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Usom Calcio\ndataOra: 2027-02-06T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
-    },
-    {
       "name": "2027-02-07-Seconda Categoria-G20.md",
       "path": "content/partite/2027-02-07-Seconda Categoria-G20.md",
       "type": "file",
       "download_url": "content/partite/2027-02-07-Seconda Categoria-G20.md",
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Graffignana 2013\ndataOra: 2027-02-07T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+    },
+    {
+      "name": "2027-02-07-U21-G20.md",
+      "path": "content/partite/2027-02-07-U21-G20.md",
+      "type": "file",
+      "download_url": "content/partite/2027-02-07-U21-G20.md",
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Sangiuliano CVS\nsquadraOspite: Nuova Lodi\ndataOra: 2027-02-07T14:30:00.000+01:00\nluogo: Via Toscana, 1 - C.s. Comunale, Sesto Ulteriano\nindirizzoTrasferta: Via Toscana, 1 - C.s. Comunale, Sesto Ulteriano\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-02-13-Juniores U19-G18.md",
@@ -413,7 +413,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-02-13-U21-G21.md",
       "type": "file",
       "download_url": "content/partite/2027-02-13-U21-G21.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Virtus Binasco\nsquadraOspite: Nuova Lodi\ndataOra: 2027-02-13T14:30:00.000+01:00\nluogo: Via Partigiani Loc. Giovenzano - Campo Sportivo Comunale, Vellezzo Bellini\nindirizzoTrasferta: Via Partigiani Loc. Giovenzano - Campo Sportivo Comunale, Vellezzo Bellini\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Usom Calcio\ndataOra: 2027-02-13T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-02-14-Seconda Categoria-G21.md",
@@ -434,7 +434,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-02-20-U21-G22.md",
       "type": "file",
       "download_url": "content/partite/2027-02-20-U21-G22.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Zibido San Giacomo\ndataOra: 2027-02-20T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Virtus Binasco\nsquadraOspite: Nuova Lodi\ndataOra: 2027-02-20T14:30:00.000+01:00\nluogo: Via Partigiani Loc. Giovenzano - Campo Sportivo Comunale, Vellezzo Bellini\nindirizzoTrasferta: Via Partigiani Loc. Giovenzano - Campo Sportivo Comunale, Vellezzo Bellini\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-02-21-Seconda Categoria-G22.md",
@@ -455,7 +455,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-02-27-U21-G23.md",
       "type": "file",
       "download_url": "content/partite/2027-02-27-U21-G23.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Giov. Lungavilla\nsquadraOspite: Nuova Lodi\ndataOra: 2027-02-27T15:30:00.000+01:00\nluogo: Via Papa Giovanni Xxiii A, 16 - C.s. Comunale \"Pietro Vercesi\", Lungavilla\nindirizzoTrasferta: Via Papa Giovanni Xxiii A, 16 - C.s. Comunale \"Pietro Vercesi\", Lungavilla\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Zibido San Giacomo\ndataOra: 2027-02-27T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-02-28-Seconda Categoria-G23.md",
@@ -476,7 +476,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-03-06-U21-G24.md",
       "type": "file",
       "download_url": "content/partite/2027-03-06-U21-G24.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Gropello S. Giorgio\ndataOra: 2027-03-06T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Giov. Lungavilla\nsquadraOspite: Nuova Lodi\ndataOra: 2027-03-06T15:30:00.000+01:00\nluogo: Via Papa Giovanni Xxiii A, 16 - C.s. Comunale \"Pietro Vercesi\", Lungavilla\nindirizzoTrasferta: Via Papa Giovanni Xxiii A, 16 - C.s. Comunale \"Pietro Vercesi\", Lungavilla\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-03-07-Seconda Categoria-G24.md",
@@ -493,18 +493,18 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Juniores U19\nsquadraCasa: Nuova Lodi\nsquadraOspite: Virtus Maleo A.S.D.\ndataOra: 2027-03-13T14:30:00.000+01:00\nluogo: Via Generale Andrea Massena - Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
+      "name": "2027-03-13-U21-G25.md",
+      "path": "content/partite/2027-03-13-U21-G25.md",
+      "type": "file",
+      "download_url": "content/partite/2027-03-13-U21-G25.md",
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Gropello S. Giorgio\ndataOra: 2027-03-13T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+    },
+    {
       "name": "2027-03-14-Seconda Categoria-G25.md",
       "path": "content/partite/2027-03-14-Seconda Categoria-G25.md",
       "type": "file",
       "download_url": "content/partite/2027-03-14-Seconda Categoria-G25.md",
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Borghetto Dil\nsquadraOspite: Nuova Lodi\ndataOra: 2027-03-14T14:30:00.000+01:00\nluogo: C.S. Comunale - Stadio, Borghetto Lodigiano\nindirizzoTrasferta: Via Case Braila ang. F. Coppi, Borghetto Lodigiano\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
-    },
-    {
-      "name": "2027-03-14-U21-G25.md",
-      "path": "content/partite/2027-03-14-U21-G25.md",
-      "type": "file",
-      "download_url": "content/partite/2027-03-14-U21-G25.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Siziano Lanterna\nsquadraOspite: Nuova Lodi\ndataOra: 2027-03-14T19:00:00.000+01:00\nluogo: Via F.lli Cervi, 8/10 - C.s. Comunale N.1 (E.a), Opera\nindirizzoTrasferta: Via F.lli Cervi, 8/10 - C.s. Comunale N.1 (E.a), Opera\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-03-20-Juniores U19-G23.md",
@@ -514,18 +514,18 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Juniores U19\nsquadraCasa: Polisportiva K2 Caselle\nsquadraOspite: Nuova Lodi\ndataOra: 2027-03-20T15:00:00.000+01:00\nluogo: Via Roma 7, Caselle Lurani\nindirizzoTrasferta: Via Roma 7, Caselle Lurani\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
-      "name": "2027-03-20-U21-G26.md",
-      "path": "content/partite/2027-03-20-U21-G26.md",
-      "type": "file",
-      "download_url": "content/partite/2027-03-20-U21-G26.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Medigliese\ndataOra: 2027-03-20T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
-    },
-    {
       "name": "2027-03-21-Seconda Categoria-G26.md",
       "path": "content/partite/2027-03-21-Seconda Categoria-G26.md",
       "type": "file",
       "download_url": "content/partite/2027-03-21-Seconda Categoria-G26.md",
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Somaglia\ndataOra: 2027-03-21T14:30:00.000+01:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+    },
+    {
+      "name": "2027-03-21-U21-G26.md",
+      "path": "content/partite/2027-03-21-U21-G26.md",
+      "type": "file",
+      "download_url": "content/partite/2027-03-21-U21-G26.md",
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Siziano Lanterna\nsquadraOspite: Nuova Lodi\ndataOra: 2027-03-21T19:00:00.000+01:00\nluogo: Via F.lli Cervi, 8/10 - C.s. Comunale N.1 (E.a), Opera\nindirizzoTrasferta: Via F.lli Cervi, 8/10 - C.s. Comunale N.1 (E.a), Opera\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-04-03-Juniores U19-G24.md",
@@ -539,7 +539,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-04-03-U21-G27.md",
       "type": "file",
       "download_url": "content/partite/2027-04-03-U21-G27.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Riozzese\nsquadraOspite: Nuova Lodi\ndataOra: 2027-04-03T15:00:00.000+02:00\nluogo: Via Iv Novembre - C.s. Comunale Campo 1, Cerro Al Lambro Fraz. Riozzo\nindirizzoTrasferta: Via Iv Novembre - C.s. Comunale Campo 1, Cerro Al Lambro Fraz. Riozzo\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Medigliese\ndataOra: 2027-04-03T15:00:00.000+01:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-04-04-Seconda Categoria-G27.md",
@@ -560,7 +560,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-04-10-U21-G28.md",
       "type": "file",
       "download_url": "content/partite/2027-04-10-U21-G28.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: F.c. Milanese\ndataOra: 2027-04-10T15:00:00.000+02:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Riozzese\nsquadraOspite: Nuova Lodi\ndataOra: 2027-04-10T15:00:00.000+02:00\nluogo: Via Iv Novembre - C.s. Comunale Campo 1, Cerro Al Lambro Fraz. Riozzo\nindirizzoTrasferta: Via Iv Novembre - C.s. Comunale Campo 1, Cerro Al Lambro Fraz. Riozzo\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-04-11-Seconda Categoria-G28.md",
@@ -577,18 +577,18 @@ window.NUOVA_LODI_CONTENT = {
       "text": "---\ncategoria: Juniores U19\nsquadraCasa: Valera Fratta\nsquadraOspite: Nuova Lodi\ndataOra: 2027-04-17T18:30:00.000+02:00\nluogo: Via del Cimitero/P.za Vittoria, Valera Fratta\nindirizzoTrasferta: Via del Cimitero/P.za Vittoria, Valera Fratta\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
+      "name": "2027-04-17-U21-G29.md",
+      "path": "content/partite/2027-04-17-U21-G29.md",
+      "type": "file",
+      "download_url": "content/partite/2027-04-17-U21-G29.md",
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: F.c. Milanese\ndataOra: 2027-04-17T15:00:00.000+02:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+    },
+    {
       "name": "2027-04-18-Seconda Categoria-G29.md",
       "path": "content/partite/2027-04-18-Seconda Categoria-G29.md",
       "type": "file",
       "download_url": "content/partite/2027-04-18-Seconda Categoria-G29.md",
       "text": "---\ncategoria: Prima Squadra\nsquadraCasa: Nuova Lodi\nsquadraOspite: Atletico Miradolo\ndataOra: 2027-04-18T15:30:00.000+02:00\nluogo: Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
-    },
-    {
-      "name": "2027-04-18-U21-G29.md",
-      "path": "content/partite/2027-04-18-U21-G29.md",
-      "type": "file",
-      "download_url": "content/partite/2027-04-18-U21-G29.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Citta Di Opera\nsquadraOspite: Nuova Lodi\ndataOra: 2027-04-18T14:30:00.000+02:00\nluogo: Via F.lli Cervi, 8/10 - C.s. Comunale N.1 (E.a), Opera\nindirizzoTrasferta: Via F.lli Cervi, 8/10 - C.s. Comunale N.1 (E.a), Opera\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-04-24-Juniores U19-G17.md",
@@ -602,7 +602,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2027-04-24-U21-G30.md",
       "type": "file",
       "download_url": "content/partite/2027-04-24-U21-G30.md",
-      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Lodi\nsquadraOspite: Oratorio Don Bosco\ndataOra: 2027-04-24T15:00:00.000+02:00\nluogo: Via Generale Andrea Massena - C.s. Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Terza Categoria U21\nsquadraCasa: Nuova Bolgiano\nsquadraOspite: Nuova Lodi\ndataOra: 2027-04-24T14:30:00.000+01:00\nluogo: Via Gagliano - C.s. Comunale Raffaele Ravaglia, San Donato Milanese\nindirizzoTrasferta: Via Gagliano - C.s. Comunale Raffaele Ravaglia, San Donato Milanese\nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2027-04-25-Seconda Categoria-G30.md",
