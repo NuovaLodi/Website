@@ -280,7 +280,7 @@ window.NUOVA_LODI_CONTENT = {
       "path": "content/partite/2026-12-13-Juniores U19-G13.md",
       "type": "file",
       "download_url": "content/partite/2026-12-13-Juniores U19-G13.md",
-      "text": "---\ncategoria: Juniores U19\nsquadraCasa: Nuova Lodi\nsquadraOspite: Valera Fratta\ndataOra: 2026-13-12T14:30:00.000+01:00\nluogo: Via Generale Andrea Massena - Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
+      "text": "---\ncategoria: Juniores U19\nsquadraCasa: Nuova Lodi\nsquadraOspite: Valera Fratta\ndataOra: 2026-12-13T14:30:00.000+01:00\nluogo: Via Generale Andrea Massena - Comunale \"Selvagreca\" Campo N.2, Lodi\nindirizzoTrasferta: \nstato: Programmata\ngolCasa: \ngolOspite: \nnote: \n---\n"
     },
     {
       "name": "2026-12-13-Seconda Categoria-G14.md",
